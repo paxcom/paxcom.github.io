@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+{% include header.md %}
+<div id="container" data-PageSwitch>
+	<div class="selections" style="position:relative">       
+        {{ content }}        
+    	<div class="selection" id="selection3" > {% markdown footer.md %} </div>
+	</div>
+</div>
+{% include js.html %}
+</body>
+</html>
