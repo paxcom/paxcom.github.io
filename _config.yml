@@ -7,7 +7,7 @@ description: Customizable Dashboards for Deep Insights into Key Performance Indi
 
 ### Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rough
 
 # Site Navigation
 baseurl: /paxtrial
