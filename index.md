@@ -1,22 +1,21 @@
 ---
 layout: default
 ---
-
 <div class="selection" id="selection0">
 	<div class="top-main-part"> 
-		{% markdown pim-intro.md %} 
+		{% include pim-intro.html %} 
 	</div>
 </div>
 <div class="selection bg-gray" id="selection1">   
 	<div class="container top-space" >
-		{% markdown pim-info.md %}
+		{% include pim-info.html %}
 	</div>
 </div>	
 <div class="selection" id="selection2">
 	<div class="row" >
 		<div class="col-md-12 col-sm-12">
 			<div class="vertical-tab-menu">
-				{% markdown whyPIM.md %}
+				{% include whyPIM.html %}
             </div>
         </div>
     </div>
