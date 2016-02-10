@@ -57,16 +57,20 @@ var loadPageSwitch = function(){
     head.appendChild(pageSwitchJs);
 }
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-    if ($(window).width() > 600){
-        loadPageSwitch();
-    }
-    $(window).resize(function() {
-        if(!pageSwitchLoaded && $(window).width() > 600){
-            pageSwitchLoaded = true;
-            loadPageSwitch();
-        }
+    $('.selections').fullpage({
+        sectionSelector : '.selection',
     });
+    enableNavScrolling();
+    $('[data-toggle="tooltip"]').tooltip();
+    // if ($(window).width() > 600){
+    //     loadPageSwitch();
+    // }
+    // $(window).resize(function() {
+    //     if(!pageSwitchLoaded && $(window).width() > 600){
+    //         pageSwitchLoaded = true;
+    //         loadPageSwitch();
+    //     }
+    // });
 });
 
 $(".nav-toggle-icon").click(function(){
