@@ -6,11 +6,6 @@ layout: default
 		{% include pim-intro.html %} 
 	</div>
 </div>
-<div class="selection bg-gray" id="selection1">   
-	<div class="container top-space" >
-		{% include pim-info.html %}
-	</div>
-</div>	
 <div class="selection" id="selection2">
 	<div class="row" >
 		<div class="col-md-12 col-sm-12">
@@ -20,3 +15,8 @@ layout: default
         </div>
     </div>
 </div>
+<div class="selection bg-gray" id="selection1">   
+	<div class="container top-space" >
+		{% include pim-info.html %}
+	</div>
+</div>	

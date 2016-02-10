@@ -1,6 +1,7 @@
 
 (function($){
  
+ $('body').width();
     var _prefix=(function(temp){
        var aPrefix=["webkit","Moz","o","ms"],props="";
        for(var i in aPrefix){
@@ -250,5 +251,6 @@
    $(function(){
    	$('[data-PageSwitch]').PageSwitch();
    });
+   
 
 })(jQuery);
