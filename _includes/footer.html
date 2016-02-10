@@ -11,9 +11,11 @@
 
 <footer>
         <div class="insight-btn">
-        {% if page.url == "/index.html"} %}
+      <!--  {% if page.url == "/index.html"} %}
         	<a href="{{ site.baseurl }}insights" target="new"> <img src="{{ site.baseurl }}/img/insight-btn.png" alt="insight-btn"/> </a> 
-        {% endif %}
+        {% endif %}-->
+        
+        {{ page.url }}
         
         
         
