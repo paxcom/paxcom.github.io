@@ -61,6 +61,9 @@ $(document).ready(function(){
         sectionSelector : '.selection',
     });
     enableNavScrolling();
+    $('.scrollDown').on('click',function () {
+        $('.selections').fullpage.moveSectionDown()
+    })
     $('[data-toggle="tooltip"]').tooltip();
     // if ($(window).width() > 600){
     //     loadPageSwitch();

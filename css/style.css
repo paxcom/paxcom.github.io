@@ -370,3 +370,9 @@ footer ul.social-icon{ float:none; margin:10px auto;}
 .product-info-popup{ position: relative; height:auto; width:100%; margin:0px; padding:0px; }
 .product-info-popup .modal-content{ border-radius:0px; position:relative; height:auto; width:100%;}
 }
+
+.scrollDown {
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
