@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="selection" id="selection0">
-	<div class="top-main-part"> 
+	<div class="top-main-part pim-bg"> 
 		{% include pim-intro.html %} 
 	</div>
 </div>
