@@ -1,6 +1,8 @@
 var navTabsId = "#selection2,#selection4";
 var pageSwitchLoaded = false;
 var manualScroll = false;
+var responsiveHeight = 500;
+var responsiveWidth = 900;
 var enableNavScrolling = function (params) {
     var activeTabIndex = 0;
     var getActiveTabIndex = function(){
@@ -60,6 +62,8 @@ $(document).ready(function(){
     var totalSections = $('.selection').length;
     $('.selections').fullpage({
         sectionSelector : '.selection',
+        responsiveWidth : responsiveWidth,
+        responsiveHeight : responsiveHeight,
         onLeave : function( index, nextIndex, direction){
             console.log("index, nextIndex, direction",index, nextIndex, direction)
             //Logic for floating button
@@ -95,15 +99,16 @@ $(document).ready(function(){
         }
     })
     $('[data-toggle="tooltip"]').tooltip();
-    // if ($(window).width() > 600){
-    //     loadPageSwitch();
-    // }
-    // $(window).resize(function() {
-    //     if(!pageSwitchLoaded && $(window).width() > 600){
-    //         pageSwitchLoaded = true;
-    //         loadPageSwitch();
-    //     }
-    // });
+    if ($(window).width() < responsiveWidth || $(window).height() < responsiveHeight){
+        $('.floating-button').hide();
+    }
+    $(window).resize(function() {
+        if ($(window).width() < responsiveWidth || $(window).height() < responsiveHeight){
+            $('.floating-button').hide();
+        }else{
+            $('.floating-button').show();
+        }
+    });
 });
 
 $(".nav-toggle-icon").click(function(){
