@@ -125,7 +125,7 @@ header.active {
 }
 
 
-.logo{ margin:30px 30px; }
+.logo{ margin:30px 15px 30px 0px; }
 
 
 ul.nav-dropdown-menu{ background-color:rgba(0,0,0,0.7); width:200px;   height:200px; border-radius:5px; position:absolute; right:20px; top:50px; font-family: 'Roboto', sans-serif; color:#FFF; margin:0px; padding:0px;
@@ -145,7 +145,10 @@ ul.nav-dropdown-menu li a:hover{ color:#ff9000;}
 /*  ///////////////////////// header css code end //////////////////////////// */
 
 /*  ///////////////////////// top main part css code strat//////////////////////////// */
-.top-main-part{ background-image: url(../img/bg-slider.png); background-repeat:no-repeat; background-size: 100% 100%; background-position:center; height:100%; width:100%;  }
+.top-main-part{ background-repeat:no-repeat; background-size: 100% 100%; background-position:center; height:100%; width:100%;  }
+.pim-bg{background-image: url(../img/bg-slider.png);}
+.insights-bg{background-image: url(../img/bg-insight.png);}
+
 ul.client-logo{ margin-top:50px; text-align:center;  padding:0px 10px 0 10px; }
 ul.client-logo li{ margin:0px; padding:0 20px 0 20px; display:inline;}
 
@@ -274,7 +277,8 @@ width:300px; position:fixed; height:100%;
   display: block; border-radius:0px;
 }
 
-.product-info-tab, #insight-offering{ border-bottom:none; padding-top:60px;}
+.product-info-tab { border-bottom:none; padding-top:100px;}
+#insight-offering .container{margin-top:80px;}
 .product-info-tab .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
     background-color: transparent;
