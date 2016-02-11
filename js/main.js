@@ -57,13 +57,35 @@ var loadPageSwitch = function(){
     head.appendChild(pageSwitchJs);
 }
 $(document).ready(function(){
+    var totalSections = $('.selection').length;
     $('.selections').fullpage({
         sectionSelector : '.selection',
-    });
-    enableNavScrolling();
-    $('.scrollDown').on('click',function () {
-        $('.selections').fullpage.moveSectionDown()
+        onLeave : function( index, nextIndex, direction){
+            if(nextIndex === totalSections){
+                $("#floating-icon").addClass('fa-hand-o-up').removeClass('fa-hand-o-down')
+            }else if(nextIndex < totalSections){
+                if(!$("#floating-icon").hasClass('fa-hand-o-down')){
+                    $("#floating-icon").addClass('fa-hand-o-down').removeClass('fa-hand-o-up')
+                }
+            }
+        }
     })
+    enableNavScrolling()
+    $('.floating-button').on('click',function () {
+        if($("#floating-icon").hasClass('fa-hand-o-down')){
+            $('.selections').fullpage.moveSectionDown()
+        }
+        if($("#floating-icon").hasClass('fa-hand-o-up')){
+            $('.selections').fullpage.moveTo(1)
+        }
+    })
+    $('body').scroll(function() {
+        console.log("$(document).height()-" + $(document).height() + ", $(window).height()-"+"$(window).scrollTop()-"+$(document).height())
+        if ($(document).height() <= ($(window).height() + $(window).scrollTop())) {
+            //Bottom Reached
+            alert('bottom')
+        }
+    });
     $('[data-toggle="tooltip"]').tooltip();
     // if ($(window).width() > 600){
     //     loadPageSwitch();

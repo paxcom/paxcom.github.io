@@ -371,7 +371,7 @@ footer ul.social-icon{ float:none; margin:10px auto;}
 .product-info-popup .modal-content{ border-radius:0px; position:relative; height:auto; width:100%;}
 }
 
-.scrollDown {
+.floating-button {
     position: fixed;
     bottom: 0px;
     right: 0px; 
