@@ -64,10 +64,10 @@ $(document).ready(function(){
             console.log("index, nextIndex, direction",index, nextIndex, direction)
             //Logic for floating button
             if(nextIndex === totalSections){
-                $("#floating-icon").addClass('fa-hand-o-up').removeClass('fa-hand-o-down')
+                $("#floating-icon").addClass('fa-chevron-up').removeClass('fa-chevron-down')
             }else if(nextIndex < totalSections){
-                if(!$("#floating-icon").hasClass('fa-hand-o-down')){
-                    $("#floating-icon").addClass('fa-hand-o-down').removeClass('fa-hand-o-up')
+                if(!$("#floating-icon").hasClass('fa-chevron-down')){
+                    $("#floating-icon").addClass('fa-chevron-down').removeClass('fa-chevron-up')
                 }
             }
             //Logic for header class
@@ -87,10 +87,10 @@ $(document).ready(function(){
     })
     enableNavScrolling()
     $('.floating-button').on('click',function () {
-        if($("#floating-icon").hasClass('fa-hand-o-down')){
+        if($("#floating-icon").hasClass('fa-chevron-down')){
             $('.selections').fullpage.moveSectionDown()
         }
-        if($("#floating-icon").hasClass('fa-hand-o-up')){
+        if($("#floating-icon").hasClass('fa-chevron-up')){
             $('.selections').fullpage.moveTo(1)
         }
     })

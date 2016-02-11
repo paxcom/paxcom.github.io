@@ -118,13 +118,13 @@ header{ position:fixed; top:0; z-index:9; width:100%;}
 
 
 .headerActive {
-    background:rgba(16,16,24, .8);	
+    background:#fff;	
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 .headerActive   .logo{ margin:10px 15px 10px 0px; }
-.headerActive   .logo img{ width:60%}
+.headerActive   .logo img{ width:130px;}
 
 
 
@@ -151,7 +151,7 @@ ul.nav-dropdown-menu li a:hover{ color:#ff9000;}
 .insights-bg{background-image: url(../img/bg-insight.png);}
 
 ul.client-logo{ margin-top:50px; text-align:center;  padding:0px 10px 0 10px; }
-ul.client-logo li{ margin:0px; padding:0 20px 0 20px; display:inline;}
+ul.client-logo li{ margin:0px 5px 0 5px; padding:15px 20px 30px 20px; display:inline;  text-align:center; vertical-align:middle; }
 
 .product-information{ margin-top:50px;} 
 .input-filter-bar{ position:absolute; bottom:0; width:100%; font-family: 'Roboto', sans-serif; color:#FFF; font-size:17px; 
@@ -182,7 +182,27 @@ ul.product-list li:hover{ box-shadow: 0 0 5px #153049; }
     position: relative; 
 }
 
-.insight-btn{ position: absolute; right:0; bottom: 60px;}
+.insight-btn{ width:100%; float:left; clear:both;   color:#efefef; text-align:center; background:url(../img/arrow.png) no-repeat center -10px #efefef; 
+padding:100px 0 50px 0; }
+
+.insight-btn button {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  font-size:17px;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+.insight-btn button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
 
 
 .inner-addon .glyphicon {
@@ -217,17 +237,16 @@ ul.product-list li:hover{ box-shadow: 0 0 5px #153049; }
 /*  ///////////////////////// top main part css code end//////////////////////////// */
 
 
-footer{ background-color:#367ec3; color:#fff; position: absolute; bottom:0; width:100%; padding:10px 0;}
-footer .copyright{ padding-top:10px;}
-footer{ background-color:#367ec3; padding:10px 0;}
-footer ul.social-icon { margin:0px; padding:0px; width:200px; float:right;}
+footer{ background-color:#367ec3; color:#fff; position: absolute; bottom:0; width:100%; padding:0px 0;}
+footer .copyright{ padding-top:20px;}
+footer ul.social-icon { margin:10px 0; padding:0px; width:200px; float:right;}
 footer ul.social-icon li{ cursor:pointer; margin:0px 5px; float:left;  width:40px; height:40px;  font-size:25px; text-align:center; display:inline; padding:3px 10px; border-radius:70px;  background-color:#3fa1da; color:#fff;}
 footer ul.social-icon li:hover{ color:#ffffff; opacity:0.6;}
 
 
 
 
-.vertical-tab-menu { width:100%; margin-top:80px; box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5) ;  position:fixed; height:100%;
+.vertical-tab-menu { width:100%; margin-top:48px;   position:fixed; height:100%;
 }
 
 
@@ -318,7 +337,7 @@ width:300px; position:fixed; height:100%;
 
 .offering-box{border:1px solid #969696; padding:30px 0px; margin-top:40px; min-height:350px;}
 
-.strip-blue{ background-color:#367ec3; padding:20px 0 10px 0; position:absolute; bottom:0; width:100%; color:#FFF; font-size:17px; font-weight:500; height:150px; }
+.strip-blue{ background-color:#367ec3; padding:20px 0 10px 0; position:absolute; bottom:0; width:100%; color:#FFF; font-size:17px; font-weight:500; height:120px; }
 .strip-blue h3{ color:#FFFFFF; margin:0px;}
 .strip-blue i{ font-size:30px; line-height:30px;  }
 
@@ -378,6 +397,12 @@ footer ul.social-icon{ float:none; margin:10px auto;}
 
 .floating-button {
     position: fixed;
-    bottom: 0px;
-    right: 0px; 
+    bottom: 10px;
+    right: 10px;
+	 text-align:center; padding:12px 0; border:solid 2px #00529c;  width:50px; height:50px; border-radius:100px; 
 }
+
+.floating-button:hover{ background-color:#00529c; border-color:#FFFFFF; }
+
+.floating-button i{ color:#00529c; font-size:20px;}
+.floating-button:hover i{ color:#fff; }
