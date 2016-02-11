@@ -1,5 +1,6 @@
 var navTabsId = "#selection2,#selection4";
 var pageSwitchLoaded = false;
+var manualScroll = false;
 var enableNavScrolling = function (params) {
     var activeTabIndex = 0;
     var getActiveTabIndex = function(){
@@ -14,25 +15,24 @@ var enableNavScrolling = function (params) {
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         activeTabIndex = getActiveTabIndex();
     })
-
+    
     $(navTabsId).on('DOMMouseScroll mousewheel', function ( event ) {
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //scroll down
             if(activeTabIndex < getTabsCount()-1){
                 $('.nav-tabs > li').eq(activeTabIndex + 1).find('a').tab('show');
+                manualScroll = true;
             }else{
-                //$('header').css('background-color','white');
-                // $('header').attr('class','activeHeader');
-                // setTimeout(function(){
-                //     $('header').removeClass('activeHeader');
-                // },300)
+                manualScroll = false;
                 return true;
             }
         } else {
             //scroll up
             if(activeTabIndex > 0){
                 $('.nav-tabs > li').eq(activeTabIndex - 1).find('a').tab('show');
+                manualScroll = true;
             }else{
+                manualScroll = false;
                 return true;
             }
         }
@@ -80,6 +80,9 @@ $(document).ready(function(){
                     $("header").addClass('headerActive')
                 }
             }
+            if(manualScroll){
+                return false;
+            }
         }
     })
     enableNavScrolling()
@@ -91,13 +94,6 @@ $(document).ready(function(){
             $('.selections').fullpage.moveTo(1)
         }
     })
-    $('body').scroll(function() {
-        console.log("$(document).height()-" + $(document).height() + ", $(window).height()-"+"$(window).scrollTop()-"+$(document).height())
-        if ($(document).height() <= ($(window).height() + $(window).scrollTop())) {
-            //Bottom Reached
-            alert('bottom')
-        }
-    });
     $('[data-toggle="tooltip"]').tooltip();
     // if ($(window).width() > 600){
     //     loadPageSwitch();
