@@ -60,6 +60,8 @@ $(document).ready(function(){
     var totalSections = $('.selection').length;
     $('.selections').fullpage({
         sectionSelector : '.selection',
+        responsiveWidth : 900,
+        responsiveHeight : 500,
         onLeave : function( index, nextIndex, direction){
             console.log("index, nextIndex, direction",index, nextIndex, direction)
             //Logic for floating button
