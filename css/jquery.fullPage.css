@@ -49,6 +49,7 @@ html.fp-enabled,
     display: table;
     table-layout:fixed;
     width: 100%;
+	overflow:hidden;
 }
 .fp-tableCell {
     display: table-cell;
