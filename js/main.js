@@ -61,11 +61,23 @@ $(document).ready(function(){
     $('.selections').fullpage({
         sectionSelector : '.selection',
         onLeave : function( index, nextIndex, direction){
+            console.log("index, nextIndex, direction",index, nextIndex, direction)
+            //Logic for floating button
             if(nextIndex === totalSections){
                 $("#floating-icon").addClass('fa-hand-o-up').removeClass('fa-hand-o-down')
             }else if(nextIndex < totalSections){
                 if(!$("#floating-icon").hasClass('fa-hand-o-down')){
                     $("#floating-icon").addClass('fa-hand-o-down').removeClass('fa-hand-o-up')
+                }
+            }
+            //Logic for header class
+            if(nextIndex === 1){
+                if($("header").hasClass('headerActive')){
+                    $("header").removeClass('headerActive')
+                }
+            }else{
+                if(!$("header").hasClass('headerActive')){
+                    $("header").addClass('headerActive')
                 }
             }
         }
