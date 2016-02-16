@@ -1,5 +1,0 @@
-{: .text-center}
-##80 + organizations are already using <span>PIM </span>
-
-{: .text-center}
-Customizable Dashboards for Deep Insights into Key Performance Indicators of yourbusiness.Monitor Price Compliance, In stock of PopularProducts, Ratings, Category Placements, Keyword performances on all PopularMarket PlacesPromotions Planning, Tracking , Sales Data AnalysisCustomizable Dashboards for Deep Insights into Key Performance Indicators of yourbusiness.Monitor Price Compliance, In stock of PopularProducts, Ratings, Category Placements, Keyword performances on all pularMarketPlacesPromotions Planning, Tracking , Sales Data AnalysisCustomizable Dashboards for Deep Insights into Key Performance Indicators of yourbusiness.Monitor Price Compliance, In stock of PopularProducts, Ratings, Category Placements, Keyword erformances on all PopularMark.
