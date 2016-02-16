@@ -1,4 +1,4 @@
-var slidesIntervalTime = 1000;
+var slidesIntervalTime = 5000;
 var slidesInterval;
 
 var changeslideAuto = function(){
@@ -30,12 +30,15 @@ $(function(){
 
     //Moving slides effect
     $('a').click(function(event){
-        resetslidesInterval();
+	    if(event.hasOwnProperty('originalEvent')){
+            clearInterval(slidesInterval)
+        }
+        //resetslidesInterval();
         var targetId = $(this).data('target-id');
         $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
         $(event.target).closest('.slide-head').addClass('active-slide-head');
         $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
         $(targetId).addClass('active-slide-content')
     })
-    slidesInterval = setInterval(changeslideAuto,2000)
+    slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 });

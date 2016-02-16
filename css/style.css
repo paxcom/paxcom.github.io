@@ -136,11 +136,11 @@ section.intro-section-white{  background-color:#fff; padding:100px 0; clear:both
 .overview-container .content{ position: relative; width:450px;  -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out; margin:30px auto; text-align:center; }
-.overview-container .btn{ height:85px; font-size:40px; color:#FFFFFF; text-align:center; padding:10px 0;  width:85px; border-radius:85px; background-color:#ff9000; border:solid 3px #FFFFFF;}
-.overview-container .btn a{ color:#FFFFFF;}
+  transition: opacity 1s ease-in-out; margin:130px auto 0 auto; text-align:center; }
+.overview-container .btn{ height:85px; font-size:40px; color:#FFFFFF; text-align:center; padding:10px 0;  width:85px; border-radius:85px; background-color:#ff9000; border:solid 3px #FFFFFF;   }
+.overview-container .btn a{ color:#FFFFFF; transition: all .1s linear;}
 .overview-container .btn .tooltip{ font-size:17px; margin-top:-20px; text-align:center;}
-.overview-container .btn:hover{ background-color:#000000; border-color:black; color:#fff; }
+.overview-container .btn:hover{ transition: all .1s linear; background-color:#000000; border-color:black; color:#fff; }
 .overview-container .btn.top{ margin-top:-50px;}
 .overview-container .right{ right:0; margin-right:120px; margin-top:40px; position:absolute;}
 .overview-container .right .tooltip{ font-size:17px; width:150px; margin:0px 0 0 30px; text-align:center;}
@@ -164,8 +164,7 @@ section.intro-section-white{  background-color:#fff; padding:100px 0; clear:both
             display: none; 
         }
         .active-slide-content{
-          
-            display : block
+        display : block
         }
 
 
@@ -197,6 +196,8 @@ padding:100px 0 50px 0; }
   padding: 12px 20px;
   transition: all .1s linear;
 }
+
+.insight-btn button:hover{ opacity:0.7}
 .insight-btn button:active {
   box-shadow: 0 2px 0 #006599;
   transform: translateY(3px);
@@ -207,7 +208,7 @@ padding:100px 0 50px 0; }
 footer{ background-color:#202020; color:#fff; position:relative;  width:100%; padding:0px 0;}
 footer .copyright{ padding-top:20px;   }
 footer ul.social-icon { margin:10px 0; padding:0px; width:200px; float:right;}
-footer ul.social-icon li{ cursor:pointer; margin:0px 5px; float:left;  width:40px; height:40px;  font-size:25px; text-align:center; display:inline; padding:3px 10px; border-radius:70px;  background-color:#4d4d4d; color:#fff;}
+footer ul.social-icon li{ cursor:pointer;   transition: all .1s linear; margin:0px 5px; float:left;  width:40px; height:40px;  font-size:25px; text-align:center; display:inline; padding:3px 10px; border-radius:70px;  background-color:#4d4d4d; color:#fff;}
 footer ul.social-icon li:hover{ color:#ffffff; opacity:0.6;}
 
 
