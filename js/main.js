@@ -27,6 +27,17 @@ $(function(){
         loopCount: false
     });
 	
+	
+
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+
+
 
     //Moving slides effect
     $('a').click(function(event){
@@ -42,3 +53,5 @@ $(function(){
     })
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 });
+
+

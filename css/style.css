@@ -141,7 +141,7 @@ section.intro-section-white{  background-color:#fff; padding:100px 0; clear:both
 .overview-container .btn a{ color:#FFFFFF; transition: all .1s linear;}
 .overview-container .btn .tooltip{ font-size:17px; margin-top:-20px; text-align:center;}
 .overview-container .btn:hover{ transition: all .1s linear; background-color:#000000; border-color:black; color:#fff; }
-.overview-container .btn.top{ margin-top:-50px;}
+.overview-container .btn.top{ margin-top:-52px;}
 .overview-container .right{ right:0; margin-right:120px; margin-top:40px; position:absolute;}
 .overview-container .right .tooltip{ font-size:17px; width:150px; margin:0px 0 0 30px; text-align:center;}
 .overview-container .left{ left:120px; margin-top:40px;  position:absolute;}
@@ -149,7 +149,8 @@ section.intro-section-white{  background-color:#fff; padding:100px 0; clear:both
 .overview-container .left-bottom{ left:0; margin-left:-30px; margin-top:250px; position:absolute;}
 .overview-container .left-bottom .tooltip{  font-size:17px; width:200px; margin:0px 0px 0 -30px; text-align:center;}
 .overview-container .right-bottom{ right:0; margin-right:-30px; margin-top:250px; position:absolute;}
-.overview-container .right-bottom .tooltip{  font-size:17px;  width:200px; margin:0px 0 0 30px; text-align:center;}
+.overview-container .right-bottom .tooltip{  font-size:17px;  width:200px; margin:0px 0 0 28px; text-align:center;}
+.tooltip-arrow{  }
 
 
 
@@ -205,11 +206,37 @@ padding:100px 0 50px 0; }
 
 
 
-footer{ background-color:#202020; color:#fff; position:relative;  width:100%; padding:0px 0;}
+footer{ background-color:#343434; color:#999; position:relative;  width:100%; padding:0px 0;}
 footer .copyright{ padding-top:20px;   }
 footer ul.social-icon { margin:10px 0; padding:0px; width:200px; float:right;}
-footer ul.social-icon li{ cursor:pointer;   transition: all .1s linear; margin:0px 5px; float:left;  width:40px; height:40px;  font-size:25px; text-align:center; display:inline; padding:3px 10px; border-radius:70px;  background-color:#4d4d4d; color:#fff;}
+footer ul.social-icon li{ cursor:pointer; color:#999;   transition: all .1s linear; margin:0px 5px; float:left;  width:40px; height:40px;  font-size:25px; text-align:center; display:inline; padding:3px 10px; border-radius:70px;  background-color:#4d4d4d; }
 footer ul.social-icon li:hover{ color:#ffffff; opacity:0.6;}
 
 
 
+@media(min-width:320px) and (max-width:1000px) { .overview-container{ width:100%; background:none;} ul.client-logo li{ width:100%; float:left;  text-align:center;}
+
+.overview-container .btn{  height:65px; font-size:30px; color:#FFFFFF; text-align:center; padding:10px 0;  width:65px; border-radius:65px; background-color:#ff9000; border:solid 3px #FFFFFF;   }
+.arrow-right{ background:none;}
+.overview-container .content{ max-width:100%; padding-left:70px;}
+.overview-container .btn.top{  left:0; margin-top:140px; position:absolute; z-index:9; }
+.overview-container .right{ left:0;  margin-top:210px; position: absolute; z-index:9; }
+.overview-container .left{ left:0; margin-top:70px;  position: absolute; z-index:9; }
+.overview-container .right-bottom{ left:0;  margin-top:280px; position: absolute; z-index:9; }
+.overview-container .left-bottom{ left:30px;  margin-top:0px;  position: absolute; z-index:9; }
+
+.overview-container .right .tooltip{ position:absolute !important; left:40px !important; font-size:17px;  text-align:center;}
+.overview-container .left .tooltip{ position:absolute !important; left:100px !important; font-size:17px;   text-align:center;}
+.overview-container .left-bottom .tooltip{ position:absolute !important; left:100px !important; font-size:17px; text-align:center;}
+.overview-container .right-bottom .tooltip{ position:absolute !important; left:40px !important; font-size:17px;   text-align:center;}
+.overview-container .btn.top .tooltip{   position:absolute !important; left:70px !important;  margin-top:35px;}
+.tooltip-arrow{ display:none;}
+
+
+.top-nav-bar ul{ width:100%; background-color:#000000;}
+header{ padding:0;}
+header .logo{ padding:10px 10px;} .top-nav-bar{ width:100%; margin:0px; padding:0px;}
+.top-nav-bar ul li{ padding:10px 9px;}
+.top-nav-bar ul li a{ color:#FFFFFF; padding:10px 0}
+.navbar-default .navbar-toggle .icon-bar{ color:#fff;}
+ }
