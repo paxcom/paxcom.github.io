@@ -1,0 +1,13 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+title: PAXCOM
+keywords: "Centralized Product information management"
+description: Customizable Dashboards for Deep Insights into Key Performance Indicators of your business.
+
+### Build settings
+markdown: kramdown
+highlighter: Pygments 
+
+# Site Navigation
+baseurl: /paxtrial
