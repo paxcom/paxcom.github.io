@@ -144,7 +144,7 @@ section.intro-section-white{  background-color:#fff; padding:100px 0; clear:both
 .overview-container .btn.top{ margin-top:-52px;}
 .overview-container .right{ right:0; margin-right:120px; margin-top:40px; position:absolute;}
 .overview-container .right .tooltip{ font-size:17px; width:150px; margin:0px 0 0 30px; text-align:center;}
-.overview-container .left{ left:120px; margin-top:40px;  position:absolute;}
+.overview-container .left{ left:115px; margin-top:40px;  position:absolute;}
 .overview-container .left .tooltip{  font-size:17px; width:200px; margin:0px 0px 0 -30px; text-align:center;}
 .overview-container .left-bottom{ left:0; margin-left:-30px; margin-top:250px; position:absolute;}
 .overview-container .left-bottom .tooltip{  font-size:17px; width:200px; margin:0px 0px 0 -30px; text-align:center;}
