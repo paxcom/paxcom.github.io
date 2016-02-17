@@ -9,11 +9,11 @@ $(window).scroll(function() {
 
  $(window).scroll(function(){
         var scroll = $(window).scrollTop();
-        if (scroll >= 385) {
+        if (scroll >= 355) {
         $(".navbar-default").removeClass("nav-relative");
 		$(".navbar-default").removeClass("nav-relative");
 		$(".navbar-default").addClass("navbar-fixed-top");
-        } else if (scroll <= 385) {
+        } else if (scroll <= 355) {
        $(".navbar-default").removeClass("navbar-fixed-top");
 		
         }
