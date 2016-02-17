@@ -52,6 +52,16 @@ $(function(){
         $(targetId).addClass('active-slide-content')
     })
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
+	
+	
+	/*$('#skuButton').on('click',function(){
+		var iframe = $("#priceCompareFrame");
+        if(iframe.attr("src") !== iframe.data("src")){
+            iframe.attr("src", iframe.data("src"));    
+        }
+		
+	});*/
+	
 });
 
 
