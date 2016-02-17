@@ -10,4 +10,4 @@ markdown: kramdown
 highlighter: Pygments 
 
 # Site Navigation
-baseurl: /paxtrial
+#baseurl: /paxtrial
