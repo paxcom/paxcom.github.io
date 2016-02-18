@@ -143,11 +143,11 @@ section.intro-section-bg{ background-color:#17171f; padding:100px 0; clear:both;
 .box-bg-black { background-color:#000000;}
 
 
-.overview-container{ position:relative; height:431px; margin: 60px auto 0 auto; float:none;  width:856px;  background:url(../images/border-img.png) no-repeat  center;  } 
+.overview-container{ position:relative; height:350px; margin: 60px auto 0 auto; float:none;  width:856px;  background:url(../images/border-img.png) no-repeat  center top;  } 
 .overview-container .content{ position: relative; width:450px;  -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out; margin:130px auto 0 auto; text-align:center; }
+  transition: opacity 1s ease-in-out; margin:90px auto 0 auto; text-align:center; }
   
 .overview-container .btn{ height:85px; font-size:40px; color:#FFFFFF; text-align:center; padding:0 0;  width:85px; border-radius:85px; background-color:#ff9000; border:solid 3px #FFFFFF; }
 .overview-container .btn a{  width:75px; float:left; height:75px; padding:10px 0 0 0; color:#FFFFFF;}
