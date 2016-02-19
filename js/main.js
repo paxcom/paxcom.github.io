@@ -41,15 +41,17 @@ $(function(){
 
     //Moving slides effect
     $('a').click(function(event){
-	    if(event.hasOwnProperty('originalEvent')){
-            clearInterval(slidesInterval)
+        if($(this).hasClass('slide-btn')){
+            if(event.hasOwnProperty('originalEvent')){
+                clearInterval(slidesInterval)
+            }
+            //resetslidesInterval();
+            var targetId = $(this).data('target-id');
+            $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
+            $(event.target).closest('.slide-head').addClass('active-slide-head');
+            $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
+            $(targetId).addClass('active-slide-content')
         }
-        //resetslidesInterval();
-        var targetId = $(this).data('target-id');
-        $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
-        $(event.target).closest('.slide-head').addClass('active-slide-head');
-        $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
-        $(targetId).addClass('active-slide-content')
     })
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 	
