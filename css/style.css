@@ -60,12 +60,12 @@
 
 body{ margin:0px; padding:0px; color:#222222;  font-weight:100 ;  font-family: 'Roboto', sans-serif;}
 ul{ margin:0px; padding:0px;}
-p{ font-size:15px; padding:10px 0;  font-family: 'Open Sans', sans-serif;   font-weight:100; line-height:25px}
+p{ font-size:17px; padding:10px 0; font-family:calibri;  line-height:25px}
 h1{      font-family: 'open_sanslight' !important; font-size:30px;   font-weight:100 ;}
 h2{ font-family: 'Open Sans', sans-serif; font-size:30px ; font-weight:100;}
 h3{       font-family: 'open_sanslight'; font-size:25px; font-weight:100 ;}
 h4{   font-family: 'miriamregular';  font-size:30px; font-weight:100 ;}
-h5{   font-family: 'miriamregular';  font-size:35px; font-weight:100 ;}
+h5{     font-family: 'open_sanslight'; font-size:30px; font-weight:500 ;}
 header{ padding:0px 20px; width:100%; margin:5px 0; height:40px;}
 .logo{ float:left;}
 .top-nav-bar{ float:right; margin:10px 0;}
@@ -94,7 +94,36 @@ header{ padding:0px 20px; width:100%; margin:5px 0; height:40px;}
 .top-main-part{ clear:both; width:100%; min-height:300px; margin:10px 0;    }
 
 
-.content-box-style{ border: solid 2px #ffa44a; background-color:#ffa42f; padding:15px; text-align:left; height:250px;}
+.overview-list{  text-align:left; }
+.overview-list { font-size:20px;}
+.text-capital{ text-transform:uppercase; font-size:16px; font-weight:500; line-height:22px;}
+.overview-list .icon{ width:85px; position:relative; z-index:99; height:85px; font-size:35px; border-radius:85px; background-color:#ffa42e; text-align:center; padding:15px 0; margin:auto;}
+.overview-list p{  background-color:#ffa42f; padding:15px;}
+.overview-list .line{ background-color:#ffa42e; top:65px; left:100px;  width:250px;  height:5px;   
+  -ms-transform: rotate(170deg); /* IE 9 */
+  -webkit-transform: rotate(170deg); /* Safari */
+   transform: rotate(170deg); /* Standard syntax */
+   box-shadow:5px -5px 5px #e38000; position:absolute; z-index:9;}
+   
+   
+   .overview-list .line2{ background-color:#ffa42e; top:65px; left:100px;  width:250px;  height:5px;   
+  -ms-transform: rotate(-160deg); /* IE 9 */
+  -webkit-transform: rotate(-160deg); /* Safari */
+   transform: rotate(-160deg); /* Standard syntax */
+   box-shadow:5px -5px 5px #e38000; position:absolute; z-index:9;}
+   
+   
+   .overview-list .line3{ background-color:#ffa42e; top:75px; left:100px;  width:250px;  height:5px;   
+  -ms-transform: rotate(160deg); /* IE 9 */
+  -webkit-transform: rotate(160deg); /* Safari */
+   transform: rotate(160deg); /* Standard syntax */
+   box-shadow:5px -5px 5px #e38000; position:absolute; z-index:9;}
+   
+   
+
+.overview-list.top-space{ margin-top:10px;}
+.overview-list.top-space1{ margin-top:70px;}
+.overview-list p.box-height{ height:275px; float:left;}
 
 .type-wrap p{    font-size:22px;} 
         /* code for animated blinking cursor */
@@ -150,12 +179,12 @@ section.intro-section-bg{ background-color:#17171f;  padding:80px 0; clear:both;
 .navbar-fixed-top body{ padding-top:50px;}
 
 .related-product .container{ max-width:900px; color:#FFFFFF;}
-.box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red { margin-top:30px; background-color:#367ec3; height:300px; color:#FFFFFF;     box-shadow: 10px 0px 30px #0c0c13;}
+.box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red { margin-top:30px; background-color:#367ec3; height:250px; color:#FFFFFF;     box-shadow: 10px 0px 30px #0c0c13;}
 .box-bg-org { background-color:#ff9000; }
 .box-bg-black { background-color:#000000;}
 .box-bg-red { background-color:#c33636;}
 
-.container-style{float-left; height:auto; max-width:900px;}
+.container-style{ height:auto; max-width:900px;}
 
 
 .overview-container{ position:relative; height:350px; margin: 60px auto 0 auto; float:none;  width:856px;  background:url(../images/border-img.png) no-repeat  center top;  } 
@@ -384,7 +413,11 @@ footer ul.social-icon li:hover{ color:#ffffff; opacity:0.6;}
 
 
 
-@media(min-width:320px) and (max-width:1000px) { .overview-container{ width:100%; background:none;} ul.client-logo li{ width:100%; float:left;  text-align:center;}
+@media(min-width:320px) and (max-width:1000px) { .overview-container{ width:100%; background:none;} ul.client-logo li{ width:100%; float:left;  text-align:center; }
+.overview-list .line, .overview-list .line2, .overview-list .line3{ display:none;}
+.overview-list{}
+.overview-list.top-space, .overview-list.top-space1 { margin:30px 0;}
+.overview-list p.box-height{ height:auto;}
 
 .overview-container .btn{ width:65px;  height:65px;  border-radius:65px; }
 
