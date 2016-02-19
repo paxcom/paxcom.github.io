@@ -88,7 +88,7 @@ header{ padding:0px 20px; width:100%; margin:5px 0; height:40px;}
 	.product-demo{ font-size:19px; font-family: 'Roboto', sans-serif; margin-top:75px;}
 
 	.product-demo i{ font-size:21px; }
-.product-demo a{ text-decoration:none; }
+.product-demo a{ text-decoration:none; outline:none; }
 .product-demo a:hover{ opacity:0.6; text-decoration:none; }
 
 .top-main-part{ clear:both; width:100%; min-height:300px; margin:10px 0;    }
