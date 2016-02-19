@@ -18,7 +18,17 @@ var resetslidesInterval = function(){
 
 $(function(){
     //Typing effect
-    $("#typed").typed({
+    $("#typed-pim").typed({
+		stringsElement : $('#typed-strings'),
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: true,
+        contentType: 'html',
+        loopCount: false
+    });
+    
+    
+    $("#typed-insights").typed({
 		stringsElement : $('#typed-strings'),
         typeSpeed: 30,
         backDelay: 500,
@@ -26,6 +36,7 @@ $(function(){
         contentType: 'html',
         loopCount: false
     });
+    
 	
 	
 
