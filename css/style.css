@@ -94,7 +94,7 @@ header{ padding:0px 20px; width:100%; margin:5px 0; height:40px;}
 .top-main-part{ clear:both; width:100%; min-height:300px; margin:10px 0;    }
 
 
-.content-box-style{ border: solid 2px #ffa44a; padding:15px; text-align:center; height:250px;}
+.content-box-style{ border: solid 2px #ffa44a; background-color:#ffa42f; padding:15px; text-align:left; height:250px;}
 
 .type-wrap p{    font-size:22px;} 
         /* code for animated blinking cursor */
@@ -155,6 +155,8 @@ section.intro-section-bg{ background-color:#17171f;  padding:80px 0; clear:both;
 .box-bg-black { background-color:#000000;}
 .box-bg-red { background-color:#c33636;}
 
+.container-style{float-left; height:auto; max-width:900px;}
+
 
 .overview-container{ position:relative; height:350px; margin: 60px auto 0 auto; float:none;  width:856px;  background:url(../images/border-img.png) no-repeat  center top;  } 
 .overview-container .content{ position: relative; width:450px;  -webkit-transition: opacity 1s ease-in-out;
@@ -193,9 +195,25 @@ section.intro-section-bg{ background-color:#17171f;  padding:80px 0; clear:both;
         }
         .active-slide-content{
         display : block;
+		 -webkit-animation-duration: 2s;animation-duration: 2s;
+          -webkit-animation-fill-mode: both;animation-fill-mode: both;
+	       -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
 		
         }
-
+		
+		    @-webkit-keyframes fadeOut {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeOut {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+		
+	
 
 
 .who-need-pim{ background:#fff; font-size:16px;  padding:10px 0 10px 0; color:#848484;  width:100%; float:left;}
@@ -254,7 +272,7 @@ padding:100px 0 50px 0; }
 .product-info-popup ul.features-list li{  float:left; width:100%;  margin:0px;   display:block; border-collapse:collapse; padding:10px; border:solid 1px #d4d4d4; }
 .product-info-popup ul.features-list li .label{ text-transform:uppercase;   color:#000000; text-align:left;  float:left;  width:100px; font-size:14px; }
 .product-info-popup ul.features-list li .value{text-transform:uppercase;  float:left; text-align:left; }
-.product-info-popup  .close{ color:#000000;}
+.product-info-popup  .modal-header .close{ color:#000000; outline:none;}
 
 
 

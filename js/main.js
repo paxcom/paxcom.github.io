@@ -56,13 +56,13 @@ $(function(){
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 	
 	
-	/*$('#skuButton').on('click',function(){
+$('#skuButton').on('click',function(){
 		var iframe = $("#priceCompareFrame");
         if(iframe.attr("src") !== iframe.data("src")){
             iframe.attr("src", iframe.data("src"));    
         }
 		
-	});*/
+	});
 	
 });
 
