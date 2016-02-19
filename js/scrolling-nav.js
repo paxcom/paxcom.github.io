@@ -2,7 +2,7 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 385) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
+		    } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
@@ -28,8 +28,11 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
+		var navigationBar = $('#navigation-bar');
+		var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
+		console.log(offset) 
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: $($anchor.attr('href')).offset().top - offset
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
