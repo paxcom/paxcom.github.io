@@ -65,6 +65,15 @@
 	src: url('../fonts/helveticaneue-thin.svg#helvetica_neueregular') format('svg');
 }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+	font-family: 'RalewayRegular_0';
+	src: url('../fonts/RalewayRegular_0.svg#RalewayRegular_0') format('svg');
+}
+}
+
+
 @font-face {
 	font-family: 'carrois_gothic_scregular';
 	src: url('../fonts/carroisgothicsc-regular.eot');
@@ -837,11 +846,308 @@ footer ul.social-icon li:hover {
 	opacity: 0.6;
 }
 
+
+/********************************************
+				PAXCOM HOME WEBSITE CSS
+*********************************************/
+
+.logo-paxcom img {
+	width: 50px;
+}
+.logo-paxcom {
+	width: 69px;
+	height: 69px;
+}
+
+.paxcom ul li.request-demo {
+	padding-right: 35px;
+	position: relative
+}
+.paxcom ul li.request-demo a {
+	color: #526069;
+	border-bottom: 1px solid #b6bec4;
+	padding-bottom: 3px;
+	padding-right: 15px;
+	font-family: 'WhitneyMediumProGkCy';
+	font-size: 11px;
+	text-transform: uppercase
+}
+.paxcom ul li.request-demo:after {
+	background: url(../images/request-icon.png) no-repeat;
+	content: "";
+	right: 8px;
+	top: -6px;
+	width: 35px;
+	height: 32px;
+	position: absolute
+}
+.paxcom ul li a:hover, .paxcom ul li a.active {
+	color: #ff9000;
+}
+#flag {
+	width: 110px;
+	height: 56px;
+	padding-top: 15px;
+	position: relative;
+	background: red;
+	color: white;
+	font-size: 11px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.footer-outter {
+	bottom: 0px;
+	width: 100%;
+	position:absolute;
+	overflow-x:hidden;
+	overflow-y:visible;
+	padding-top:60px;
+}
+.footer-paxcom {
+	
+	position: relative;
+	z-index: 10;
+	vertical-align: top;
+	max-width: none;
+	
+	 margin-top: -64px;
+    
+}
+.top-text {
+	background: #ffaa3b none repeat scroll 0 0;
+color: #fff;
+float: left;
+font-family: "RalewayExtraBold_0";
+font-size: 12px;
+font-weight: 900;
+margin-left: -19px;
+margin-top: -101px;
+padding: 5px 5px 5px 30px;
+position: relative;
+transform: rotate(-7deg);
+z-index: 10;
+}
+ul.footer-nav {
+	width: 100%
+}
+ul.footer-nav li {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+	width: 150px;
+	height: 86.60px;
+	background-color: #ffffff;
+	border-left: dashed 1px #ff9306;
+	border-right: dashed 1px #ff9306;
+}
+ul.footer-nav li a {
+	text-align: center;
+	display: block;
+	z-index: 11111;
+	position: relative;
+	font-size: 12px;
+	text-decoration: none;
+	color: #202a32;
+	font-family:arial;
+	font-weight:500;
+}
+ul.footer-nav li a img {
+	margin-bottom: 5px
+}
+ul.footer-nav li a:hover {
+	color: #f34217
+}
+ul.footer-nav li:before, ul.footer-nav li:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 106.07px;
+	height: 106.07px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 20.9670px;
+}
+ul.footer-nav li:before {
+	top: -53.0330px;
+	border-top: dashed 1.4142px #ff9306;
+	border-right: dashed 1.4142px #ff9306;
+}
+ul.footer-nav li:after {
+	bottom: -53.0330px;
+	border-bottom: dashed 1.4142px #ff9306;
+	border-left: dashed 1.4142px #ff9306;
+}
+ul.footer-nav li:nth-child(4) {
+	top: 100px;
+}
+ul.footer-nav li:nth-child(3) {
+	top: 80px;
+}
+ul.footer-nav li:nth-child(2) {
+	top: 60px;
+}
+ul.footer-nav li:nth-child(1) {
+	top: 50px;
+	margin-right: 50px;
+}
+.footer-webstore {
+	color: #fff;
+	font-family: 'calibri';
+	font-size: 20px;
+	position: relative;
+	z-index: 99;
+	text-align: right;
+	font-weight:100;
+	text-shadow: 1px 0px 2px #929292;
+}
+.footer-webstore strong {
+	font-weight: 600;
+	}
+.paxcom-into-text {
+	font-family: 'RalewayThin_0';
+	font-size: 70px;
+	color: #414b53;
+	/*float: left;
+	margin-top: 50px;*/
+	position: relative;
+
+	text-shadow:0 0 1px #000000;
+
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+
+}
+.paxcom-into-text strong {
+	font-family: 'RalewayRegular_0';
+}
+.paxcom-into-text em {
+	font-size: 17px;
+		color: #526069;
+		font-family: 'RalewayRegular_0';
+	text-align: right;
+	float: left;
+	font-style: normal;
+	text-shadow:none;
+	padding-left:80px;
+	
+}
+.paxcom-into-text em:before {
+	background: #8b959c none repeat scroll 0 0;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	margin-top: 12px;
+	opacity: 0.3;
+	position: absolute;
+	width: 80px;
+}
+.bg {
+	overflow-x: hidden;
+	overflow-y: visible !important;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 82px;
+}
+.bg:before {
+	border-bottom: 107px solid #ff9000;
+	border-left: 1059px solid transparent;
+	border-right: 400px solid transparent;
+	content: "";
+	position: absolute;
+	top: 52px;
+	width: 100%;
+	z-index: 1;
+}
+.bg:after {
+	border-bottom: 141px solid #ffaa3b;
+	border-left: 1090px solid transparent;
+	border-right: 311px solid transparent;
+	content: "";
+	left: -8px;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+.mountain, .mountain-two, .mountain-three {
+	position: absolute;
+	bottom: 0;
+	border-left: 1005px solid transparent;
+	border-right: 400px solid transparent;
+	border-bottom: 123px solid #ff9000;
+	z-index: 1;
+	width: 100%;
+}
+.mountain-two {
+	left: 80px;
+	bottom: -20px;
+	opacity: .3;
+	z-index: 0;
+}
+.mountain-three {
+	left: -35px;
+	bottom: 20px;
+	opacity: .5;
+	z-index: 0;
+	transform: rotate(.5deg);
+	border-left: 1005px solid transparent;
+	border-right: 400px solid transparent;
+	border-bottom: 123px solid #ff9000;
+}
+.mountain-top {
+	position: absolute;
+	right: -65px;
+	border-left: 65px solid transparent;
+	border-right: 65px solid transparent;
+	border-bottom: 77px solid #ceeaf6;
+	z-index: 2;
+}
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+	position: absolute;
+	top: 70px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 25px solid #ceeaf6;
+}
+.footer-info {
+	background: #ff9000 none repeat scroll 0 0;
+	 margin-top: 75px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+
+
+
+
+@media(min-width:320px) and (max-width:1231px) {.top-text {
+    background: #ffaa3b none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-family: "RalewayExtraBold_0";
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: -19px;
+    margin-top: -67px;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+    transform: rotate(0deg);
+    z-index: 10;} }
 @media(min-width:320px) and (max-width:1000px) {
 .overview-container {
 	width: 100%;
 	background: none;
 }
+.paxcom-intro-outter{ position:relative !important;; top:0 !important; display:block;
+height:auto; left:0 !important;}
+
+.top-nav-bar ul{ height:30px; padding-top:6px;}
 ul.client-logo li {
 	width: 100%;
 	float: left;
@@ -850,6 +1156,10 @@ ul.client-logo li {
 .overview-list .line, .overview-list .line2, .overview-list .line3 {
 	display: none;
 }
+
+.paxcom ul li.request-demo a{ color:#f8a243; border-bottom:none;} 
+
+
 .overview-list {
 }
 .overview-list.top-space, .overview-list.top-space1 {
@@ -972,6 +1282,84 @@ header .logo {
 .navbar-default .navbar-toggle .icon-bar {
 	color: #fff;
 }
+
+
+.bg {
+	overflow-x: hidden;
+	overflow-y: visible !important;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 82px;
+}
+.bg:before {
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	content: "";
+	position: absolute;
+	top: 52px;
+	width: 100%;
+	z-index: 1;
+}
+.bg:after {
+	border-bottom:0;
+	border-left: 0;
+	border-right: 0;
+	content: "";
+	left: -8px;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+.top-text {
+	background: #ffaa3b none repeat scroll 0 0;
+color: #fff;
+float: left;
+font-family: "RalewayExtraBold_0";
+font-size: 12px;
+font-weight: 900;
+margin-left:0;
+margin-top:0;
+padding: 5px 5px 5px 30px;
+position: relative;
+transform: rotate(0);
+z-index: 10;
+}
+
+.footer-info {
+	background: #ff9000 none repeat scroll 0 0;
+	 margin-top: 75px;
+    padding-bottom: 10px;
+    padding-top:0;
+}
+ul.footer-nav li:nth-child(4) {
+	top: 80px !important;
+}
+ul.footer-nav li:nth-child(3) {
+	top: 80px !important;
+}
+ul.footer-nav li:nth-child(2) {
+	top: 80px !important;
+}
+ul.footer-nav li:nth-child(1) {
+	top: 80px !important;
+	margin-right: 0;
+}
+
+ul.footer-nav li{  margin:0 auto 100px auto; text-align:center; }
+
+
+
+body{ overflow:scroll; height: inherit;}
+.footer-outter{ 
+width: 100%;
+
+overflow-x: hidden;
+overflow-y: visible;
+padding-top: 60px;
+position: absolute; bottom:auto;}
 }
 
 @media(min-width:320px) and (max-width:667px) {
@@ -986,277 +1374,18 @@ header .logo {
 	height: auto !important;
 	width: 100%;
 }
-}
-/********************************************
-				PAXCOM HOME WEBSITE CSS
-*********************************************/
+ul.footer-nav{ max-width:150px; margin:auto;} 
 
-.logo-paxcom img {
-	width: 50px;
-}
-.logo-paxcom {
-	width: 69px;
-	height: 69px;
-}
+.top-nav-bar ul li{ display:block; float:right; background-color:#000000; width:100%; clear:both;}
+.top-nav-bar ul li a:hover{ color:#377fc2; }
+.paxcom ul li.request-demo a{ color: #f78f1e; border-bottom:none; text-decoration:none;}
+.paxcom ul li.request-demo a:hover{ color:#FFFFFF; }
+.navbar-default .navbar-toggle .icon-bar{ color:#FFFFFF;}
 
-.paxcom ul li.request-demo {
-	padding-right: 35px;
-	position: relative
-}
-.paxcom ul li.request-demo a {
-	color: #526069;
-	border-bottom: 1px solid #b6bec4;
-	padding-bottom: 3px;
-	padding-right: 15px;
-	font-family: 'WhitneyMediumProGkCy';
-	font-size: 11px;
-	text-transform: uppercase
-}
-.paxcom ul li.request-demo:after {
-	background: url(../images/request-icon.png) no-repeat;
-	content: "";
-	right: 8px;
-	top: -6px;
-	width: 35px;
-	height: 32px;
-	position: absolute
-}
-.paxcom ul li a:hover, .paxcom ul li a.active {
-	color: #ff9000;
-}
-#flag {
-	width: 110px;
-	height: 56px;
-	padding-top: 15px;
-	position: relative;
-	background: red;
-	color: white;
-	font-size: 11px;
-	letter-spacing: 0.2em;
-	text-align: center;
-	text-transform: uppercase;
-}
-.footer-outter {
-	bottom: 0px;
-	width: 100%;
-	position:absolute;
-	overflow-x:hidden;
-	overflow-y:visible;
-	padding-top:60px;
-}
-.footer-paxcom {
-	
-	position: relative;
-	z-index: 10;
-	vertical-align: top;
-	max-width: none;
-	
-	 margin-top: -64px;
-    
-}
-.top-text {
-	background: #ffaa3b none repeat scroll 0 0;
-color: #fff;
-float: left;
-font-family: "RalewayExtraBold_0";
-font-size: 12px;
-font-weight: 900;
-margin-left: -19px;
-margin-top: -101px;
-padding: 5px 5px 5px 30px;
-position: relative;
-transform: rotate(-7deg);
-z-index: 10;
-}
-ul.footer-nav {
-	width: 100%
-}
-ul.footer-nav li {
-	float: right;
-	display: inline-block;
-	margin-right: 10px;
-	position: relative;
-	width: 150px;
-	height: 86.60px;
-	background-color: #ffffff;
-	border-left: dashed 1px #ff9306;
-	border-right: dashed 1px #ff9306;
-}
-ul.footer-nav li a {
-	text-align: center;
-	display: block;
-	z-index: 11111;
-	position: relative;
-	font-size: 12px;
-	text-decoration: none;
-	color: #202a32;
-	font-family: 'RalewayMedium_0';
-}
-ul.footer-nav li a img {
-	margin-bottom: 5px
-}
-ul.footer-nav li a:hover {
-	color: #f34217
-}
-ul.footer-nav li:before, ul.footer-nav li:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	width: 106.07px;
-	height: 106.07px;
-	-webkit-transform: scaleY(0.5774) rotate(-45deg);
-	-ms-transform: scaleY(0.5774) rotate(-45deg);
-	transform: scaleY(0.5774) rotate(-45deg);
-	background-color: inherit;
-	left: 20.9670px;
-}
-ul.footer-nav li:before {
-	top: -53.0330px;
-	border-top: dashed 1.4142px #ff9306;
-	border-right: dashed 1.4142px #ff9306;
-}
-ul.footer-nav li:after {
-	bottom: -53.0330px;
-	border-bottom: dashed 1.4142px #ff9306;
-	border-left: dashed 1.4142px #ff9306;
-}
-ul.footer-nav li:nth-child(4) {
-	top: 100px;
-}
-ul.footer-nav li:nth-child(3) {
-	top: 80px;
-}
-ul.footer-nav li:nth-child(2) {
-	top: 60px;
-}
-ul.footer-nav li:nth-child(1) {
-	top: 50px;
-	margin-right: 50px;
-}
-.footer-webstore {
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
-	position: relative;
-	z-index: 99;
-	text-align: right;
-0px 1px 1px #000;
-	font-family: 'WhitneyMediumProGkCy';
-	text-shadow: 1px 0px 2px #000;
-}
-.footer-webstore strong {
-	font-weight: 900;
-	font-family: 'WhitneyBlackProGkCy';
-}
-.paxcom-into-text {
-	font-family: 'RalewayThin_0';
-	font-size: 70px;
-	color: #414b53;
-	/*float: left;
-	margin-top: 50px;*/
-	position: relative;
-	display:table-cell;
-	vertical-align:middle;
-	text-align:left;
-}
-.paxcom-into-text strong {
-	font-family: 'RalewayRegular_0';
-}
-.paxcom-into-text em {
-	font-size: 16px;
-	font-family: 'RalewayLight_0';
-	color: #526069;
-	text-align: right;
-	float: right;
-	font-style: normal
-}
-.paxcom-into-text em:before {
-	background: #8b959c none repeat scroll 0 0;
-	content: "";
-	display: block;
-	height: 1px;
-	left: 0;
-	margin-top: 12px;
-	opacity: 0.3;
-	position: absolute;
-	width: 80px;
-}
-.bg {
-	overflow-x: hidden;
-	overflow-y: visible !important;
-	position: relative;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding-top: 82px;
-}
-.bg:before {
-	border-bottom: 107px solid #ff9000;
-	border-left: 1059px solid transparent;
-	border-right: 400px solid transparent;
-	content: "";
-	position: absolute;
-	top: 52px;
-	width: 100%;
-	z-index: 1;
-}
-.bg:after {
-	border-bottom: 141px solid #ffaa3b;
-	border-left: 1090px solid transparent;
-	border-right: 311px solid transparent;
-	content: "";
-	left: -8px;
-	position: absolute;
-	top: 0;
-	z-index: 0;
-}
-.mountain, .mountain-two, .mountain-three {
-	position: absolute;
-	bottom: 0;
-	border-left: 1005px solid transparent;
-	border-right: 400px solid transparent;
-	border-bottom: 123px solid #ff9000;
-	z-index: 1;
-	width: 100%;
-}
-.mountain-two {
-	left: 80px;
-	bottom: -20px;
-	opacity: .3;
-	z-index: 0;
-}
-.mountain-three {
-	left: -35px;
-	bottom: 20px;
-	opacity: .5;
-	z-index: 0;
-	transform: rotate(.5deg);
-	border-left: 1005px solid transparent;
-	border-right: 400px solid transparent;
-	border-bottom: 123px solid #ff9000;
-}
-.mountain-top {
-	position: absolute;
-	right: -65px;
-	border-left: 65px solid transparent;
-	border-right: 65px solid transparent;
-	border-bottom: 77px solid #ceeaf6;
-	z-index: 2;
-}
-.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
-	position: absolute;
-	top: 70px;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 25px solid #ceeaf6;
-}
-.footer-info {
-	background: #ff9000 none repeat scroll 0 0;
-	 margin-top: 75px;
-    padding-bottom: 10px;
-    padding-top: 50px;
-}
+.navbar-default .navbar-toggle{ border-color:#FFFFFF; }
+.navbar-default .navbar-toggle .icon-bar{background-color: #FFF !important;}
 
+}
 
 .paxcom-intro-outter{
 	display: table;
@@ -1265,4 +1394,6 @@ ul.footer-nav li:nth-child(1) {
     margin: 0 auto;
     position: absolute;
 	top:70px;
+	padding:0 20px;
 }
+
