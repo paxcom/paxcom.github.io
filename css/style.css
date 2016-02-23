@@ -649,6 +649,16 @@ ul.client-logo li {
 	font-size: 14px;
 	color: #666666;
 }
+
+.paxcom-intro-outter{
+	display: table;
+    height: calc(100% - (70px + 365px));
+    left: 60px;
+    margin: 0 auto;
+    position: absolute;
+	top:70px;
+	padding:0 20px;
+}
 .product-info-popup .modal-header {
 	border-bottom: none;
 }
@@ -1360,7 +1370,7 @@ overflow-x: hidden;
 overflow-y: visible;
 padding-top: 60px;
 position: absolute; bottom:auto;}
-}
+
 
 @media(min-width:320px) and (max-width:667px) {
 .overview-container .btn.top {
@@ -1385,15 +1395,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 .navbar-default .navbar-toggle{ border-color:#FFFFFF; }
 .navbar-default .navbar-toggle .icon-bar{background-color: #FFF !important;}
 
+
 }
 
-.paxcom-intro-outter{
-	display: table;
-    height: calc(100% - (70px + 365px));
-    left: 60px;
-    margin: 0 auto;
-    position: absolute;
-	top:70px;
-	padding:0 20px;
-}
 
