@@ -85,7 +85,8 @@ body {
 	color: #222222;
 	font-weight: 100;
 	font-family: 'Roboto', sans-serif;
-	height: auto
+	height:auto;
+	
 }
 body:before {
 	border-bottom: 50px solid transparent;
@@ -1039,6 +1040,9 @@ header .logo {
 	bottom: 0px;
 	width: 100%;
 	position:absolute;
+	overflow-x:hidden;
+	overflow-y:visible;
+	padding-top:60px;
 }
 .footer-paxcom {
 	
@@ -1177,11 +1181,11 @@ ul.footer-nav li:nth-child(1) {
 .bg {
 	overflow-x: hidden;
 	overflow-y: visible !important;
-	/*position: absolute;*/
+	position: relative;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding-top: 62px;
+	padding-top: 82px;
 }
 .bg:before {
 	border-bottom: 107px solid #ff9000;
