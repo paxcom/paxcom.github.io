@@ -1152,9 +1152,12 @@ ul.footer-nav li:nth-child(1) {
 	font-family: 'RalewayThin_0';
 	font-size: 70px;
 	color: #414b53;
-	float: left;
-	margin-top: 50px;
+	/*float: left;
+	margin-top: 50px;*/
 	position: relative;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
 }
 .paxcom-into-text strong {
 	font-family: 'RalewayRegular_0';
@@ -1252,4 +1255,14 @@ ul.footer-nav li:nth-child(1) {
 	 margin-top: 75px;
     padding-bottom: 10px;
     padding-top: 50px;
+}
+
+
+.paxcom-intro-outter{
+	display: table;
+    height: calc(100% - (70px + 365px));
+    left: 60px;
+    margin: 0 auto;
+    position: absolute;
+	top:70px;
 }
