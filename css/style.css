@@ -1014,13 +1014,13 @@ ul.footer-nav li:nth-child(1) {
 	/*float: left;
 	margin-top: 50px;*/
 	position: relative;
-<<<<<<< HEAD
+
 	text-shadow:0 0 1px #000000;
-=======
+
 	display:table-cell;
 	vertical-align:middle;
 	text-align:left;
->>>>>>> 72905d7b464820350a91f2b6757be33378000d50
+
 }
 .paxcom-into-text strong {
 	font-family: 'RalewayRegular_0';
@@ -1030,7 +1030,7 @@ ul.footer-nav li:nth-child(1) {
 		color: #526069;
 		font-family: 'RalewayRegular_0';
 	text-align: right;
-	float: right;
+	float: left;
 	font-style: normal;
 	text-shadow:none;
 	padding-left:80px;
@@ -1124,7 +1124,7 @@ ul.footer-nav li:nth-child(1) {
 }
 
 
-<<<<<<< HEAD
+
 
 @media(min-width:320px) and (max-width:1231px) {.top-text {
     background: #ffaa3b none repeat scroll 0 0;
@@ -1144,6 +1144,9 @@ ul.footer-nav li:nth-child(1) {
 	width: 100%;
 	background: none;
 }
+.paxcom-intro-outter{ position:relative !important;; top:0 !important; display:block;
+height:auto; left:0 !important;}
+
 .top-nav-bar ul{ height:30px; padding-top:6px;}
 ul.client-logo li {
 	width: 100%;
@@ -1383,7 +1386,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 .navbar-default .navbar-toggle .icon-bar{background-color: #FFF !important;}
 
 }
-=======
+
 .paxcom-intro-outter{
 	display: table;
     height: calc(100% - (70px + 365px));
@@ -1391,5 +1394,6 @@ ul.footer-nav{ max-width:150px; margin:auto;}
     margin: 0 auto;
     position: absolute;
 	top:70px;
+	padding:0 20px;
 }
->>>>>>> 72905d7b464820350a91f2b6757be33378000d50
+
