@@ -1038,27 +1038,31 @@ header .logo {
 .footer-outter {
 	bottom: 0px;
 	width: 100%;
+	position:absolute;
 }
 .footer-paxcom {
-	margin-top: 101px;
+	
 	position: relative;
 	z-index: 10;
 	vertical-align: top;
 	max-width: none;
+	
+	 margin-top: -64px;
+    
 }
 .top-text {
 	background: #ffaa3b none repeat scroll 0 0;
-	color: #fff;
-	float: left;
-	font-size: 12px;
-	font-weight: 900;
-	margin-left: -19px;
-	margin-top: -52px;
-	padding: 5px 5px 5px 30px;
-	transform: rotate(-7deg);
-	z-index: 10;
-	position: relative;
-	font-family: 'RalewayExtraBold_0';
+color: #fff;
+float: left;
+font-family: "RalewayExtraBold_0";
+font-size: 12px;
+font-weight: 900;
+margin-left: -19px;
+margin-top: -101px;
+padding: 5px 5px 5px 30px;
+position: relative;
+transform: rotate(-7deg);
+z-index: 10;
 }
 ul.footer-nav {
 	width: 100%
@@ -1173,7 +1177,7 @@ ul.footer-nav li:nth-child(1) {
 .bg {
 	overflow-x: hidden;
 	overflow-y: visible !important;
-	position: absolute;
+	/*position: absolute;*/
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -1241,6 +1245,7 @@ ul.footer-nav li:nth-child(1) {
 }
 .footer-info {
 	background: #ff9000 none repeat scroll 0 0;
-	margin-top: 97px;
-	padding-bottom: 10px;
+	 margin-top: 75px;
+    padding-bottom: 10px;
+    padding-top: 50px;
 }
