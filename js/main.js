@@ -69,11 +69,20 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    
-    $('#overview').on('DOMMouseScroll mousewheel', function ( event ) {
-        if(!isNavAtTop()){
-            return true;
+    $('.top-main-part,header').bind('DOMMouseScroll mousewheel wheel',function (event) {
+        console.log($('#navigation-bar').offset())
+        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+            //var abc = $('a[href=overview]')
+            $('#nav-overview').click();
+            //console.log(abc);
+            return false;
         }
+        return true;
+    })
+    $('#overview').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+        // if(!isNavAtTop()){
+        //     return true;
+        // }
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //scroll down
             var slidesCount = $('.slides-heads').children().length
@@ -92,10 +101,10 @@ $(function(){
         }
     });
 	
-    function isNavAtTop(elem){
+    function isNavAtTop(){
         var docViewTop = $(window).scrollTop();
         var navTop = $('#navigation-bar').offset().top;
-        return (navTop == docViewTop);
+        return (navTop == docViewTop && navTop<500);
     }
     
 });
