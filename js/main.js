@@ -70,43 +70,84 @@ $(function(){
         }
 	});
     $('.top-main-part,header').bind('DOMMouseScroll mousewheel wheel',function (event) {
-        console.log($('#navigation-bar').offset())
+        //console.log($('#navigation-bar').offset())
+        console.log('w scroll top',$(window).scrollTop())        
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //var abc = $('a[href=overview]')
-            $('#nav-overview').click();
-            //console.log(abc);
+            $('#nav1').click();
             return false;
         }
         return true;
     })
     $('#overview').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
-        // if(!isNavAtTop()){
-        //     return true;
-        // }
+        console.log('w scroll top',$(window).scrollTop())
+        console.log('#overview offset().top',$('#overview').offset().top);
+        var slidesCount = $('.slides-heads').children().length
+        var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //scroll down
-            var slidesCount = $('.slides-heads').children().length
-            var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
-            activeHeadIndex++;
-            if(activeHeadIndex >= slidesCount){
-                return true;
+            if(isElementAtTop('#overview')){
+                activeHeadIndex++;
+                if(activeHeadIndex >= slidesCount){
+                    //scroll to related products
+                    $('#nav2').click();
+                    return false;
+                }
+                $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
+                resetslidesInterval();
+                //prevent page fom scrolling
+                return false;
+            }else{
+                console.log('element not at top - scrolling down to nav1')
+                $('#nav1').click();
+                return false;
             }
-            $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-            resetslidesInterval();
-            //prevent page fom scrolling
-            return false;
         } else {
             //scroll up
-            return true;
+            if(isElementAtTop('#overview')){
+                activeHeadIndex--;
+                if(activeHeadIndex < 0){
+                    //scroll to top
+                    $('html, body').animate({scrollTop : 0},800);
+                    return false;
+                }
+                $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
+                resetslidesInterval();
+                return false;
+            }else{
+                console.log('element not at top - up scroll')
+                return true;
+            }
         }
     });
-	
+	$('#relatedProducts').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+        console.log('w scroll top',$(window).scrollTop());
+        console.log('#relatedProducts offset().top',$('#relatedProducts').offset().top);
+        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+            //scroll down
+            return true;
+        }else{
+            //scroll up
+            if($('#relatedProducts').offset().top >= ($(window).scrollTop() -15)){
+                $('#nav1').click();
+                return false;
+            }else{
+                return true;
+            }
+        }
+    });
     function isNavAtTop(){
         var docViewTop = $(window).scrollTop();
         var navTop = $('#navigation-bar').offset().top;
-        return (navTop == docViewTop && navTop<500);
+        return (navTop == docViewTop );
+    }
+    
+    function isElementAtTop(element) {
+        var windowTop = $(window).scrollTop();
+        var elementTop = $(element).offset().top;
+        if(elementTop >= windowTop -15 && elementTop <= windowTop + 15){
+            return true;
+        }
+        return false;
     }
     
 });
-
-
