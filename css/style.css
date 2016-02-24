@@ -1203,14 +1203,14 @@ ul.client-logo li {
 }
 .overview-container .btn a {
 	height: 50px;
-	width: 50px;
+	width: 40px;
 	padding: 10px 0;
 	font-size: 20px;
 }
 .overview-container .btn a:hover {
 	height: 50px;
 	text-align: center;
-	width: 50px;
+	width: 40px;
 }
 .arrow-right {
 	background: none;
@@ -1400,6 +1400,10 @@ position: absolute; bottom:auto;}
 .overview-container .btn.top {
 	height: auto;
 }
+
+footer .copyright{ text-align:center !important;}
+footer ul.social-icon{ float:none !important; margin:0 auto; }
+footer ul.social-icon li{ margin:10px 5px;}
 
 .footer-webstore{ text-align:left;}
 .footer-paxcom{ width:180px; margin:auto;}
