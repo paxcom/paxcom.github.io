@@ -1019,14 +1019,15 @@ ul.footer-nav li:nth-child(1) {
 	font-weight:100;
 	text-shadow: 1px 0px 2px #929292;
 }
+.footer-bottom{position:absolute; bottom:0px;}
 .footer-webstore strong {
 	font-weight: 600;
 	}
 .paxcom-into-text {
 	font-family: 'RalewayThin_0';
 	font-size: 70px;
-	color: #414b53;
-	/*float: left;
+	color: #000;
+	/*414b53 float: left;
 	margin-top: 50px;*/
 	position: relative;
 

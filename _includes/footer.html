@@ -1,4 +1,12 @@
+
+{% if page.url == "/kinator/index.html"  } or page.url == "/kinator/"  } or page.url == "/Egenie/index.html" or page.url == "/Egenie/" %}
+<footer class="footer-bottom">
+{% else %}
 <footer>
+{% endif %}
+
+
+
   
   {% if page.url == "/pim/"  } or page.url == "/pim/index.html" %}
   	<div class="insight-btn"> 
@@ -11,7 +19,7 @@
 
   <div class="container ">
     <div class="row">
-      <div class="col-sm-8 col-xs-12 copyright"> Copyright  	&#9400; 2016 Paxcom India Pvt Ltd </div>
+      <div class="col-sm-8 col-xs-12 copyright"> Copyright &#9400; 2016 Paxcom India Pvt Ltd </div>
       <div class="col-sm-4 col-xs-12 text-right">
         <ul class="social-icon">
           <li> <i class="fa fa-facebook"></i></li>
