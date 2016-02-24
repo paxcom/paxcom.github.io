@@ -80,11 +80,16 @@ $(function(){
             return false;
         }
         return true;
-    })
+    });
+    var overviewScrolling = false;
     $('#overview').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
-        if(window.animating){
+        if(window.animating || overviewScrolling){
             return false;
         }
+        overviewScrolling = true;
+        setTimeout(function() {
+            overviewScrolling = false;
+        }, 250);
         console.log('w scroll top',$(window).scrollTop())
         console.log('#overview offset().top',$('#overview').offset().top);
         var slidesCount = $('.slides-heads').children().length
@@ -137,7 +142,8 @@ $(function(){
         console.log('#relatedProducts offset().top',$('#relatedProducts').offset().top);
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //scroll down
-            return true;
+            $('#nav3').click();
+            return false;
         }else{
             //scroll up
             if($('#relatedProducts').offset().top >= ($(window).scrollTop() -15)){
@@ -146,6 +152,28 @@ $(function(){
             }else{
                 return true;
             }
+        }
+    });
+
+    $('#clients,footer').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+        if(window.animating){
+            return false;
+        }
+        console.log('w scroll top',$(window).scrollTop());1447
+        console.log('#clients offset().top',$('#clients').offset().top);1534
+        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+            //scroll down
+            $('#nav3').click();
+            return false;
+        }else{
+            //scroll up
+            if($('#clients').offset().top <= ($(window).scrollTop() + 100)){
+                $('#nav2').click();
+            }else{
+                console.log('here')
+                $('#nav1').click();
+            }
+            return false;
         }
     });
     
