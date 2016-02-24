@@ -604,7 +604,6 @@ ul.client-logo li {
 	text-align: center;
 	background: url(../images/arrow2.png) no-repeat center -10px #efefef;
 	padding: 100px 0 50px 0;
-	margin-bottom:60px;
 }
 .insight-btn button {
 	border: 0;
@@ -825,14 +824,14 @@ ul.client-logo li {
 	height: 56px;
 }
 footer {
-	
+	background-color: #17171f;
 	color: #999;
 	position: relative;
 	width: 100%;
 	padding: 0px 0;
 }
 
-.bottom-footer{ background-color: #17171f; position:fixed; bottom:0; width:100%; margin-top:200px;}
+
 footer .copyright {
 	padding-top: 20px;
 }
