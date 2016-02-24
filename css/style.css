@@ -1143,7 +1143,7 @@ ul.footer-nav li:nth-child(1) {
 
 
 @media(min-width:320px) and (max-width:1231px) {.top-text {
-    background: #ffaa3b none repeat scroll 0 0;
+   
     color: #fff;
     float: left;
     font-family: "RalewayExtraBold_0";
@@ -1154,7 +1154,16 @@ ul.footer-nav li:nth-child(1) {
     padding: 5px 5px 5px 30px;
     position: relative;
     transform: rotate(0deg);
-    z-index: 10;} 
+    z-index: 10;
+	
+
+background: #ffaa3b;
+background: -moz-linear-gradient(left, #ffaa3b 48%, #ff9000 77%); 
+background: -webkit-linear-gradient(left, #ffaa3b 48%,#ff9000 77%);
+background: linear-gradient(to right, #ffaa3b 48%,#ff9000 77%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa3b', endColorstr='#ff9000',GradientType=1 );
+	
+	} 
 	
 
 ul.footer-nav li {
