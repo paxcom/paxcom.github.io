@@ -1143,7 +1143,7 @@ ul.footer-nav li:nth-child(1) {
 
 
 @media(min-width:320px) and (max-width:1231px) {.top-text {
-    background: #ffaa3b none repeat scroll 0 0;
+   
     color: #fff;
     float: left;
     font-family: "RalewayExtraBold_0";
@@ -1154,8 +1154,84 @@ ul.footer-nav li:nth-child(1) {
     padding: 5px 5px 5px 30px;
     position: relative;
     transform: rotate(0deg);
-    z-index: 10;} 
+    z-index: 10;
 	
+
+background: #ffaa3b;
+background: -moz-linear-gradient(left, #ffaa3b 48%, #ff9000 77%); 
+background: -webkit-linear-gradient(left, #ffaa3b 48%,#ff9000 77%);
+background: linear-gradient(to right, #ffaa3b 48%,#ff9000 77%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa3b', endColorstr='#ff9000',GradientType=1 );
+	
+	} 
+	
+
+ul.footer-nav li {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+	width: 150px;
+	height: 86.60px;
+	background-color: #ffffff;
+	border-left: dashed 1px #ff9306;
+	border-right: dashed 1px #ff9306;
+}
+ul.footer-nav li a {
+	text-align: center;
+	display: block;
+	z-index: 11111;
+	position: relative;
+	font-size: 12px;
+	text-decoration: none;
+	color: #202a32;
+	font-family:arial;
+	font-weight:500;
+}
+ul.footer-nav li a img {
+	margin-bottom: 5px
+}
+ul.footer-nav li a:hover {
+	color: #f34217
+}
+ul.footer-nav li:before, ul.footer-nav li:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 106.07px;
+	height: 106.07px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 20.9670px;
+}
+ul.footer-nav li:before {
+	top: -53.0330px;
+	border-top: dashed 1.4142px #ff9306;
+	border-right: dashed 1.4142px #ff9306;
+}
+ul.footer-nav li:after {
+	bottom: -53.0330px;
+	border-bottom: dashed 1.4142px #ff9306;
+	border-left: dashed 1.4142px #ff9306;
+}
+ul.footer-nav li:nth-child(4) {
+	top: 100px;
+}
+ul.footer-nav li:nth-child(3) {
+	top: 80px;
+}
+ul.footer-nav li:nth-child(2) {
+	top: 60px;
+}
+ul.footer-nav li:nth-child(1) {
+	top: 50px;
+	margin-right: -20px;
+}
+
+
+
 
 	
 	}
@@ -1166,7 +1242,17 @@ ul.footer-nav li:nth-child(1) {
 .overview-container {
 	width: 100%;
 	background: none;
+	
+	
 }
+
+
+.navbar-nav{ margin:0px;}
+.navbar-default .navbar-toggle {
+    border-color: #FFFFFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar{ background-color:#FFFFFF;}
 .footer-webstore{ text-align:left;}
 .paxcom-intro-outter{ position:relative !important;; top:0 !important; display:block;
 height:auto; left:0 !important; padding:100px 15px 0 15px; }
@@ -1204,14 +1290,14 @@ ul.client-logo li {
 }
 .overview-container .btn a {
 	height: 50px;
-	width: 50px;
+	width: 40px;
 	padding: 10px 0;
 	font-size: 20px;
 }
 .overview-container .btn a:hover {
 	height: 50px;
 	text-align: center;
-	width: 50px;
+	width: 40px;
 }
 .arrow-right {
 	background: none;
@@ -1401,6 +1487,10 @@ position: absolute; bottom:auto;}
 .overview-container .btn.top {
 	height: auto;
 }
+
+footer .copyright{ text-align:center !important;}
+footer ul.social-icon{ float:none !important; margin:0 auto; }
+footer ul.social-icon li{ margin:10px 5px;}
 
 .footer-webstore{ text-align:left;}
 .footer-paxcom{ width:180px; margin:auto;}
