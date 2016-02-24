@@ -16,6 +16,8 @@ var resetslidesInterval = function(){
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 }
 
+
+
 $(function(){
     //Typing effect
     $("#typed-pim").typed({
@@ -160,6 +162,12 @@ $(function(){
             return clientsUp();
         }
     });
+	
+	$(".page-scroll").click(function(){
+		$(".navbar-ex1-collapse").removeClass("in");
+	});
+
+	
 });
 
 
@@ -207,6 +215,9 @@ var overviewUp = function () {
             }
 }
 
+
+
+
 var relatedDown = function () {
                 $('#nav3').click();
             return false;
@@ -247,6 +258,9 @@ function isNavAtTop(){
     return (navTop == docViewTop );
 }
 
+	
+
+
 function isElementAtTop(element) {
     var windowTop = $(window).scrollTop();
     var elementTop = $(element).offset().top;
@@ -254,4 +268,8 @@ function isElementAtTop(element) {
         return true;
     }
     return false;
+	
+	
 }
+
+
