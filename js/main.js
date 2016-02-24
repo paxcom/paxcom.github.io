@@ -62,14 +62,17 @@ $(function(){
     })
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
     
-	
     $('#skuButton').on('click',function(){
 		var iframe = $("#priceCompareFrame");
         if(iframe.attr("src") !== iframe.data("src")){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
+    
     $('.top-main-part,header').bind('DOMMouseScroll mousewheel wheel',function (event) {
+        if(window.animating){
+            return false;
+        }
         //console.log($('#navigation-bar').offset())
         console.log('w scroll top',$(window).scrollTop())        
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
@@ -79,6 +82,9 @@ $(function(){
         return true;
     })
     $('#overview').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+        if(window.animating){
+            return false;
+        }
         console.log('w scroll top',$(window).scrollTop())
         console.log('#overview offset().top',$('#overview').offset().top);
         var slidesCount = $('.slides-heads').children().length
@@ -107,7 +113,10 @@ $(function(){
                 activeHeadIndex--;
                 if(activeHeadIndex < 0){
                     //scroll to top
-                    $('html, body').animate({scrollTop : 0},800);
+                    window.animating = true;
+                    $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
+                        window.animating = false;
+                    });
                     return false;
                 }
                 $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
@@ -119,7 +128,11 @@ $(function(){
             }
         }
     });
+    
 	$('#relatedProducts').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+        if(window.animating){
+            return false;
+        }
         console.log('w scroll top',$(window).scrollTop());
         console.log('#relatedProducts offset().top',$('#relatedProducts').offset().top);
         if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
@@ -135,6 +148,7 @@ $(function(){
             }
         }
     });
+    
     function isNavAtTop(){
         var docViewTop = $(window).scrollTop();
         var navTop = $('#navigation-bar').offset().top;
