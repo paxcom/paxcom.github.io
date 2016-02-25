@@ -1,6 +1,8 @@
 var slidesIntervalTime = 5000;
 var slidesInterval;
 var overviewScrolling = false;
+var previewsScrolling = false;
+var preventScrollTimeout = 1000;
 var changeslideAuto = function(){
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
@@ -72,6 +74,13 @@ $(function(){
         }
 	});
     $(window).bind('DOMMouseScroll mousewheel',function (event) {
+        if(previewsScrolling){
+            return false;
+        }
+        previewsScrolling = true;
+        setTimeout(function() {
+            previewsScrolling = false;
+        }, preventScrollTimeout);
         console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
         if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //down
@@ -174,7 +183,7 @@ var multipleScrolling = function ( side ) {
     overviewScrolling = true;
     setTimeout(function() {
         overviewScrolling = false;
-    }, 750);
+    }, preventScrollTimeout);
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
     if( side === 'down' ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
