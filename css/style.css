@@ -142,8 +142,8 @@ h4 {
 }
 h5 {
 	font-family: 'open_sanslight';
-	font-size: 30px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 900;
 }
 header {
 	padding: 0px 20px;
@@ -1140,9 +1140,69 @@ ul.footer-nav li:nth-child(1) {
 }
 
 
+.about-us h5, .contact-us h5{ color:#1a69aa; padding-top:30px; line-height:30px;}
+.contact-us{ }
+.contact-us label{ color:#000000; font-weight:normal;}
+
+.our-team{}
+.team-list-outer{ background-color:#f4f4f4; padding:20px; height:500px; margin-top:130px;}
+.fixed-hight{ height:400px;}
+.team-list { width:200px; max-width:100%; margin:auto;     margin-top: -125px;
+
+	height: auto;
+	background:#ffffff;
+	position: relative; border-radius:150px; border:solid 5px #FFFFFF;
+}
+
+.our-team h5, .our-team h6{ text-align:center;}
+
+.team-list img{  width:100%; border-radius:150px;}
 
 
-@media(min-width:320px) and (max-width:1231px) {.top-text {
+.contact-us label:after {
+  content:"*";color:red;
+}
+
+.mail-icon{ height:40px; width:40px; float:left; border-radius:50px; background-color:#367ec3; color:#fff; text-align:center; font-size:20px; padding:5px 0 0 0;  }
+
+.email{ color:#367ec3; padding:10px 10px; float:left;}
+
+.sidebar {
+    background: none repeat scroll 0 0 #fafafa;
+    border: 1px dashed #ddd;
+    padding: 20px 20px;
+    float: left;
+}
+
+.sidebar .custom-list {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar .custom-list li {
+    list-style: outside none none;
+    margin: 0;
+    padding: 10px 0 0 25px;
+
+}
+
+.sidebar .custom-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}
+
+.location {
+    border-radius: 0;
+    border-top: 1px solid #cccccc;
+    float: left;
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+}
+
+.no-padding{ padding:0px !important;}
+
+
+@media(min-width:320px) and (max-width:1231px) {.top-text { 
    
     color: #fff;
     float: left;
@@ -1164,6 +1224,8 @@ background: linear-gradient(to right, #ffaa3b 48%,#ff9000 77%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa3b', endColorstr='#ff9000',GradientType=1 );
 	
 	} 
+	
+	.team-list-outer{ height:500px; }
 	
 
 ul.footer-nav li {
@@ -1246,11 +1308,17 @@ ul.footer-nav li:nth-child(1) {
 	
 }
 
+.team-list-outer{ height:auto;}
+
 
 .navbar-nav{ margin:0px;}
 .navbar-default .navbar-toggle {
     border-color: #FFFFFF;
 }
+
+
+
+
 
 .navbar-default .navbar-toggle .icon-bar{ background-color:#FFFFFF;}
 .footer-webstore{ text-align:left;}
