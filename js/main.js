@@ -97,6 +97,7 @@ $(function(){
         if(window.animating){
             return false;
         }
+        // resetslidesInterval();
         var currentElement = $scrollElements.filter('.scroll-active');
         var currentElementIndex = $scrollElements.index(currentElement);
         var nextElementIndex = currentElementIndex;
@@ -126,8 +127,21 @@ $(function(){
     }
 
 	
-	$(".page-scroll").click(function(){
+	$(".page-scroll").click(function(event){
 		$(".navbar-ex1-collapse").removeClass("in");
+        var targetId = $(event.target).attr('href')
+        var currentElement = $scrollElements.filter('.scroll-active');
+        var currentElementIndex = $scrollElements.index(currentElement);
+        var targetElement = $scrollElements.filter(targetId);
+        var targetElementIndex = $scrollElements.index(targetElement);
+        if(targetElementIndex !== -1 && currentElementIndex!==targetElementIndex){
+            console.log('manuall scroll click')
+            currentElement.removeClass('scroll-active');
+            targetElement.addClass('scroll-active');
+
+        }
+        scrollToElement(targetElement);
+        event.preventDefault();
 	});
 
 });
@@ -144,8 +158,10 @@ var scrollToElement = function (element) {
         element = $(element);
     }
     window.animating = true;
+    var navigationBar = $('#navigation-bar');
+    var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
     $('html, body').animate({
-        scrollTop: element.offset().top
+        scrollTop: element.offset().top - offset
     }, 1500,'easeInOutExpo',function () {
         window.animating = false;
     });
