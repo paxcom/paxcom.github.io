@@ -1,8 +1,10 @@
+var animationTime = 1000;
 var slidesIntervalTime = 5000;
 var slidesInterval;
 var overviewScrolling = false;
-var previewsScrolling = false;
-var preventScrollTimeout = 1000;
+var preventScrolling = false;
+var preventScrollTimeout = 750;
+var previousTime = new Date().getTime();
 var changeslideAuto = function(){
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
@@ -72,23 +74,54 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    $(window).bind('DOMMouseScroll mousewheel',function (event) {
-        if(previewsScrolling){
+    // $(window).bind('DOMMouseScroll mousewheel',function (event) {
+    //     if(preventScrolling){
+    //         return false;
+    //     }
+    //     preventScrolling = true;
+    //     setTimeout(function() {
+    //         preventScrolling = false;
+    //     }, preventScrollTimeout);
+    //     console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
+    //     if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+    //         //down
+    //         return onScroll('down');
+    //     }else{
+    //         //up
+    //         return onScroll('up');
+    //     }
+    // });
+    var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+    $(window).bind(mousewheelevt, function(e){
+        // var currentTime = new Date().getTime();
+        // console.log('time diff',currentTime - previousTime)
+        // if((currentTime - previousTime) <= preventScrollTimeout){
+        //     previousTime = currentTime;
+        //     return false;
+        // }
+        // previousTime = currentTime;
+        if(preventScrolling){
             return false;
         }
-        previewsScrolling = true;
+        preventScrolling = true;
         setTimeout(function() {
-            previewsScrolling = false;
+            preventScrolling = false;
         }, preventScrollTimeout);
-        console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
-        if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //down
-            return onScroll('down');
-        }else{
-            //up
+        var evt = window.event || e //equalize event object     
+        evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+        var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+        console.log(delta);
+        if(delta > 0) {
+            //scroll up
             return onScroll('up');
         }
-    })
+        else{
+            //scroll down
+            return onScroll('down');
+        }   
+    });
+    
+    
     $(document).keydown(function ( event ) {
         if(event.which === 40){
             //down
@@ -155,7 +188,7 @@ $(function(){
 
 var scrollToTop = function () {
     window.animating = true;
-    $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
+    $('html, body').animate({scrollTop : 0},animationTime,'easeInOutExpo',function () {
         window.animating = false;
     });
 }
@@ -169,19 +202,21 @@ var scrollToElement = function (element) {
     var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
     $('html, body').animate({
         scrollTop: element.offset().top - offset
-    }, 1500,'easeInOutExpo',function () {
+    }, animationTime,'easeInOutExpo',function () {
         window.animating = false;
     });
 }
 
 var multipleScrolling = function ( side ) {
-    if(window.animating || overviewScrolling){
+    if(window.animating){
         return true
     }
-    overviewScrolling = true;
-    setTimeout(function() {
-        overviewScrolling = false;
-    }, preventScrollTimeout);
+    // var currentTime = new Date().getTime();
+    // if((currentTime - previousTime) <= 100){
+    //     previousTime = currentTime;
+    //     return true;
+    // }
+    // previousTime = currentTime;
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
     if( side === 'down' ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
