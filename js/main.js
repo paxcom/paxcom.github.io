@@ -18,6 +18,9 @@ var resetslidesInterval = function(){
 
 $(function(){
     //Typing effect
+    var $scrollElements = $('.scroll-section');
+    $scrollElements.first().addClass('scroll-active');
+    scrollToTop();
     $("#typed-pim").typed({
 		stringsElement : $('#typed-strings'),
         typeSpeed: 30,
@@ -68,98 +71,60 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    
-    $('.top-main-part,header').bind('DOMMouseScroll mousewheel wheel',function (event) {
-        if(window.animating){
-            return false;
+    $(window).bind('DOMMouseScroll mousewheel wheel',function (event) {
+        if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+            //down
+            return onScroll('down');
+        }else{
+            //up
+            return onScroll('up');
         }
-        //console.log($('#navigation-bar').offset())
-        console.log('w scroll top',$(window).scrollTop())        
-        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            return frontDown();
-        }
-        return true;
-    });
+    })
     
     $(document).keydown(function ( event ) {
-        console.log('ddd',event)
-        if(window.animating){
-            return false;
+        if(event.which === 40){
+            //down
+            return onScroll('down');
+        } else if(event.which === 38){
+            //up
+            return onScroll('up');
         }
-        if(isElementAtTop('#overview') && event.which === 40){
-            return overviewDown()
-        }
-        if(isElementAtTop('#overview') && event.which === 38){
-            return overviewUp()
-        }
-        if(isElementAtTop('#relatedProducts') && event.which === 40){
-            return relatedDown()
-        }
-        if(isElementAtTop('#relatedProducts') && event.which === 38){
-            return relatedUp()
-        }
-        if(($('#clients').offset().top <= $(window).scrollTop() + 100) && event.which === 40){
-            return clientsDown()
-        }
-        if(($('#clients').offset().top <= $(window).scrollTop() + 100) && event.which === 38){
-            return clientsUp()
-        }
-        
-        if(!$('#navigation-bar').hasClass('navbar-fixed-top') && event.which === 40){
-            return frontDown()
-        }
-
         return true;
     });
-
-    $('#overview').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
-        if(window.animating || overviewScrolling){
-            return false;
-        }
-        overviewScrolling = true;
-        setTimeout(function() {
-            overviewScrolling = false;
-        }, 250);
-        console.log('w scroll top',$(window).scrollTop())
-        console.log('#overview offset().top',$('#overview').offset().top);
-
-        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //scroll down
-            return overviewDown();
-        } else {
-            return overviewUp();
-        }
-    });
     
-	$('#relatedProducts').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
+    
+    var onScroll = function (side) {
         if(window.animating){
             return false;
         }
-        console.log('w scroll top',$(window).scrollTop());
-        console.log('#relatedProducts offset().top',$('#relatedProducts').offset().top);
-        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //scroll down
-            return relatedDown();
-        }else{
-            //scroll up
-            return relatedUp();
+        var currentElement = $scrollElements.filter('.scroll-active');
+        var currentElementIndex = $scrollElements.index(currentElement);
+        var nextElementIndex = currentElementIndex;
+        var nextElement;
+        if(side === 'down'){
+            if(currentElementIndex + 1 !== $scrollElements.length){
+                nextElementIndex = currentElementIndex + 1;
+            }
+        }else if(side === 'up'){
+            if(currentElementIndex !== 0){
+                nextElementIndex = currentElementIndex - 1;
+            }
         }
-    });
+        if(currentElementIndex !== nextElementIndex){
+            currentElement = $scrollElements.eq(currentElementIndex);
+            if(currentElement.hasClass('scroll-multiple')){
+                if(multipleScrolling(side)){
+                    return false;
+                }
+            }
+            nextElement = $scrollElements.eq(nextElementIndex);
+            currentElement.removeClass('scroll-active');
+            nextElement.addClass('scroll-active');
+            scrollToElement(nextElement);
+        }
+        return false;
+    }
 
-    $('#clients,footer').bind('DOMMouseScroll mousewheel wheel', function ( event ) {
-        if(window.animating){
-            return false;
-        }
-        console.log('w scroll top',$(window).scrollTop());1447
-        console.log('#clients offset().top',$('#clients').offset().top);1534
-        if( event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0 ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //scroll down
-            return clientsDown();
-        }else{
-            //scroll up
-            return clientsUp();
-        }
-    });
 	
 	$(".page-scroll").click(function(){
 		$(".navbar-ex1-collapse").removeClass("in");
@@ -167,99 +132,53 @@ $(function(){
 
 });
 
-
-
-var overviewDown = function () {
-    var slidesCount = $('.slides-heads').children().length
-    var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
-    if($('#navigation-bar').hasClass('navbar-fixed-top')){
-        activeHeadIndex++;
-        if(activeHeadIndex >= slidesCount){
-            //scroll to related products
-            $('#nav2').click();
-            return false;
-        }
-        $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-        resetslidesInterval();
-        //prevent page fom scrolling
-        return false;
-    }else{
-        console.log('element not at top - scrolling down to nav1')
-        $('#nav1').click();
-        return false;
-    }
+var scrollToTop = function () {
+    window.animating = true;
+    $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
+        window.animating = false;
+    });
 }
 
-var overviewUp = function () {
+var scrollToElement = function (element) {
+    if(typeof(element) !== 'object'){
+        element = $(element);
+    }
+    window.animating = true;
+    $('html, body').animate({
+        scrollTop: element.offset().top
+    }, 1500,'easeInOutExpo',function () {
+        window.animating = false;
+    });
+}
+
+var multipleScrolling = function ( side ) {
+    if(window.animating || overviewScrolling){
+        return true
+    }
+    overviewScrolling = true;
+    setTimeout(function() {
+        overviewScrolling = false;
+    }, 750);
+    var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
-    //scroll up
-    if(isElementAtTop('#overview')){
+    if( side === 'down' ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+        //scroll down
+            activeHeadIndex++;
+            if(activeHeadIndex >= slidesCount){
+                return false;
+            }
+            $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
+            resetslidesInterval();
+            //prevent page fom scrolling
+            return true;
+    } else if(side === 'up') {
         activeHeadIndex--;
         if(activeHeadIndex < 0){
             //scroll to top
-            window.animating = true;
-            $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
-                window.animating = false;
-            });
             return false;
         }
         $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
         resetslidesInterval();
-        return false;
-    }else{
-        console.log('element not at top - up scroll')
         return true;
     }
-}
-
-
-
-
-var relatedDown = function () {
-    $('#nav3').click();
-    return false;
-}
-
-var relatedUp = function () {
-    if($('#relatedProducts').offset().top >= ($(window).scrollTop() -15)){
-        $('#nav1').click();
-        return false;
-    }else{
-        return true;
-    }
-}
-
-var clientsDown = function () {
-    $('#nav3').click();
-    return false;
-}
-
-var clientsUp = function () {
-    if($('#clients').offset().top <= ($(window).scrollTop() + 100)){
-        $('#nav2').click();
-    }else{
-        console.log('here')
-        $('#nav1').click();
-    }
-    return false;
-}
-
-var frontDown = function () {
-    $('#nav1').click();
-    return false;
-}
-
-function isNavAtTop(){
-    var docViewTop = $(window).scrollTop();
-    var navTop = $('#navigation-bar').offset().top;
-    return (navTop == docViewTop );
-}
-
-function isElementAtTop(element) {
-    var windowTop = $(window).scrollTop();
-    var elementTop = $(element).offset().top;
-    if(elementTop >= windowTop -35 && elementTop <= windowTop + 35){
-        return true;
-    }
-    return false;
 }
