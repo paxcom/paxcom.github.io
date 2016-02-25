@@ -71,7 +71,8 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    $(window).bind('DOMMouseScroll mousewheel wheel',function (event) {
+    $(window).bind('DOMMouseScroll mousewheel',function (event) {
+        console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
         if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
             //down
             return onScroll('down');
@@ -80,7 +81,6 @@ $(function(){
             return onScroll('up');
         }
     })
-    
     $(document).keydown(function ( event ) {
         if(event.which === 40){
             //down
