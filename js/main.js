@@ -16,8 +16,6 @@ var resetslidesInterval = function(){
     slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
 }
 
-
-
 $(function(){
     //Typing effect
     $("#typed-pim").typed({
@@ -167,89 +165,88 @@ $(function(){
 		$(".navbar-ex1-collapse").removeClass("in");
 	});
 
-	
 });
 
 
 
 var overviewDown = function () {
-                var slidesCount = $('.slides-heads').children().length
-            var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
-            if($('#navigation-bar').hasClass('navbar-fixed-top')){
-                activeHeadIndex++;
-                if(activeHeadIndex >= slidesCount){
-                    //scroll to related products
-                    $('#nav2').click();
-                    return false;
-                }
-                $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-                resetslidesInterval();
-                //prevent page fom scrolling
-                return false;
-            }else{
-                console.log('element not at top - scrolling down to nav1')
-                $('#nav1').click();
-                return false;
-            }
+    var slidesCount = $('.slides-heads').children().length
+    var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
+    if($('#navigation-bar').hasClass('navbar-fixed-top')){
+        activeHeadIndex++;
+        if(activeHeadIndex >= slidesCount){
+            //scroll to related products
+            $('#nav2').click();
+            return false;
+        }
+        $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
+        resetslidesInterval();
+        //prevent page fom scrolling
+        return false;
+    }else{
+        console.log('element not at top - scrolling down to nav1')
+        $('#nav1').click();
+        return false;
+    }
 }
 
 var overviewUp = function () {
-            var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
-            //scroll up
-            if(isElementAtTop('#overview')){
-                activeHeadIndex--;
-                if(activeHeadIndex < 0){
-                    //scroll to top
-                    window.animating = true;
-                    $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
-                        window.animating = false;
-                    });
-                    return false;
-                }
-                $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-                resetslidesInterval();
-                return false;
-            }else{
-                console.log('element not at top - up scroll')
-                return true;
-            }
+    var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
+    //scroll up
+    if(isElementAtTop('#overview')){
+        activeHeadIndex--;
+        if(activeHeadIndex < 0){
+            //scroll to top
+            window.animating = true;
+            $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
+                window.animating = false;
+            });
+            return false;
+        }
+        $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
+        resetslidesInterval();
+        return false;
+    }else{
+        console.log('element not at top - up scroll')
+        return true;
+    }
 }
 
 
 
 
 var relatedDown = function () {
-                $('#nav3').click();
-            return false;
+    $('#nav3').click();
+    return false;
 }
 
 var relatedUp = function () {
-                if($('#relatedProducts').offset().top >= ($(window).scrollTop() -15)){
-                $('#nav1').click();
-                return false;
-            }else{
-                return true;
-            }
+    if($('#relatedProducts').offset().top >= ($(window).scrollTop() -15)){
+        $('#nav1').click();
+        return false;
+    }else{
+        return true;
+    }
 }
 
 var clientsDown = function () {
-                $('#nav3').click();
-            return false;
+    $('#nav3').click();
+    return false;
 }
 
 var clientsUp = function () {
     if($('#clients').offset().top <= ($(window).scrollTop() + 100)){
-                $('#nav2').click();
-            }else{
-                console.log('here')
-                $('#nav1').click();
-            }
-            return false;
+        $('#nav2').click();
+    }else{
+        console.log('here')
+        $('#nav1').click();
+    }
+    return false;
 }
 
 var frontDown = function () {
-                $('#nav1').click();
-            return false;
+    $('#nav1').click();
+    return false;
 }
 
 function isNavAtTop(){
@@ -258,9 +255,6 @@ function isNavAtTop(){
     return (navTop == docViewTop );
 }
 
-	
-
-
 function isElementAtTop(element) {
     var windowTop = $(window).scrollTop();
     var elementTop = $(element).offset().top;
@@ -268,8 +262,4 @@ function isElementAtTop(element) {
         return true;
     }
     return false;
-	
-	
 }
-
-
