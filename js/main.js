@@ -3,7 +3,7 @@ var slidesIntervalTime = 5000;
 var slidesInterval;
 var overviewScrolling = false;
 var preventScrolling = false;
-var preventScrollTimeout = 750;
+var preventScrollTimeout = 1000;
 var previousTime = new Date().getTime();
 var changeslideAuto = function(){
     var slidesCount = $('.slides-heads').children().length
@@ -54,17 +54,15 @@ $(function(){
 
 
     //Moving slides effect
-    $('a').click(function(event){
-        if($(this).hasClass('slide-btn')){
-            if(event.hasOwnProperty('originalEvent')){
-                //clearInterval(slidesInterval)
-            }
-            var targetId = $(this).data('target-id');
-            $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
-            $(event.target).closest('.slide-head').addClass('active-slide-head');
-            $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
-            $(targetId).addClass('active-slide-content')
+    $('a.slide-btn').click(function(event){
+        if(event.hasOwnProperty('originalEvent')){
+            //clearInterval(slidesInterval)
         }
+        var targetId = $(this).data('target-id');
+        $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
+        $(event.target).closest('.slide-head').addClass('active-slide-head');
+        $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
+        $(targetId).addClass('active-slide-content')
     })
     //slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
     
@@ -91,36 +89,26 @@ $(function(){
     //         return onScroll('up');
     //     }
     // });
-    var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
-    $(window).bind(mousewheelevt, function(e){
-        // var currentTime = new Date().getTime();
-        // console.log('time diff',currentTime - previousTime)
-        // if((currentTime - previousTime) <= preventScrollTimeout){
-        //     previousTime = currentTime;
-        //     return false;
-        // }
-        // previousTime = currentTime;
-        if(preventScrolling){
+    $(window).mousewheel(function(event) {
+        //console.log(event.deltaX, event.deltaY, event.deltaFactor);
+        if(preventScrolling || window.animating){
+            event.preventDefault();
             return false;
         }
         preventScrolling = true;
         setTimeout(function() {
             preventScrolling = false;
         }, preventScrollTimeout);
-        var evt = window.event || e //equalize event object     
-        evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
-        var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
-        console.log(delta);
-        if(delta > 0) {
-            //scroll up
+        if(event.deltaY > 0){
             return onScroll('up');
-        }
-        else{
-            //scroll down
+        }else if(event.deltaY < 0){
             return onScroll('down');
-        }   
+        }else{
+            preventScrolling = false;
+        }
+        event.preventDefault();
+        return false;
     });
-    
     
     $(document).keydown(function ( event ) {
         if(event.which === 40){
@@ -165,7 +153,7 @@ $(function(){
         }
         return false;
     }
-
+    
 	
 	$(".page-scroll").click(function(event){
 		$(".navbar-ex1-collapse").removeClass("in");
@@ -208,15 +196,21 @@ var scrollToElement = function (element) {
 }
 
 var multipleScrolling = function ( side ) {
-    if(window.animating){
+
+    var currentTime = new Date().getTime();
+    if((currentTime - previousTime) >= 150){
+        overviewScrolling = false;
+        previousTime = currentTime;
+    }
+    previousTime = currentTime;
+
+    if(window.animating || overviewScrolling){
         return true
     }
-    // var currentTime = new Date().getTime();
-    // if((currentTime - previousTime) <= 100){
-    //     previousTime = currentTime;
-    //     return true;
-    // }
-    // previousTime = currentTime;
+    setTimeout(function() {
+        overviewScrolling = false;
+    }, 1000);
+    overviewScrolling = true;
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
     if( side === 'down' ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
