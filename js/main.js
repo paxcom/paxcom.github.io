@@ -55,9 +55,8 @@ $(function(){
     $('a').click(function(event){
         if($(this).hasClass('slide-btn')){
             if(event.hasOwnProperty('originalEvent')){
-                clearInterval(slidesInterval)
+                //clearInterval(slidesInterval)
             }
-            //resetslidesInterval();
             var targetId = $(this).data('target-id');
             $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
             $(event.target).closest('.slide-head').addClass('active-slide-head');
@@ -65,7 +64,7 @@ $(function(){
             $(targetId).addClass('active-slide-content')
         }
     })
-    slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
+    //slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
     
     $('#skuButton').on('click',function(){
 		var iframe = $("#priceCompareFrame");
@@ -106,7 +105,6 @@ $(function(){
         if(window.animating){
             return false;
         }
-        // resetslidesInterval();
         var currentElement = $scrollElements.filter('.scroll-active');
         var currentElementIndex = $scrollElements.index(currentElement);
         var nextElementIndex = currentElementIndex;
@@ -193,7 +191,7 @@ var multipleScrolling = function ( side ) {
                 return false;
             }
             $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-            resetslidesInterval();
+            //resetslidesInterval();
             //prevent page fom scrolling
             return true;
     } else if(side === 'up') {
@@ -203,7 +201,7 @@ var multipleScrolling = function ( side ) {
             return false;
         }
         $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-        resetslidesInterval();
+        //resetslidesInterval();
         return true;
     }
 }
