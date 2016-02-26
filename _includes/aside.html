@@ -1,0 +1,50 @@
+<!-- Latest Posts -->
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>Latest Posts</h4>
+  </div>
+  <ul class="list-group">
+    {% for post in site.posts limit: 5 %}
+    <li class="list-group-item"> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncatewords: 9 | capitalize }}</a>
+      <p><small><strong>{{ post.date | date: "%A, %B %e, %Y"  }} </strong> . {{ post.category }} {{ post.post-by }} , {{post.tags}}</small></p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<!--{% if page.layout == "post" %}
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>Related Posts</h4>
+  </div>
+ 
+  <ul class="list-group">
+    {% for post in site.related_posts limit: 5 %}
+    <li class="list-group-item"> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title | truncatewords: 9 | capitalize }}</a>
+      <p><small><strong>{{ post.date | date: "%A, %B %e, %Y"  }} </strong> . {{ post.category }} {{ post.post-by }} , {{post.tags}}</small></p>
+    </li>
+    {% endfor %}
+  </ul>
+  
+</div>
+{% endif %}-->
+
+
+
+<!--<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>Tags</h4>
+  </div> 
+   
+    <div class="panel-body">
+    {% assign tags = site.tags | sort %}
+		{% for tag in tags %}
+         
+            <a href="{{ site.baseurl }}/category.html#{{ tag | first | slugify }}/" class="label label-warning tag-list">
+                    {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+            </a>
+       
+	{% endfor %}
+ </div>
+</div>-->

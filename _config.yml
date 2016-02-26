@@ -1,9 +1,18 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
+name: "paxcom"
 title: PAXCOM
 keywords: "Centralized Product information management"
 description: Customizable Dashboards for Deep Insights into Key Performance Indicators of your business.
+author: "vivek kumar"
+email: vivek.kumar@paxcel.net
+url: ""
+github : username
+twitter : username
+
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 ### Build settings
 markdown: kramdown
@@ -11,3 +20,7 @@ highlighter: Pygments
 
 # Site Navigation
 #baseurl: /paxtrial
+
+disqus: jekyllblogsite
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+{% include header.html %}    
+
+{% include post-header.html%}
+   {{ content }}
+{% include post-footer.html%}
+ 
+
+
+{% include footer.html%}    
+
+
+
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip(); 
+	});
+</script>
+</body>
+</html>

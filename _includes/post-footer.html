@@ -1,0 +1,18 @@
+<!-- Post Footer -->
+	  <!-- Load disqus comments if disqus id available-->
+      {% if site.disqus %}
+      <div class="comment-footer">
+        <p><a href="{{POST_URL}}#disqus_thread" id="showComments">Comments</a></p>
+        <div id="disqus_thread"></div>
+            <div class="share-page"> 
+                Share this on &rarr; 
+                <a  href="#" target="_blank" onclick="window.open('https://twitter.com/share?url='+window.location.href+'&via={{ site.twitter }}','_blank','height=300,width=600');return false;" title="Share on Twitter" class="label label-primary"><i class="fa fa-twitter"></i> Twitter</a> 
+                <a href="#" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+window.location.href,'_blank','height=300,width=600');return false;"  title="Share on Facebook" class="label label-info">facebook</a> 
+                <a target="_blank" onclick="window.open('https://plus.google.com/share?url='+window.location.href,'_blank','height=300,width=600');return false;" title="Share on Google+" class="label label-danger">Google+</a>
+                
+                <a  href="#" target="_blank" onclick="window.open('http://pinterest.com/pin/create/button/?url='+window.location.href,'_blank','height=300,width=600');return false;" rel="nofollow" title="Share on Pinterest" class="label label-warning">Pinterest</a>
+                <a  href="#" target="_blank" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url='+window.location.href,'_blank','height=300,width=600');return false;" rel="nofollow" title="Share on Linkedin" class="label label-success">Linkedin</a>  
+                
+           </div>
+      </div>
+      {% endif %}
