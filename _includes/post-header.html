@@ -1,0 +1,75 @@
+      <!-- Post Header -->
+      <div class="post-header">
+        <h2>{{ page.title  }}</h2>
+       
+        <div class="clearfix"></div>
+        
+ <div class="clearfix"></div>
+      </div>
+      <div class="meta-info">
+    	<ul>
+        	<li><span>On :</span> {{ page.date | date: "%B %-d, %Y" }} </li>
+            <li><span>By : </span>{{ page.post-by }}</li>
+            <li><span>In :</span>
+            	{% if page.tags and page.tags.size > 0 %}
+                	{% for tag in page.tags %}
+                    	 {{ tag }}
+                    {% endfor %}
+                {% endif %}
+                
+            </li>
+
+        </ul>
+    
+	</div>
+ 
+        
+        
+        
+         {% if page.images %}
+        <div class="bs-example">        
+        	{% assign foundImage = 0 %}
+            
+        	{% for img in page.images %}
+            	{% assign foundImage = forloop.index %}
+            {% endfor %}
+            
+            {% if foundImage == 1 %}
+            	<div class="image-container">
+                	{% for img in page.images %}
+                	<img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" img-responsive>
+                	{% endfor %}
+                    
+                </div>
+                
+               {% else %}
+               
+               <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel"> 
+            
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              {% for img in page.images %}
+              <li data-target="#myCarousel" data-slide-to="forloop.index" class="{% if forloop.index  == 1 %} active {% endif %}"></li>
+              {% endfor %}
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner"> {% for img in page.images %}
+              <div class="item {% if forloop.index  == 1 %} active {% endif %} "> <img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" img-responsive>
+                <div class="carousel-caption">
+                  <h3>{{img.title }}</h3>
+                  <p>{{img.caption }} </p>
+                </div>
+              </div>
+              {% endfor %} </div>
+            <!-- Carousel nav --> 
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="carousel-control right" href="#myCarousel" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a> </div>
+            	
+            {% endif %}
+            
+            
+        
+        
+          
+        </div>
+        {% endif %}
+     
