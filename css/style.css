@@ -88,6 +88,10 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+
+
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -442,10 +446,9 @@ section.intro-section-bg {
 .overview-container .content {
 	position: relative;
 	width: 450px;
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
+	opacity:1;
+	
+
 	margin: 70px auto 0 auto;
 	text-align: center;
 }
@@ -545,13 +548,13 @@ section.intro-section-bg {
 	-webkit-animation-name: fadeOut;
 	animation-name: fadeOut;
 }
- @-webkit-keyframes fadeOut {
+ @-webkit-keyframes fadeOut { 
  0% {
 opacity: 0;
 }
  100% {
 opacity: 1;
-}
+} 
 }
  @keyframes fadeOut {
  0% {
@@ -1033,22 +1036,25 @@ ul.footer-nav li:nth-child(1) {
 	/*414b53 float: left;
 	margin-top: 50px;*/
 	position: relative;
-	text-shadow:0 0 1px #000000;
-	display:table-cell;
+		display:table-cell;
 	vertical-align:middle;
 	text-align:left;}
 
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
 	font-size: 70px; font-weight:100 !important;
-	color: #000;}
+	color: #000;
+	text-shadow:0 0 1.2 #000; 
+	
+
+}
 
 .paxcom-into-text strong {
 	font-family: 'RalewayRegular_0';
 }
 .paxcom-into-text em {
 	font-size: 17px;
-		color: #526069;
-		font-family: 'RalewayRegular_0';
+	color: #526069;
+	font-family: 'RalewayRegular_0';
 	text-align: right;
 	float: left;
 	font-style: normal;
