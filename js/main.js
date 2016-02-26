@@ -22,9 +22,7 @@ var resetslidesInterval = function(){
 
 $(function(){
     //Typing effect
-    var $scrollElements = $('.scroll-section');
-    $scrollElements.first().addClass('scroll-active');
-    scrollToTop();
+
     $("#typed-pim").typed({
 		stringsElement : $('#typed-strings'),
         typeSpeed: 30,
@@ -89,26 +87,32 @@ $(function(){
     //         return onScroll('up');
     //     }
     // });
-    $(window).mousewheel(function(event) {
-        //console.log(event.deltaX, event.deltaY, event.deltaFactor);
-        if(preventScrolling || window.animating){
+    var $scrollElements = $('.scroll-section');
+
+    if($('#scroll-page').length > 0){
+        $scrollElements.first().addClass('scroll-active');
+        scrollToTop();
+        $(window).mousewheel(function(event) {
+            //console.log(event.deltaX, event.deltaY, event.deltaFactor);
+            if(preventScrolling || window.animating){
+                event.preventDefault();
+                return false;
+            }
+            preventScrolling = true;
+            setTimeout(function() {
+                preventScrolling = false;
+            }, preventScrollTimeout);
+            if(event.deltaY > 0){
+                return onScroll('up');
+            }else if(event.deltaY < 0){
+                return onScroll('down');
+            }else{
+                preventScrolling = false;
+            }
             event.preventDefault();
             return false;
-        }
-        preventScrolling = true;
-        setTimeout(function() {
-            preventScrolling = false;
-        }, preventScrollTimeout);
-        if(event.deltaY > 0){
-            return onScroll('up');
-        }else if(event.deltaY < 0){
-            return onScroll('down');
-        }else{
-            preventScrolling = false;
-        }
-        event.preventDefault();
-        return false;
-    });
+        });
+    }
     
     $(document).keydown(function ( event ) {
         if(event.which === 40){
