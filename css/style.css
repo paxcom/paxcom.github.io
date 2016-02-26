@@ -842,20 +842,23 @@ footer ul.social-icon {
 	float: right;
 }
 footer ul.social-icon li {
-	cursor: pointer;
+	
 	color: #999;
 	transition: all .1s linear;
 	margin: 0px 5px;
 	float: left;
-	width: 40px;
-	height: 40px;
-	font-size: 25px;
+    font-size: 25px;
 	text-align: center;
 	display: inline;
-	padding: 3px 10px;
 	border-radius: 70px;
-	background-color: #4d4d4d;
+	background-color: #4d4d4d; width: 40px;
+	height: 40px;
 }
+
+footer ul.social-icon li i{ padding: 8px 10px; 	}
+
+footer ul.social-icon li a{ color:#999;  cursor: pointer;
+	font-size: 25px;}
 footer ul.social-icon li:hover {
 	color: #ffffff;
 	opacity: 0.6;
