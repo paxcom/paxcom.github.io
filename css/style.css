@@ -1029,20 +1029,19 @@ ul.footer-nav li:nth-child(1) {
 	font-weight: 600;
 	}
 .paxcom-into-text {
-	font-family: 'RalewayThin_0';
-	font-size: 70px;
-	color: #000;
+	
 	/*414b53 float: left;
 	margin-top: 50px;*/
 	position: relative;
-
 	text-shadow:0 0 1px #000000;
-
 	display:table-cell;
 	vertical-align:middle;
-	text-align:left;
+	text-align:left;}
 
-}
+.paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
+	font-size: 70px; font-weight:100 !important;
+	color: #000;}
+
 .paxcom-into-text strong {
 	font-family: 'RalewayRegular_0';
 }
@@ -1150,7 +1149,20 @@ ul.footer-nav li:nth-child(1) {
 .contact-us label{ color:#000000; font-weight:normal;}
 
 .our-team{}
+
+
+.our-team .name{ font-family: 'open_sanslight';
+	font-size: 20px;
+	font-weight: 900; text-align:center;}
+	
+.our-team .designation{ font-family: 'open_sanslight';
+	font-size: 13px;
+	font-weight: 900; color:#367ec3; text-align:center;}
+
 .team-list-outer{ background-color:#f4f4f4; padding:20px; height:500px; margin-top:130px;}
+
+
+
 .fixed-hight{ height:400px;}
 .team-list { width:200px; max-width:100%; margin:auto;     margin-top: -125px;
 
@@ -1218,7 +1230,9 @@ ul.footer-nav li:nth-child(1) {
     margin-top: -67px;
     padding: 5px 5px 5px 30px;
     position: relative;
-    transform: rotate(0deg);
+  -ms-transform: rotate(0deg); /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari */
+transform: rotate(0deg);
     z-index: 10;
 	
 
@@ -1512,7 +1526,9 @@ margin-left:0;
 margin-top:0;
 padding: 5px 5px 5px 30px;
 position: relative;
-transform: rotate(0);
+-ms-transform: rotate(0deg); /* IE 9 */
+-webkit-transform: rotate(0deg); /* Safari */
+transform: rotate(0deg);
 z-index: 10;
 }
 
