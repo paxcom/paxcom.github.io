@@ -1043,7 +1043,8 @@ ul.footer-nav li:nth-child(1) {
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
 	font-size: 70px; font-weight:100 !important;
 	color: #000;
-	text-shadow:0 0 1.2 #000; 
+	text-shadow:0 0 0.5px #000; 
+	-webkit-text-shadow:0 0 0.5px #000; 
 	
 
 }
