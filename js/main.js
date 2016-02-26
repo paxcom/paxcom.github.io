@@ -171,6 +171,10 @@ $(function(){
         scrollToElement(targetElement);
         event.preventDefault();
 	});
+	
+	$(".nav-toggle-icon").click(function(){
+    $(".top-nav-bar ul").toggleClass("nav-display-none");
+});
 
 });
 
