@@ -1,8 +1,10 @@
+var animationTime = 1000;
 var slidesIntervalTime = 5000;
 var slidesInterval;
 var overviewScrolling = false;
-var previewsScrolling = false;
+var preventScrolling = false;
 var preventScrollTimeout = 1000;
+var previousTime = new Date().getTime();
 var changeslideAuto = function(){
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
@@ -20,9 +22,7 @@ var resetslidesInterval = function(){
 
 $(function(){
     //Typing effect
-    var $scrollElements = $('.scroll-section');
-    $scrollElements.first().addClass('scroll-active');
-    scrollToTop();
+
     $("#typed-pim").typed({
 		stringsElement : $('#typed-strings'),
         typeSpeed: 30,
@@ -52,20 +52,17 @@ $(function(){
 
 
     //Moving slides effect
-    $('a').click(function(event){
-        if($(this).hasClass('slide-btn')){
-            if(event.hasOwnProperty('originalEvent')){
-                clearInterval(slidesInterval)
-            }
-            //resetslidesInterval();
-            var targetId = $(this).data('target-id');
-            $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
-            $(event.target).closest('.slide-head').addClass('active-slide-head');
-            $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
-            $(targetId).addClass('active-slide-content')
+    $('a.slide-btn').click(function(event){
+        if(event.hasOwnProperty('originalEvent')){
+            //clearInterval(slidesInterval)
         }
+        var targetId = $(this).data('target-id');
+        $('.slides-heads').find('.active-slide-head').removeClass('active-slide-head')
+        $(event.target).closest('.slide-head').addClass('active-slide-head');
+        $('.slides-contents').find('.active-slide-content').removeClass('active-slide-content');
+        $(targetId).addClass('active-slide-content')
     })
-    slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
+    //slidesInterval = setInterval(changeslideAuto,slidesIntervalTime)
     
     $('#skuButton').on('click',function(){
 		var iframe = $("#priceCompareFrame");
@@ -73,23 +70,50 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    $(window).bind('DOMMouseScroll mousewheel',function (event) {
-        if(previewsScrolling){
+    // $(window).bind('DOMMouseScroll mousewheel',function (event) {
+    //     if(preventScrolling){
+    //         return false;
+    //     }
+    //     preventScrolling = true;
+    //     setTimeout(function() {
+    //         preventScrolling = false;
+    //     }, preventScrollTimeout);
+    //     console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
+    //     if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+    //         //down
+    //         return onScroll('down');
+    //     }else{
+    //         //up
+    //         return onScroll('up');
+    //     }
+    // });
+    var $scrollElements = $('.scroll-section');
+
+    if($('#scroll-page').length > 0){
+        $scrollElements.first().addClass('scroll-active');
+        scrollToTop();
+        $(window).mousewheel(function(event) {
+            //console.log(event.deltaX, event.deltaY, event.deltaFactor);
+            if(preventScrolling || window.animating){
+                event.preventDefault();
+                return false;
+            }
+            preventScrolling = true;
+            setTimeout(function() {
+                preventScrolling = false;
+            }, preventScrollTimeout);
+            if(event.deltaY > 0){
+                return onScroll('up');
+            }else if(event.deltaY < 0){
+                return onScroll('down');
+            }else{
+                preventScrolling = false;
+            }
+            event.preventDefault();
             return false;
-        }
-        previewsScrolling = true;
-        setTimeout(function() {
-            previewsScrolling = false;
-        }, preventScrollTimeout);
-        console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
-        if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-            //down
-            return onScroll('down');
-        }else{
-            //up
-            return onScroll('up');
-        }
-    })
+        });
+    }
+    
     $(document).keydown(function ( event ) {
         if(event.which === 40){
             //down
@@ -106,7 +130,6 @@ $(function(){
         if(window.animating){
             return false;
         }
-        // resetslidesInterval();
         var currentElement = $scrollElements.filter('.scroll-active');
         var currentElementIndex = $scrollElements.index(currentElement);
         var nextElementIndex = currentElementIndex;
@@ -134,7 +157,7 @@ $(function(){
         }
         return false;
     }
-
+    
 	
 	$(".page-scroll").click(function(event){
 		$(".navbar-ex1-collapse").removeClass("in");
@@ -152,12 +175,16 @@ $(function(){
         scrollToElement(targetElement);
         event.preventDefault();
 	});
+	
+	$(".nav-toggle-icon").click(function(){
+    $(".top-nav-bar ul").toggleClass("nav-display-none");
+});
 
 });
 
 var scrollToTop = function () {
     window.animating = true;
-    $('html, body').animate({scrollTop : 0},1500,'easeInOutExpo',function () {
+    $('html, body').animate({scrollTop : 0},animationTime,'easeInOutExpo',function () {
         window.animating = false;
     });
 }
@@ -171,19 +198,27 @@ var scrollToElement = function (element) {
     var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
     $('html, body').animate({
         scrollTop: element.offset().top - offset
-    }, 1500,'easeInOutExpo',function () {
+    }, animationTime,'easeInOutExpo',function () {
         window.animating = false;
     });
 }
 
 var multipleScrolling = function ( side ) {
+
+    var currentTime = new Date().getTime();
+    if((currentTime - previousTime) >= 150){
+        overviewScrolling = false;
+        previousTime = currentTime;
+    }
+    previousTime = currentTime;
+
     if(window.animating || overviewScrolling){
         return true
     }
-    overviewScrolling = true;
     setTimeout(function() {
         overviewScrolling = false;
-    }, preventScrollTimeout);
+    }, 1000);
+    overviewScrolling = true;
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
     if( side === 'down' ) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
@@ -193,7 +228,7 @@ var multipleScrolling = function ( side ) {
                 return false;
             }
             $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-            resetslidesInterval();
+            //resetslidesInterval();
             //prevent page fom scrolling
             return true;
     } else if(side === 'up') {
@@ -203,7 +238,7 @@ var multipleScrolling = function ( side ) {
             return false;
         }
         $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
-        resetslidesInterval();
+        //resetslidesInterval();
         return true;
     }
 }

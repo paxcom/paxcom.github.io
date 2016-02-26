@@ -1,11 +1,13 @@
 <header class="scroll-section">
   <div class="logo"> <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/logo.png" alt="#"/></a></div>
-  <!--<nav class="top-nav-bar">
-    <ul>
-      <li> <a href="#">products </a> </li>
-      <li> <a href="#">Team </a></li>
-      <li> <a href="#">About us </a></li>
-      <li> <a href="#"> Career </a></li>
+<nav class="top-nav-bar">
+<div class="nav-toggle-icon"> <i class="fa fa-bars"></i> </div>
+    <ul class="nav-display-none">
+      <!--  <li> <a href="#">products </a> </li> -->
+      <li> <a {% page.url == '../about-us.html' %} class='active'{% endif %}>About us </a></li>
+      <li > <a {% page.url == '../our-team.html' %} class='active'{% endif %}>Team </a></li>
+      <li > <a {% page.url == '../contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
+    <!--  <li> <a href="#"> Career </a></li> -->
     </ul>
-  </nav>--> 
+  </nav>
 </header>
