@@ -1,16 +1,14 @@
 <header>
-  <div class="logo logo-paxcom"> <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/paxcom-logo.png" alt="Paxcom" class="img-responsive"/></a></div>
+  <div class="logo logo-paxcom"> <a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}/images/paxcom-logo.png" alt="Paxcom logo" class="img-responsive"/></a></div>
 <nav class="top-nav-bar paxcom">
 <div class="nav-toggle-icon"> <i class="fa fa-bars"></i> </div>
     <ul class="nav-display-none">
      
       <!--   <li> <a href="#">products </a> </li> -->
      
-      <li> <a href="about-us.html">About us </a></li>
-       <li> <a href="our-team.html">Team </a></li>
-    <!--  <li> <a href="#"> Career </a></li> -->
-     <!--   <li> <a href="#">Blog </a></li> -->
-      <li> <a href="contact-us.html">Contact Us </a></li>
+      <li> <a {% page.url == '../about-us.html' %}class='active'{% endif %}>About us </a></li>
+      <li > <a  {% page.url == '../our-team.html' %} class='active'{% endif %}>Team </a></li>
+      <li > <a  {% page.url == '../contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
      <!--  <li class="request-demo"> <a href="#"> Request a Demo </a></li> -->
       
       

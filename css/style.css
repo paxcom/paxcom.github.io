@@ -170,12 +170,11 @@ header {
 .top-nav-bar ul li a {
 	color: #222222;
 	text-decoration: none;
-	-webkit-transition: width 2s; /* Safari */
-	-webkit-transition-delay: 0.1s; /* Safari */
-	transition-delay: 0.1s;
-	transition: width 2s;
+
 }
-.top-nav-bar ul li a:hover, .top-nav-bar ul li a.active{color:#ff9000} 
+.top-nav-bar ul li a:hover, .top-nav-bar ul li a.active{color:#ff9000; border-bottom:solid 3px #ff9000;
+} 
+
 
 
 .navbar {
@@ -943,7 +942,10 @@ margin-left: -19px;
  margin-top: -99px;
 padding: 5px 5px 5px 30px;
 position: relative;
+-ms-transform: rotate(-6.7deg); /* IE 9 */
+-webkit-transform: rotate(-6.7deg); /* Safari */
 transform: rotate(-6.7deg);
+
 z-index: 10;
 }
 ul.footer-nav {
