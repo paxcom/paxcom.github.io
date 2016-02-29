@@ -101,6 +101,8 @@ body {
 	height:auto;
 	
 }
+iframe{ border:none;}
+
 body:before {
 	border-bottom: 50px solid transparent;
 	border-right: 409px solid #ff9000;
