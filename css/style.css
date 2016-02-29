@@ -1154,7 +1154,7 @@ ul.footer-nav li:nth-child(1) {
 }
 
 
-.about-us h5, .contact-us h5{ color:#1a69aa; padding-top:30px; line-height:30px;}
+.about-us h1, .contact-us h1{ color:#1a69aa; padding-top:30px; line-height:30px;}
 .contact-us{ }
 .contact-us label{ color:#000000; font-weight:normal;}
 
@@ -1221,7 +1221,7 @@ address {
     border-radius: 0;
     border-top: 1px solid #cccccc;
     float: left;
-    margin-top: 30px;
+    margin-top:0;
     padding: 0;
     width: 100%;
 }
