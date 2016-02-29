@@ -607,7 +607,7 @@ ul.client-logo li {
 	background: url(../images/arrow2.png) no-repeat center -10px #efefef;
 	padding: 100px 0 50px 0;
 }
-.insight-btn button {
+.insight-btn a {
 	border: 0;
 	background: #ff9000;
 	border-radius: 4px;
@@ -616,15 +616,16 @@ ul.client-logo li {
 	cursor: pointer;
 	font: inherit;
 	margin: 0;
+	text-decoration: none;
 	font-size: 17px;
 	outline: 0;
 	padding: 12px 20px;
 	transition: all .1s linear;
 }
-.insight-btn button:hover {
+.insight-btn a:hover {
 	opacity: 0.7
 }
-.insight-btn button:active {
+.insight-btn a:active {
 	box-shadow: 0 2px 0 #006599;
 	transform: translateY(3px);
 }
