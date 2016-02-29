@@ -1154,9 +1154,9 @@ ul.footer-nav li:nth-child(1) {
 }
 
 
-.about-us h1, .contact-us h1{ color:#1a69aa; padding-top:30px; line-height:30px;}
+.about-us h1, .contact-us h1{ color:#1a69aa; padding-top:30px; line-height:30px; font-size:24px; clear:both;}
 .contact-us{ }
-.contact-us label{ color:#000000; font-weight:normal;}
+.contact-us label{ color:#000000; font-weight:normal; }
 
 .our-team{}
 
