@@ -5,7 +5,7 @@ sitemap:
 priority: 1.0
 ---
 
-<div class="container">
+<div class="container" style="margin-top:80px;">
   <div class="row"> 
     <!-- main content start here -->
     <div class="col-md-8">
@@ -59,7 +59,7 @@ priority: 1.0
             {% if foundImage == 1 %}
             	<div class="image-container">
                 	{% for img in post.images %}
-                	<img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" img-responsive>
+                	<img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" class="img-responsive">
                 	{% endfor %}
                     
                 </div>
@@ -76,7 +76,7 @@ priority: 1.0
             </ol>
             <!-- Carousel items -->
             <div class="carousel-inner"> {% for img in post.images %}
-              <div class="item {% if forloop.index  == 1 %} active {% endif %} "> <img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" img-responsive>
+              <div class="item {% if forloop.index  == 1 %} active {% endif %} "> <img src="{{site.baseurl}}/media/{{img.path}}" alt="{{img.alt }}" class="img-responsive">
                 <div class="carousel-caption">
                   <h3>{{img.title }}</h3>
                   <p>{{img.caption }} </p>
