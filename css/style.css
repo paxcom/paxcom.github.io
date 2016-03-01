@@ -663,7 +663,6 @@ ul.client-logo li {
 	margin: auto;
 	height: 360px; padding:0px;
 	width: 100%;
-	border: solid 1px #d4d4d4;
 	font-size: 14px;
 	color: #666666;
 
@@ -680,7 +679,7 @@ ul.client-logo li {
 	padding:0 20px;
 }
 .product-info-popup .modal-header {
-	border-bottom: none; 
+	border-bottom: none; background-color:#ff9000; color:#FFFFFF; border-bottom:none;
 }
 .product-info-popup .modal-footer {
 	border-top: none;
@@ -725,7 +724,7 @@ ul.client-logo li {
 	text-align: left;
 }
 .product-info-popup .modal-header .close {
-	color: #000000;
+	color: #fff;
 	outline: none;
 }
 #skuModel {
