@@ -679,7 +679,7 @@ ul.client-logo li {
 	padding:0 20px;
 }
 .product-info-popup .modal-header {
-	border-bottom: none; background-color:#ff9000; color:#FFFFFF; border-bottom:none;
+	 background-color:#ff9000; color:#FFFFFF; font-size:17px;
 }
 .product-info-popup .modal-footer {
 	border-top: none;
