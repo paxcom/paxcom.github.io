@@ -672,14 +672,19 @@ ul.client-logo li {
 
 
 .paxcom-intro-outter{
-	display: table;
-    height: calc(100% - (70px + 365px));
-    left: 60px;
-    margin: 0 auto;
-    position: absolute;
-	top:70px;
-	padding:0 20px;
+display: table;
+height: calc(100% - (70px + 365px));
+left: 60px;
+margin: 0 auto;
+position: absolute;
+top: 120px;
+padding: 0 20px;
+		
 }
+
+
+
+
 .product-info-popup .modal-header {
 	 background-color:#ff9000; color:#FFFFFF; font-size:17px;
 }
@@ -1046,6 +1051,14 @@ ul.footer-nav li:nth-child(1) {
 .footer-webstore strong {
 	font-weight: 600;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 .paxcom-into-text {
 	
 	/*414b53 float: left;
@@ -1054,6 +1067,32 @@ ul.footer-nav li:nth-child(1) {
 		display:table-cell;
 	vertical-align:middle;
 	text-align:left;}
+	
+	
+	.sub-heading{font-size: 17px;
+    color: #526069;
+    font-family: 'RalewayRegular_0'; }
+	.sub-heading:first-child{ margin-top:15px;}
+	
+	ul.list-menu{ margin:10px 0 10px 20px; }
+	
+	ul.list-menu li{ font-size: 17px;
+    color: #526069;
+	 border-left:solid 1px #ff9000;
+	 padding:5px 22px;
+    font-family: 'RalewayRegular_0'; display:block;   }
+	
+	
+	ul.list-menu li:before{
+    content: "";
+    display: block;
+    background:url(../images/bullet.jpg) no-repeat;
+    width: 25px;
+    height: 25px;
+	padding-left:20px;
+	position:absolute; margin-left:-32px;
+  
+}
 
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
 	font-size: 70px; font-weight:100 !important;
@@ -1097,6 +1136,7 @@ ul.footer-nav li:nth-child(1) {
 	right: 0;
 	bottom: 0;
 	padding-top: 82px;
+	
 }
 .bg:before {
 	border-bottom: 130px solid #ff9000;
@@ -1351,8 +1391,11 @@ ul.footer-nav li:nth-child(1) {
 }
 
 
+ .bg:after {
+    border-bottom: 141px solid #ffaa3b;}
 
-
+  .paxcom-into-text em:before{ display:none; } 
+ .paxcom-into-text em{padding-left:0; text-align:left;}
 	
 	}
 	
@@ -1608,6 +1651,12 @@ position: absolute; bottom:auto;}
  .footer-info{ padding:0px;}
   .footer-info .container{ width:100%; padding:15px;}
  .top-text{ padding-left:15px;}
+ 
+  .paxcom-into-text em:before{ display:none; } 
+ .paxcom-into-text em{padding-left:0; text-align:left;}
+ 
+ .bg:after {
+    border-bottom: 141px solid #ffaa3b;}
  }
 
 
@@ -1649,7 +1698,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
  .nav-display-none{ display:none;}
  
  .paxcom-into-text em:before{ display:none; } 
- .paxcom-into-text em{padding-left:0; text-align:right;}
+ .paxcom-into-text em{padding-left:0; text-align:left;}
  
  .footer-info{ padding:0px;}
  
