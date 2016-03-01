@@ -1645,7 +1645,8 @@ ul.footer-nav{ max-width:150px; margin:auto;}
  padding:0px 8px !important; font-size:14px !important; position:relative}
  .meta-info li span{color:#2E2E2E}
  
- .list-group-style ul.list-group{ padding:0px 20px ;}
+ .blog-right-sidebar{ border: 1px dashed #ddd; margin-bottom:30px;}
+ .blog-right-sidebar ul.list-group{ padding:0px 20px ; }
   
  .list-style ul{ margin:0 0 0 17px ;}
  .list-style ul li{     font-size: 17px;
@@ -1665,6 +1666,8 @@ ul.footer-nav{ max-width:150px; margin:auto;}
     clear: both;     font-family: 'open_sanslight' !important;
   
     font-weight: 100;}
+	
+	.custom-search-input{ padding:15px;}
 
 /* .meta-info li:after{    content: "";
     width: 1px;
