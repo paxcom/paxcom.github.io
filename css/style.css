@@ -1635,7 +1635,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 
 
 /******************BLOG*************************/
-.single-post-excerpt{border: 1px dashed #ddd; padding:0px 20px; margin:0 0 20px 0}
+.single-post-excerpt{border: 1px dashed #ddd; padding:0px 20px 20px 20px; margin:0 0 20px 0}
 .single-post-excerpt h4 a{color:#000; text-decoration:none;font-weight:700; font-size:18px;}
 .single-post-excerpt h4 a:hover{color:#ff9000}
 .meta-info{margin-bottom:15px;}
@@ -1659,7 +1659,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 	.paginator{ margin:20px 0; padding:0px;}
 	
 	.archive-title, .post-header h2{     color: #1a69aa;
-    padding-top: 0px;
+    padding-top: 0px; margin:0 0 30px 0;
     line-height: 30px;
     font-size: 30px;
     clear: both;     font-family: 'open_sanslight' !important;
