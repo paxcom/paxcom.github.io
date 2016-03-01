@@ -1657,6 +1657,14 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 	.list-group li{  font-family: calibri;  font-size: 17px; font-weight:500; padding:0;}
 	
 	.paginator{ margin:20px 0; padding:0px;}
+	
+	.archive-title, .post-header h2{     color: #1a69aa;
+    padding-top: 0px;
+    line-height: 30px;
+    font-size: 30px;
+    clear: both;     font-family: 'open_sanslight' !important;
+  
+    font-weight: 100;}
 
 /* .meta-info li:after{    content: "";
     width: 1px;
