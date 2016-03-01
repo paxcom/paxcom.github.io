@@ -1635,6 +1635,7 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 
 
 /******************BLOG*************************/
+.single-post-excerpt{border: 1px dashed #ddd; padding:20px;}
 .single-post-excerpt h4 a{color:#000; text-decoration:none;font-weight:700; font-size:18px;}
 .single-post-excerpt h4 a:hover{color:#ff9000}
 .meta-info{margin-bottom:15px;}
