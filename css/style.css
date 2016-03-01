@@ -115,6 +115,8 @@ body:before {
 	width: 0;
 }
 
+.label{ font-weight:normal;}
+
 .navbar-nav>li.active-style.active a{ background:none; }
 
 ul {
