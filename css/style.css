@@ -951,21 +951,20 @@ footer ul.social-icon li:hover {
     
 }
 .top-text {
-	background: #ffaa3b none repeat scroll 0 0;
-color: #fff;
-float: left;
-font-family: "RalewayExtraBold_0";
-font-size: 12px;
-font-weight: 900;
-margin-left: -19px;
- margin-top: -99px;
-padding: 5px 5px 5px 30px;
-position: relative;
--ms-transform: rotate(-6.7deg); /* IE 9 */
--webkit-transform: rotate(-6.7deg); /* Safari */
-transform: rotate(-6.7deg);
-
-z-index: 10;
+    background: #ffaa3b none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-family: "RalewayExtraBold_0";
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: -19px;
+    margin-top: -99px;
+    padding: 9px 5px 7px 30px;
+    position: relative;
+    -ms-transform: rotate(-6.7deg);
+    -webkit-transform: rotate(-6.7deg);
+    transform: rotate(-4.7deg);
+    z-index: 10;
 }
 ul.footer-nav {
 	width: 100%
@@ -1021,16 +1020,16 @@ ul.footer-nav li:after {
 	border-left: dashed 1.4142px #ff9306;
 }
 ul.footer-nav li:nth-child(4) {
-	top: 100px;
+	top: 115px;
 }
 ul.footer-nav li:nth-child(3) {
-	top: 80px;
+	top: 100px;
 }
 ul.footer-nav li:nth-child(2) {
-	top: 60px;
+	top:90px;
 }
 ul.footer-nav li:nth-child(1) {
-	top: 50px;
+	top: 75px;
 	margin-right: 50px;
 }
 .footer-webstore {
@@ -1100,18 +1099,18 @@ ul.footer-nav li:nth-child(1) {
 	padding-top: 82px;
 }
 .bg:before {
-	border-bottom: 107px solid #ff9000;
-	border-left: 1059px solid transparent;
-	border-right: 400px solid transparent;
-	content: "";
-	position: absolute;
-	top: 52px;
-	width: 100%;
-	z-index: 1;
+	border-bottom: 130px solid #ff9000;
+    border-left: 1632px solid transparent;
+    border-right: 100px solid transparent;
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 1;
 }
 .bg:after {
-	border-bottom: 141px solid #ffaa3b;
-	border-left: 1090px solid transparent;
+	border-bottom: 130px solid #ffaa3b;
+	border-left: 1500px solid transparent;
 	border-right: 311px solid transparent;
 	content: "";
 	left: -8px;
