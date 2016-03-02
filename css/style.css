@@ -672,12 +672,17 @@ ul.client-logo li {
 
 
 .paxcom-intro-outter{
-display: table;
-height: calc(100% - (70px + 365px));
-left: 60px;
+
 margin: 0 auto;
 position: absolute;
-top: 120px;
+height:300px;
+max-width:1170px;
+width:100%;
+left:50%;
+top:40%;
+margin-top:-150px;
+margin-left:-585px;
+
 padding: 0 20px;
 		
 }
@@ -1139,9 +1144,9 @@ ul.footer-nav li:nth-child(1) {
 	
 }
 .bg:before {
-	border-bottom: 130px solid #ff9000;
-    border-left: 1632px solid transparent;
-    border-right: 100px solid transparent;
+	border-bottom: 127px solid #ff9000;
+    border-left: 1694px solid transparent;
+    border-right: 0px solid transparent;
     content: "";
     position: absolute;
     top: 30px;
@@ -1149,14 +1154,14 @@ ul.footer-nav li:nth-child(1) {
     z-index: 1;
 }
 .bg:after {
-	border-bottom: 130px solid #ffaa3b;
-	border-left: 1500px solid transparent;
-	border-right: 311px solid transparent;
-	content: "";
-	left: -8px;
-	position: absolute;
-	top: 0;
-	z-index: 0;
+	    border-bottom: 130px solid #ffaa3b;
+    border-left: 1548px solid transparent;
+    border-right: 20000382px solid transparent;
+    content: "";
+    left: -8px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
 }
 .mountain, .mountain-two, .mountain-three {
 	position: absolute;
@@ -1396,6 +1401,19 @@ ul.footer-nav li:nth-child(1) {
 
   .paxcom-into-text em:before{ display:none; } 
  .paxcom-into-text em{padding-left:0; text-align:left;}
+ 
+ 
+ .paxcom-intro-outter{margin: 0 auto;
+position: relative;
+height:auto;
+max-width:auto;
+width:100%;
+left:0;
+top:0;
+margin-top:0;
+margin-left:0;
+
+padding: 0 20px;}
 	
 	}
 	
@@ -1423,8 +1441,7 @@ ul.footer-nav li:nth-child(1) {
 
 .navbar-default .navbar-toggle .icon-bar{ background-color:#FFFFFF;}
 .footer-webstore{ text-align:left;}
-.paxcom-intro-outter{ position:relative !important;; top:0 !important; display:block;
-height:auto; left:0 !important; padding:100px 15px 0 15px; }
+
 
 .top-nav-bar ul{ height:30px; padding-top:6px;}
 ul.client-logo li {
@@ -1664,6 +1681,20 @@ position: absolute; bottom:auto;}
 .overview-container .btn.top {
 	height: auto;
 }
+
+
+.paxcom-intro-outter{margin: 0 auto;
+position: relative;
+height:auto;
+max-width:auto;
+width:100%;
+left:0;
+top:0;
+margin-top:0;
+margin-left:0;
+
+padding: 0 20px;}
+
 
 footer .copyright{ text-align:center !important;}
 footer ul.social-icon{ float:none !important; margin:0 auto; }
