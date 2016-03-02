@@ -2,46 +2,26 @@
 
 <div class="blog-right-sidebar">
   <div class="custom-search-input">
-  <form action="{{site.baseurl}}/search" method="GET">
-    <div class="input-group col-md-12">
-    
-      <input type="text" class="  search-query form-control" name="query" placeholder="Search...">
-      <span class="input-group-btn">
-      <button class="btn btn-primary" type="button"> <span class=" glyphicon glyphicon-search"></span> </button>
-      </span> 
-      
-        
-      
-      
-      
-      
-      </div>
-       </form>
+    <form action="{{site.baseurl}}/search" method="GET">
+      <div class="input-group col-md-12">
+        <input type="text" class="  search-query form-control" name="query" placeholder="Search...">
+        <span class="input-group-btn">
+        <button class="btn btn-primary" type="button"> <span class=" glyphicon glyphicon-search"></span> </button>
+        </span> </div>
+    </form>
   </div>
   <div class="panel ">
-  
-  
-  
-  <div class="{% if page.url == '/category.html'  %} hide-cat {% endif %}">
-    <div class="panel-heading">
-      <h4>CATEGORIES </h4>
+    <div class="{% if page.url == '/category.html'  %} hide-cat {% endif %}">
+      <div class="panel-heading">
+        <h4>CATEGORIES </h4>
+      </div>
+      <ul class="categories-list" >
+        {% assign tags = site.tags | sort %}
+        {% for tag in tags %}
+        <li > <a href="{{ site.baseurl }}/category.html#{{ tag | first | slugify }}/"> {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a> </li>
+        {% endfor %}
+      </ul>
     </div>
-    <ul class="categories-list" >
-      
-      {% assign tags = site.tags | sort %}
-    {% for tag in tags %} 
-    
-    <li > <a href="{{ site.baseurl }}/category.html#{{ tag | first | slugify }}/">  {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})</a> </li>
-    
-   {% endfor %}
-    </ul>
-    
-
-    
-    </div>
-    
-    
-    
     <div class="panel-heading">
       <h4>POPULAR POSTS</h4>
     </div>
