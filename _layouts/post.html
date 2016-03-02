@@ -2,15 +2,15 @@
 {% include head.html %}
 <body>
 {% include header.html%}
-<div class="container">
+<div class="container blog-top-space">
   <div class="row"> 
     <!-- main content start here -->
-    <div class="col-md-8"> 
+    <div class="col-md-8 list-style"> 
     	{% include post-header.html%}
       {% include post-content.html%}
       {% include post-footer.html%}
       <div id="home" class="grid post">
-        <div class="unit whole">
+        <div class="unit whole ">
           <article>
             <div class="listing"> {% for post in paginator.posts %}
               <article>
@@ -29,7 +29,7 @@
     </div>
     
     <!-- Aside start here -->
-    <div class="col-md-4"> {% include aside.html%} </div>
+    <div class="col-md-4 "> {% include aside.html%} </div>
   </div>
   <div class="clearfix"></div>
 </div>

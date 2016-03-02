@@ -125,6 +125,8 @@ $(function(){
         return true;
     });
     
+	
+	
     
     var onScroll = function (side) {
         if(window.animating){
@@ -242,3 +244,4 @@ var multipleScrolling = function ( side ) {
         return true;
     }
 }
+

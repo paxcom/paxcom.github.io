@@ -1,13 +1,16 @@
 <header class="scroll-section">
-  <div class="logo"> <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/logo.png" alt="#"/></a></div>
+  <div class="logo"> <a href="{{ site.baseurl }}/"> <img src="{{ site.baseurl }}/images/logo.png" alt="Paxcom Logo"/></a></div>
 <nav class="top-nav-bar">
 <div class="nav-toggle-icon"> <i class="fa fa-bars"></i> </div>
     <ul class="nav-display-none">
       <!--  <li> <a href="#">products </a> </li> -->
+
       <li> <a href="{{site.baseurl}}/about-us.html" {% if page.url == '/about-us.html' %} class='active' {% endif %}>About us </a></li>
       <li > <a   href="{{site.baseurl}}/our-team.html" {% if  page.url == '/our-team.html' %} class='active'{% endif %}>Team </a></li>
       <li > <a   href="{{site.baseurl}}/contact-us.html" {% if page.url == '/contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
-      <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html" or  page.layout =="post" %} class='active'{% endif %}>Blog </a></li>
+
+      <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html"  or page.layout == "post" %} class='active'{% endif %}>Blog </a></li>
+
     <!--  <li> <a href="#"> Career </a></li> -->
     </ul>
   </nav>
