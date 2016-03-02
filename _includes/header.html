@@ -8,7 +8,7 @@
       <li> <a href="{{site.baseurl}}/about-us.html" {% if page.url == '/about-us.html' %} class='active' {% endif %}>About us </a></li>
       <li > <a   href="{{site.baseurl}}/our-team.html" {% if  page.url == '/our-team.html' %} class='active'{% endif %}>Team </a></li>
       <li > <a   href="{{site.baseurl}}/contact-us.html" {% if page.url == '/contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
-      <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html" %} class='active'{% endif %}>Blog </a></li>
+      <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html"  or page.layout == "post" %} class='active'{% endif %}>Blog </a></li>
 
     <!--  <li> <a href="#"> Career </a></li> -->
     </ul>

@@ -11,8 +11,25 @@
                             </div>
                         </div>
 <div class="panel ">
+
+    <div class="panel-heading">
+    <h4>CATEGORIES</h4>
+  </div>
+  
+  <ul class="categories-list" >
+  	{% for post in site.posts limit: 5 %}
+    <li > <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.categories }}  </a>
+      
+    </li>
+    {% endfor %}
+  
+  
+  
+  
+  </ul>
+
   <div class="panel-heading">
-    <h4>Latest Posts</h4>
+    <h4>POPULAR POSTS</h4>
   </div>
   <ul class="list-group">
     {% for post in site.posts limit: 5 %}
@@ -21,6 +38,9 @@
     </li>
     {% endfor %}
   </ul>
+  
+
+  
 </div> </div>
 
 <!--{% if page.layout == "post" %}
