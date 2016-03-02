@@ -182,10 +182,32 @@ a:hover{ text-decoration:none; color:#ff9000; }
 .top-nav-bar ul li a {
 	color: #222222;
 	text-decoration: none;
+	 position:relative;
+	 padding:10px 0 5px 0;
+	 
 
 }
-.top-nav-bar ul li a:hover, .top-nav-bar ul li a.active{color:#ff9000; border-bottom:solid 3px #ff9000;
-} 
+
+.top-nav-bar ul li a:after, .top-nav-bar ul li a.active:after {
+    position:absolute;
+    bottom:0;
+    left:50%;
+	border-bottom:solid 3px #ff9000;
+    width:0%;
+    background-color:#ff9000;
+    display:block;
+    content:'';
+    transition:0.3s;
+}
+
+.top-nav-bar ul li a.active{ border-bottom:solid 3px #ff9000; padding:10px 0 2px 0;}
+
+.top-nav-bar ul li a:hover:after{
+    left:0;
+    width:100%;
+}
+
+.top-nav-bar ul li a.active:after, .top-nav-bar ul li a:hover.active:after{ border-bottom:none;}
 
 
 
@@ -1824,3 +1846,8 @@ ul.footer-nav{ max-width:150px; margin:auto;}
 	
 	.comment-footer{ margin:20px 0; border: 1px solid #e2e2e2;
     border-bottom: 2px solid #e2e2e2; padding:20px;}
+.cat-div{padding-top:15px}
+.cat-div ul li>h3{margin-top:px;}
+.cat-div ul li>ul li{padding:0px;}
+.cat-div ul li>ul li h4{margin:0px;}
+.hide-cat{display:none}
