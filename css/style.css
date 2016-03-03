@@ -741,7 +741,7 @@ padding: 0 20px;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
-.text {
+.btn-text {
 
   font-size: 15px;
   line-height: 32px;
