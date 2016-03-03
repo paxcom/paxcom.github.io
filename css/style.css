@@ -696,20 +696,67 @@ ul.client-logo li {
 .paxcom-intro-outter{
 
 margin: 0 auto;
-position: absolute;
-height:300px;
+position: relative;
+
 max-width:1170px;
 width:100%;
-left:50%;
-top:40%;
-margin-top:-150px;
-margin-left:-585px;
-
 padding: 0 20px;
 		
 }
 
 
+.paxcom-services{ padding:70px 15px 0px 15px;}
+.icon-org{ font-size:12px; color:#ff9000; vertical-align:top; padding-top:10px;}
+.icon-blue{ font-size:12px; color:#1a69aa; vertical-align:top; padding-top:10px;}
+.icon-pink{ font-size:12px; color:#f49ac1; vertical-align:top; padding-top:10px;}
+
+.border-line{ border-top:solid 1px #2d2a2a; width:100%; padding:10px 0; }
+.border-line-blue{ border-top:solid 3px #003560; padding:10px 0; width:150px;}
+
+
+.btn-view-channel{ margin:20px 0; }
+.btn-view-channel a{ text-decoration:none; padding:10px 20px; text-align:center; color:#000000; border:solid 1px #000000;
+ background: #fff;
+
+	  float:left;
+    transition:all 0.5s ease;
+}
+.btn-view-channel a:hover{ background-color:#ff9000;  color:#FFFFFF; border:solid 1px #ff9000;}
+
+
+.btn-services {
+  position: relative;
+
+
+  transform: translateY(-50%);
+	  margin: 100px auto 0 auto;
+  width: 320px;  
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #000;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 5px;
+  color: #000;
+  top: -50px;
+  text-align:center;
+  position: relative;
+}
+.btn-services:hover .shape {
+  stroke-width: 2px;
+   stroke: #ff9000;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
 
 
 .product-info-popup .modal-header {
@@ -967,7 +1014,7 @@ footer ul.social-icon li:hover {
 .footer-outter {
 	bottom: 0px;
 	width: 100%;
-	position:absolute;
+	position: relative;
 	overflow-x:hidden;
 	overflow-y:visible;
 	padding-top:60px;
@@ -1605,8 +1652,10 @@ header .logo {
 }
 .top-nav-bar ul li a:hover {
 	color: #FFFFFF;
-	padding: 10px 0 0 0;
+	padding: 10px 0 7px 0;
 }
+
+.top-nav-bar ul li a.active{ padding: 10px 0 4px 0;}
 .navbar-default .navbar-toggle .icon-bar {
 	color: #fff;
 }
@@ -1689,7 +1738,7 @@ width: 100%;
 overflow-x: hidden;
 overflow-y: visible;
 padding-top: 60px;
-position: absolute; bottom:auto;}
+position: relative; bottom:auto;}
 
 
  .footer-info{ padding:0px;}
@@ -1700,7 +1749,7 @@ position: absolute; bottom:auto;}
  .paxcom-into-text em{padding-left:0; text-align:left;}
  
  .bg:after {
-    border-bottom: 141px solid #ffaa3b;}
+   border-bottom: none;}
  }
 
 
