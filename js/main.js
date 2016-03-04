@@ -5,6 +5,7 @@ var overviewScrolling = false;
 var preventScrolling = false;
 var preventScrollTimeout = 1000;
 var previousTime = new Date().getTime();
+var multipleScrollingEnabled = true;
 var changeslideAuto = function(){
     var slidesCount = $('.slides-heads').children().length
     var activeHeadIndex = $('.slides-heads').find('.active-slide-head').index();
@@ -70,23 +71,7 @@ $(function(){
             iframe.attr("src", iframe.data("src"));    
         }
 	});
-    // $(window).bind('DOMMouseScroll mousewheel',function (event) {
-    //     if(preventScrolling){
-    //         return false;
-    //     }
-    //     preventScrolling = true;
-    //     setTimeout(function() {
-    //         preventScrolling = false;
-    //     }, preventScrollTimeout);
-    //     console.log(event.originalEvent.detail,event.originalEvent.wheelDelta)
-    //     if(event.originalEvent.detail > 0 || event.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
-    //         //down
-    //         return onScroll('down');
-    //     }else{
-    //         //up
-    //         return onScroll('up');
-    //     }
-    // });
+    
     var $scrollElements = $('.scroll-section');
 
     if($('#scroll-page').length > 0){
@@ -125,9 +110,6 @@ $(function(){
         return true;
     });
     
-	
-	
-    
     var onScroll = function (side) {
         if(window.animating){
             return false;
@@ -147,7 +129,7 @@ $(function(){
         }
         if(currentElementIndex !== nextElementIndex){
             currentElement = $scrollElements.eq(currentElementIndex);
-            if(currentElement.hasClass('scroll-multiple')){
+            if(multipleScrollingEnabled && currentElement.hasClass('scroll-multiple')){
                 if(multipleScrolling(side)){
                     return false;
                 }
@@ -155,12 +137,15 @@ $(function(){
             nextElement = $scrollElements.eq(nextElementIndex);
             currentElement.removeClass('scroll-active');
             nextElement.addClass('scroll-active');
-            scrollToElement(nextElement);
+            if(nextElementIndex === 0){
+                scrollToTop();
+            }else{
+                scrollToElement(nextElement);
+            }
         }
         return false;
     }
     
-	
 	$(".page-scroll").click(function(event){
 		$(".navbar-ex1-collapse").removeClass("in");
         var targetId = $(event.target).attr('href')
@@ -227,6 +212,7 @@ var multipleScrolling = function ( side ) {
         //scroll down
             activeHeadIndex++;
             if(activeHeadIndex >= slidesCount){
+                multipleScrollingEnabled = false;
                 return false;
             }
             $('.slides-heads .slide-head').eq(activeHeadIndex).find('a').click();
