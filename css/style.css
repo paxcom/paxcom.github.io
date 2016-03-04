@@ -1753,6 +1753,8 @@ position: relative; bottom:auto;}
  
  .bg:after {
    border-bottom: none;}
+   
+   .box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red{ margin-top:0px; padding-top:20px;}
  }
 
 
@@ -1768,7 +1770,7 @@ position: relative; bottom:auto;}
 
 }	
 	
-	
+	.box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red{ margin-top:0px; padding-top:20px;}
 	
 	
 .overview-container .btn.top {
