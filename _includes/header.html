@@ -3,15 +3,27 @@
 <nav class="top-nav-bar">
 <div class="nav-toggle-icon"> <i class="fa fa-bars"></i> </div>
     <ul class="nav-display-none">
-      <!--  <li> <a href="#">products </a> </li> -->
+      <!--  <li> <a href="#">products </a> </li> --> 
+   <li class="dropdown"> <a href="#" class="dropdown-toggle {% if page.url == '/products/pim/' or page.url == '/products/pim/index.html' or page.url == '/products/eGenie/index.html' or page.url == '/products/eGenie/' or page.url == '/products/kinator/' or page.url == '/products/kinator/index.html' or page.url == '/products/insights/index.html' or page.url == '/products/insights/'  %}  active {% endif %} " data-toggle="dropdown"  >Products</a>   <span class="caret"></span>
+           <ul class="dropdown-menu">
+    <li><a href="{{ site.baseurl }}/products/pim"> Pim </a></li>
+      <li><a href="{{ site.baseurl }}/products/insights">Insights  </a></li>
+    <li><a href="{{ site.baseurl }}/products/eGenie"> eGenie</a></li>
+    <li><a href="{{ site.baseurl }}/products/kinator">Kinator</a></li>
+  
+    </ul>
+      </li>
+         <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html"  or page.layout == "post" %} class='active'{% endif %}>Blog </a></li>
+         
+       <li > <a   href="{{site.baseurl}}/our-team.html" {% if  page.url == '/our-team.html' %} class='active'{% endif %}>Team </a></li>
+       <li> <a href="{{site.baseurl}}/about-us.html" {% if page.url == '/about-us.html' %} class='active' {% endif %}>About us </a></li>
+       <li > <a   href="{{site.baseurl}}/contact-us.html" {% if page.url == '/contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
 
-      <li> <a href="{{site.baseurl}}/about-us.html" {% if page.url == '/about-us.html' %} class='active' {% endif %}>About us </a></li>
-      <li > <a   href="{{site.baseurl}}/our-team.html" {% if  page.url == '/our-team.html' %} class='active'{% endif %}>Team </a></li>
-      <li > <a   href="{{site.baseurl}}/contact-us.html" {% if page.url == '/contact-us.html' %} class='active'{% endif %}>Contact Us </a></li>
-
-      <li > <a   href="{{site.baseurl}}/blog" {% if page.url == '/blog/' or page.url == "/blog/index.html"  or page.layout == "post" %} class='active'{% endif %}>Blog </a></li>
+   
 
     <!--  <li> <a href="#"> Career </a></li> -->
     </ul>
   </nav>
+  
+  
 </header>
