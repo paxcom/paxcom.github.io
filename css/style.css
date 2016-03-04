@@ -1940,3 +1940,101 @@ ul.benefit-list li:before{
 .integrations-section p{font-size:20px;}
 
 .text-orange{color:#ff9000}
+.text-black{color:#000}
+
+
+
+.thumbnailOuter{ display:table;  height:170px; width:99%; margin-bottom:2px; margin-right:2px; float:left;}
+a.custom-thumbnail {
+    display: table-cell;
+    line-height: normal;
+    margin-bottom: 0;
+    text-align: center;
+    transition: border 0.2s ease-in-out 0s;
+	color:#fff;
+	font-size:13px; 
+	text-transform:uppercase;
+	vertical-align:middle;
+	background: #17171f; /* Old browsers */
+
+}
+
+a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
+}
+
+
+
+.tabcontent{margin:0 auto; width:90%;}
+.bgimgchange{margin-top:60px;}
+.bgimgchange .col-lg-2 {
+    padding: 0px;
+}
+
+
+
+.float {
+	display: inline-block;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0,0,0,0)
+}
+.float:active, .float:focus, .float:hover {
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px)
+}
+
+.features {
+    padding-bottom: 51px;
+    text-align: left;
+}
+.features .feature {
+    background: none repeat scroll 0 0 white;
+    border-radius: 3px;
+    float: left;
+    height: 430px !important;
+    margin-bottom:0px;
+    padding: 0;
+}
+.features .feature-icon {
+    background: none repeat scroll 0 0 activecaption;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.features .feature-icon img {margin: 0px; padding: 0px; width: 100%;}
+
+.features .feature h5 {
+    color: #202020;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+.features .feature p {
+    font-size: 14px;
+}
+
+.custom-list {
+    float: left;
+   margin: 15px 0 0;
+    padding: 0;
+    width: 100%;
+}
+.custom-list li {
+    list-style: outside none none;
+    margin: 0;
+    padding:10px 20px 0px 40px;
+    background: url("../images/tick-icon.png") no-repeat scroll 15px 14px ;)
+}
+a.feature ul.custom-list li	{color:#4c4c4c;}
+a.feature:hover ul.custom-list li	{color:#209acd;}
+.col5pad p i {
+    margin-right: 5px;
+}
