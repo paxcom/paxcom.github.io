@@ -218,6 +218,13 @@ a:hover{ text-decoration:none; color:#ff9000; }
 .top-nav-bar .dropdown-menu li a{ padding:10px 10px; color:#000; text-transform:inherit;  }
 .top-nav-bar .dropdown-menu li a:hover{ background-color:#f78f1e; color:#FFFFFF; }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin:5px 0 0 10px;
+ }
+ 
+ .caret{  margin-top:-4px;}
+
 .top-nav-bar .dropdown-menu li a:after{ border-bottom:none;}
 
 .navbar {
@@ -1072,7 +1079,7 @@ ul.icons-group li {
 	display: inline-block;
 	margin-right: 10px;
 	position: relative;
-	width: 150px;
+	width: 152px;
 	height: 86.60px;
 	background-color: #ffffff;
 	border-left: dashed 1px #ff9306;
@@ -1131,7 +1138,9 @@ ul.icons-group li:nth-child(1) {
 	margin-right: 50px;
 }
 
-ul.icons-group li:hover{ box-shadow:0 0 10px #000;}
+ul.icons-group li:hover{  border-left:solid 3px #ffaa3b;  border-right:solid 3px #ffaa3b;}
+ul.icons-group li:hover:after{  border-bottom:solid 3px #ffaa3b;  border-left:solid 3px #ffaa3b;}
+ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:solid 3px #ffaa3b;}
 
 .webstore {
 	color: #fff;
@@ -1372,6 +1381,8 @@ width:110%;
 
 }
 
+.sidebar .custom-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}
+
 .services-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}
 
 
@@ -1463,7 +1474,7 @@ ul.icons-group li {
 	display: inline-block;
 	margin-right: 10px;
 	position: relative;
-	width: 150px;
+	width: 151px;
 	height: 86.60px;
 	background-color: #ffffff;
 	border-left: dashed 1px #ff9306;
@@ -1488,6 +1499,8 @@ ul.icons-group li a img {
 ul.icons-group li a:hover {
 	color: #f34217
 }
+
+
 ul.icons-group li:before, ul.icons-group li:after {
 	content: "";
 	position: absolute;
@@ -1500,6 +1513,11 @@ ul.icons-group li:before, ul.icons-group li:after {
 	background-color: inherit;
 	left: 20.9670px;
 }
+
+ul.icons-group li:hover:before{}
+
+
+
 ul.icons-group li:before {
 	top: -53.0330px;
 	border-top: dashed 1.4142px #ff9306;
@@ -1556,7 +1574,7 @@ padding:0 20px; }
 	
 }
 
-.caret{ color:#FFFFFF;}
+.caret{ color:#FFFFFF; margin-top:-4px;}
 .top-nav-bar .dropdown-menu{ height:auto;}
 .team-list-outer{ height:auto;}
 
@@ -2081,6 +2099,8 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
 .features .feature p {
     font-size: 14px;
 }
+
+
 
 .custom-list {
     float: left;
