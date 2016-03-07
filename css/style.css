@@ -2115,7 +2115,8 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
 .custom-list li {
     list-style: outside none none;
     margin: 0;
-    padding:10px 20px 0px 40px;
+    padding:10px 20px 0px 40px;	
+    background: url(../images/tick-icon.png) no-repeat scroll 15px 14px;
   
 }
 a.feature ul.custom-list li	{color:#4c4c4c;}
@@ -2123,3 +2124,27 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 .col5pad p i {
     margin-right: 5px;
 }
+.eGenie-list {margin-top:60px;}
+.eGenie-list li{list-style:none; text-align:left; font-size:25px; font-family: 'open_sanslight'; margin-bottom:30px;} 
+.eGenie-list li span{ color:#000000; font-weight:600;font-family: 'Open Sans', sans-serif; }
+.eGenie-list li:before{ color:#0064d2; font-family:'FontAwesome'; content:"\f00c"; font-size:25px; margin-right:20px; }
+.eGenie-overview-img{text-align:left}
+@media (min-width: 768px) and (max-width: 991px) {
+	.eGenie-list li{font-size:22px; } 
+	.features .feature h5{padding:5px 20px}
+	.custom-list{ margin: 5px 0 0;}
+	.custom-list li{ padding: 5px 20px 0 40px;background: rgba(0, 0, 0, 0) url("../images/tick-icon.png") no-repeat scroll 15px 10px}
+	ul.client-logo li{width:48%;}
+	ul.client-logo li img{max-width:100%} 
+	
+}
+@media (max-width: 767px) {
+	#overview, #integrations, #benefits{height:auto !important}
+	#integrations, #benefits{padding:10px 0px 20px;}
+	.integrations-section{height:auto; margin:15px 0px; padding:20px;}
+	.eGenie-list{margin-top:20px;}
+	.eGenie-list li{font-size:18px; margin-bottom:10px;}
+	.eGenie-list li:before{font-size:18px; margin-right:10px; }
+	.float{margin-bottom:10px;}
+	.eGenie-overview-img{text-align:center;}
+}		
