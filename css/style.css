@@ -1178,10 +1178,10 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	
 	.sub-heading{font-size: 17px;
     color: #526069;
-    font-family: 'RalewayRegular_0'; }
-	.sub-heading:first-child{ margin-top:15px;}
+    font-family: 'RalewayRegular_0'; position:relative; z-index:99; }
+	.sub-heading:first-child{ margin-top:15px; }
 	
-	ul.list-menu{ margin:10px 0 10px 0px; }
+	ul.list-menu{ margin:10px 0 10px 0px; position:relative; z-index:99; }
 	
 	ul.list-menu li{ font-size: 17px;
     color: #526069;
