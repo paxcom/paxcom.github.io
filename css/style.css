@@ -1061,14 +1061,16 @@ min-height:100vh; margin-top:-90px;}
     font-family: "RalewayExtraBold_0";
     font-size: 12px;
     font-weight: 900;
-    margin-left: -19px;
-    margin-top: -94px;
-    padding: 5px 5px 4px 30px;
+    margin-left: -20px;
+    margin-top: -47px;
+    height: 32px;
+    padding: 7px 5px 4px 30px;
     position: relative;
-    -ms-transform: rotate(-6.7deg);
-    -webkit-transform: rotate(-6.7deg);
-    transform: rotate(-4.8deg);
+    -ms-transform: rotate(-4.4deg);
+    -webkit-transform: rotate(-4.4deg);
+    transform: rotate(-4.4deg);
     z-index: 10;
+
 }
 
 ul.icons-group {
@@ -1125,17 +1127,17 @@ ul.icons-group li:after {
 	border-left: dashed 1.4142px #ff9306;
 }
 ul.icons-group li:nth-child(4) {
-	top: 115px;
+	top: 163px;
 }
 ul.icons-group li:nth-child(3) {
-	top: 100px;
+	top: 150px;
 }
 ul.icons-group li:nth-child(2) {
-	top:90px;
+	top:140px;
 }
 ul.icons-group li:nth-child(1) {
-	top: 75px;
-	margin-right: 50px;
+	top: 128px;
+
 }
 
 ul.icons-group li:hover{  border-left:solid 3px #ffaa3b;  border-right:solid 3px #ffaa3b;}
@@ -1223,39 +1225,37 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	
 }
 
-.bg {
-	overflow-x: hidden;
-	overflow-y: visible !important;
-	position: relative;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding-top: 82px;
-	
+.bg { overflow-x: hidden;
+    overflow-y: visible !important;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 82px;
 }
 .bg:before {
-	border-bottom: 127px solid #ff9000;
-    border-left: 1694px solid transparent;
+    border-bottom: 151px solid #ff9000;
+    border-left: 2044px solid transparent;
     border-right: 0px solid transparent;
     content: "";
     position: absolute;
-    top: 30px;
+    top: 54px;
     width: 100%;
     z-index: 1;
 }
 .bg:after {
-	border-bottom: 133px solid #ffaa3b;
-border-left: 2000px solid transparent;
-border-right: -182px solid transparent;
-content: "";
-left: -133px;
-position: absolute;
-top: -7px;
-z-index: 0;
--ms-transform: rotate(7deg);
--webkit-transform: rotate(7deg);
-transform: rotate(-1deg);
-width:110%;
+    border-bottom: 167px solid #ffaa3b;
+    border-left: 2543px solid transparent;
+    border-right: -182px solid transparent;
+    content: "";
+    left: -133px;
+    position: absolute;
+    top: -7px;
+    z-index: 0;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(-1deg);
+    width: 110%;
 }
 .mountain, .mountain-two, .mountain-three {
 	position: absolute;
@@ -1298,10 +1298,10 @@ width:110%;
 	border-top: 25px solid #ceeaf6;
 }
 .product-text-info {
-	background: #ff9000 none repeat scroll 0 0;
-	 margin-top: 75px;
-    padding-bottom: 10px;
-    padding-top: 50px;
+    background: #ff9000 none repeat scroll 0 0;
+    margin-top: 90px;
+    padding-bottom: 15px;
+    padding-top: 30px;
 }
 
 
@@ -1439,7 +1439,7 @@ min-height:auto; margin-top:0;}
     font-size: 12px;
     font-weight: 900;
     margin-left: -19px;
-    margin-top: -67px;
+    margin-top: -57px;
     padding: 5px 5px 5px 30px;
     position: relative;
   -ms-transform: rotate(0deg); /* IE 9 */
@@ -1552,6 +1552,18 @@ margin-left:0;
 
 padding:0 20px; }
 .paxcom-into-text h1{ font-size:50px;}
+
+
+.bg::before {
+    border-bottom: 151px solid #ff9000;
+    border-left: 2044px solid transparent;
+    border-right: 0px solid transparent;
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 1;
+}
 	
 	}
 	
