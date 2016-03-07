@@ -1179,12 +1179,12 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
     font-family: 'RalewayRegular_0'; }
 	.sub-heading:first-child{ margin-top:15px;}
 	
-	ul.list-menu{ margin:10px 0 10px 20px; }
+	ul.list-menu{ margin:10px 0 10px 0px; }
 	
 	ul.list-menu li{ font-size: 17px;
     color: #526069;
 	 border-left:solid 1px #ff9000;
-	 padding:5px 22px;
+	 padding:6px 22px;
     font-family: 'RalewayRegular_0'; display:block;   }
 	
 	
@@ -1222,17 +1222,7 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	padding-left:80px;
 	
 }
-.paxcom-into-text em:before {
-	background: #8b959c none repeat scroll 0 0;
-	content: "";
-	display: block;
-	height: 1px;
-	left: 0;
-	margin-top: 12px;
-	opacity: 0.3;
-	position: absolute;
-	width: 80px;
-}
+
 .bg {
 	overflow-x: hidden;
 	overflow-y: visible !important;
@@ -1561,6 +1551,7 @@ margin-top:0;
 margin-left:0;
 
 padding:0 20px; }
+.paxcom-into-text h1{ font-size:50px;}
 	
 	}
 	
@@ -1830,6 +1821,7 @@ position: relative; bottom:auto;}
    
    .box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red{ margin-top:0px; padding-top:20px;}
    .top-nav-bar .dropdown-menu li a:hover{ padding:10px;}
+   .paxcom-into-text h1{ font-size:50px;}
  }
 
 
@@ -1837,7 +1829,7 @@ position: relative; bottom:auto;}
 	.top-nav-bar .dropdown-menu{ margin:0px; height:auto; background-color:#FFFFFF;}
 .top-nav-bar .dropdown-menu li a:hover{ padding:10px;}
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
-	font-size: 40px; font-weight:100 !important;
+	font-size: 30px; font-weight:100 !important;
 	margin-bottom:40px;
 	color: #000;
 	text-shadow:0 0 0.5px #000; 
