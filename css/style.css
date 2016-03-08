@@ -2144,7 +2144,7 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	
 }
 @media (max-width: 767px) {
-	#overview, #integrations, #benefits, .features .feature, #relatedProducts, #clients{height:auto !important; padding:20px 0px;}
+	#overview, #integrations, #benefits, .features .feature, #relatedProducts, #clients{height:auto !important; padding:30px 0px;}
 	/*#integrations, #benefits{padding:10px 0px 20px;}*/
 	.integrations-section{height:auto; margin:15px 0px; padding:20px;}
 	.eGenie-list{margin-top:20px;}
@@ -2156,4 +2156,5 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	.features{padding-bottom:0px;}
 	.features .feature{padding: 0px;}
 	.top-main-part .wrap h1{ font-size:28px;}
+	.mtop30Mobile{margin-top:30px;}
 }		
