@@ -1785,6 +1785,7 @@ position: relative;
 -webkit-transform: rotate(0deg); /* Safari */
 transform: rotate(0deg);
 z-index: 10;
+height:auto;
 }
 
 .product-text-info {
@@ -1832,14 +1833,15 @@ position: relative; bottom:auto;}
    border-bottom: none;}
    
    .box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red{ margin-top:0px; padding-top:20px;}
-   .top-nav-bar .dropdown-menu li a:hover{ padding:10px;}
+   .top-nav-bar .dropdown-menu li a:hover{ padding:20px 10px;}
    .paxcom-into-text h1{ font-size:50px;}
  }
 
 
 @media(min-width:320px) and (max-width:667px) {
 	.top-nav-bar .dropdown-menu{ margin:0px !important; height:auto; background-color:#FFFFFF;}
-.top-nav-bar .dropdown-menu li a:hover{ padding:10px;}
+	.top-nav-bar .dropdown-menu li a{ padding:20px 10px;}
+
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
 	font-size: 30px; font-weight:100 !important;
 	margin-bottom:40px;
@@ -1899,8 +1901,8 @@ ul.icons-group{ max-width:150px; margin:auto;}
 .navbar-default .navbar-toggle{ border-color:#FFFFFF; }
 .navbar-default .navbar-toggle .icon-bar{background-color: #FFF !important;}
 
-.nav-toggle-icon{ width:35px; float:right; margin-top:-50px; height:30px; display:block; border:solid 1px #f78f1e; border-radius:3px; font-size:20px;
- padding:0px 0 0 0; margin-right:20px; text-align:center; color:#000; cursor:pointer;}
+.nav-toggle-icon{ width:35px; float:right; margin-top:-50px; height:40px; display:block; border:solid 1px #f78f1e; border-radius:3px; font-size:24px;
+ padding:2px 0 0 0; margin-right:20px; text-align:center; color:#000; cursor:pointer;}
  
  .nav-display-none{ display:none;}
  
@@ -2141,6 +2143,7 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	 #integrations, .benefits-kinator{height:auto !important}
 	.kinator-integrations .integrations-section{min-height:450px; margin:50px 0px; }
 	.benefits-kinator .overview-list.top-space, .benefits-kinator .overview-list.top-space1{margin:0px; padding:0px;}
+
 	
 }
 @media (max-width: 767px) {
