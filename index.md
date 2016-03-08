@@ -7,3 +7,4 @@ layout: default
 {% include howItWork.html %}
 {% include history.html %}
 {% include footer.html %}
+{% include scrollPage.html %}
