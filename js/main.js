@@ -165,7 +165,10 @@ $(function(){
 	
 	$(".nav-toggle-icon").click(function(){
     $(".top-nav-bar ul").toggleClass("nav-display-none");
+	   $(".nav-toggle-icon").toggleClass("active");
 });
+
+
 
 });
 

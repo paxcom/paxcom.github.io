@@ -237,6 +237,11 @@ a:hover{ text-decoration:none; color:#ff9000; }
 	transition-timing-function: linear;
 	-webkit-transition-timing-function: linear;
 }
+
+.img-desktop{display:block;   text-align:center; margin:auto;}
+.img-desktop img{ width:auto; max-width:100%; height:auto; text-align:center;}
+.img-mobile { display:none;}
+
 .product-demo {
 	font-size: 19px;
 	font-family: 'Roboto', sans-serif;
@@ -774,6 +779,8 @@ padding:120px 20px 0 20px;
 
 .bg-gray{ background-color:#F1F1F1; padding:70px 0;}
 .mirchimart-section{ padding:70px 0;}
+
+
 
 
 .product-info-popup .modal-header {
@@ -1833,14 +1840,16 @@ position: relative; bottom:auto;}
    border-bottom: none;}
    
    .box-bg-blue, .box-bg-org, .box-bg-black, .box-bg-red{ margin-top:0px; padding-top:20px;}
-   .top-nav-bar .dropdown-menu li a:hover{ padding:20px 10px;}
+
    .paxcom-into-text h1{ font-size:50px;}
+      .top-nav-bar .dropdown-menu li a:hover{ padding:10px 10px;}
  }
 
 
 @media(min-width:320px) and (max-width:667px) {
 	.top-nav-bar .dropdown-menu{ margin:0px !important; height:auto; background-color:#FFFFFF;}
 	.top-nav-bar .dropdown-menu li a{ padding:20px 10px;}
+	   .top-nav-bar .dropdown-menu li a:hover{ padding:20px 10px;}
 
 .paxcom-into-text h1{ font-family: 'RalewayThin_0' !important;
 	font-size: 30px; font-weight:100 !important;
@@ -1892,7 +1901,7 @@ footer ul.social-icon li{ margin:10px 5px;}
 }
 ul.icons-group{ max-width:150px; margin:auto;} 
 
-.top-nav-bar ul li{ display:block; float:right; background-color:#000000; width:100%; clear:both;}
+.top-nav-bar ul li{ display:block; float:right; background-color:#000000; width:100%; clear:both; padding:20px 10px;}
 .top-nav-bar ul li a:hover{ color:#377fc2; }
 .paxcom ul li.request-demo a{ color: #f78f1e; border-bottom:none; text-decoration:none;}
 .paxcom ul li.request-demo a:hover{ color:#FFFFFF; }
@@ -1903,6 +1912,8 @@ ul.icons-group{ max-width:150px; margin:auto;}
 
 .nav-toggle-icon{ width:35px; float:right; margin-top:-50px; height:40px; display:block; border:solid 1px #f78f1e; border-radius:3px; font-size:24px;
  padding:2px 0 0 0; margin-right:20px; text-align:center; color:#000; cursor:pointer;}
+ .nav-toggle-icon:hover{ background-color:#000000; color:#fff; border:#000000;}
+  .nav-toggle-icon.active{ background-color:#000000; color:#fff; border:#000000;}
  
  .nav-display-none{ display:none;}
  
@@ -2144,7 +2155,7 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	.kinator-integrations .integrations-section{min-height:450px; margin:50px 0px; }
 	.benefits-kinator .overview-list.top-space, .benefits-kinator .overview-list.top-space1{margin:0px; padding:0px;}
 
-	
+
 }
 @media (max-width: 767px) {
 	#overview, #integrations, #benefits, .features .feature, #relatedProducts, #clients{height:auto !important; padding:30px 0px;}
@@ -2160,4 +2171,18 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	.features .feature{padding: 0px;}
 	.top-main-part .wrap h1{ font-size:28px;}
 	.mtop40Mobile{margin-top:40px;}
+	
+.img-desktop{display:none;   text-align:center; margin:auto;}
+.img-desktop img{ width:auto; max-width:100%; height:auto; text-align:center;}
+.img-mobile{display:block;   text-align:center; margin:auto;}
+.img-mobile img{ width:auto; max-width:100%; height:auto; text-align:center;}
+.overview-container{ height:400px;}
+.products-icon{ width:320px; margin:auto;}
+ul.icons-group{max-width:320px;}
+ul.icons-group li:nth-child(4){ top:-107px !important;     left: -7px;
+} 
+ul.icons-group li:nth-child(2){ top:267px !important; left: -7px;}
+ul.icons-group li:nth-child(1){ top:267px !important; left: -7px;}
+ul.icons-group li:nth-child(3){ top:-107px !important; left: -7px;}
+.products-icon{ padding:0px;}
 }		
