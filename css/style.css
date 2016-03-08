@@ -1263,8 +1263,8 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
     position: absolute;
     top: -7px;
     z-index: 0;
-    -ms-transform: rotate(7deg);
-    -webkit-transform: rotate(7deg);
+    -ms-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
     transform: rotate(-1deg);
     width: 110%;
 }
@@ -1638,13 +1638,13 @@ ul.client-logo li {
 	border-radius: 50px;
 }
 .overview-container .btn a {
-	height: 50px;
+	height: 44px;
 	width: 40px;
 	padding: 10px 0;
 	font-size: 20px;
 }
 .overview-container .btn a:hover {
-	height: 50px;
+	height: 44px;
 	text-align: center;
 	width: 40px;
 }
@@ -1692,6 +1692,16 @@ ul.client-logo li {
 	font-size: 17px;
 	text-align: center;
 }
+
+.overview-container .top .tooltip {
+	position: absolute !important;
+	left: 35px !important;
+	font-size: 17px;
+	text-align: center;
+	width:320px;
+}
+
+
 .overview-container .left .tooltip {
 	position: absolute !important;
 	left: 60px !important;
@@ -2122,6 +2132,8 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
     font-size: 14px;
 }
 
+
+
 .custom-list {
     float: left;
    margin: 15px 0 0;
@@ -2146,8 +2158,6 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 .eGenie-list li span{ color:#000000; font-weight:600;font-family: 'Open Sans', sans-serif; }
 .eGenie-list li:before{ color:#0064d2; font-family:'FontAwesome'; content:"\f00c"; font-size:25px; margin-right:20px; }
 .eGenie-overview-img{text-align:left}
-
-.inline-block{display:inline}
 @media (min-width: 768px) and (max-width: 991px) {
 	.eGenie-list li{font-size:22px; } 
 	.features .feature h5{padding:5px 20px}
