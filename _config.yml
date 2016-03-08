@@ -21,6 +21,6 @@ highlighter: Pygments
 # Site Navigation
 #baseurl: /paxtrial
 
-disqus: jekyllblogsite
+disqus: paxcomblog
 
 
