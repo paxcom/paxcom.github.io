@@ -1,8 +1,8 @@
 ---
 layout: post
-tags: UI, Design
+tags: Support articles
 title: Data Collection and analysis for forming Sales Strategy in E-commerce
-post-by: Vivek 
+post-by: Paxcom Admin 
 ---
 
 This article presents insights into problems faced by companies in getting competitive information from e-commerce channels and what they can do in such a scenario.
