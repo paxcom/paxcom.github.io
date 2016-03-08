@@ -1355,7 +1355,7 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
     float: left;
 }
 
-.sidebar .custom-list {
+/*.sidebar .custom-list {
     float: left;
     margin: 0;
     padding: 0;
@@ -1369,9 +1369,9 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	font-family: calibri; font-size:17px;
 	
 
-}
+}*/
 
-.sidebar .custom-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}
+/*.sidebar .custom-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}*/
 
 .services-list li:before{content: "\f00c";   font-family: FontAwesome; position:absolute; left:40px;}
 
@@ -2019,7 +2019,7 @@ ul.benefit-list li:before{
 .benefit-box .benefit-icon{ width:50px; height:50px; border:2px solid #000; text-align:center; line-height:2.2em; margin:0px auto; font-size:20px; color:#fff; border-radius:50%;}
 
 #integrations {color:#fff;}
-.integrations-section{border:1px solid #3c3c49;   color:#fff; margin:80px 0px; padding:20px; background:#14141b; line-height:3em; height:300px;}
+.integrations-section{border:1px solid #3c3c49;   color:#fff; margin:80px 0px; padding:20px; background:#14141b; line-height:3em; height:340px;}
 .integrations-section p{font-size:20px;}
 
 .text-orange{color:#ff9000}
@@ -2116,6 +2116,7 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
     list-style: outside none none;
     margin: 0;
     padding:10px 20px 0px 40px;	
+	background: rgba(0, 0, 0, 0) url("../images/tick-icon.png") no-repeat scroll 15px 15px
 
   
 }
@@ -2137,9 +2138,13 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	ul.client-logo li{width:48%;}
 	ul.client-logo li img{max-width:100%} 
 	
+	 #integrations, .benefits-kinator{height:auto !important}
+	.kinator-integrations .integrations-section{min-height:450px; margin:50px 0px; }
+	.benefits-kinator .overview-list.top-space, .benefits-kinator .overview-list.top-space1{margin:0px; padding:0px;}
+	
 }
 @media (max-width: 767px) {
-	#overview, #integrations, #benefits{height:auto !important}
+	#overview, #integrations, #benefits, .features .feature{height:auto !important}
 	#integrations, #benefits{padding:10px 0px 20px;}
 	.integrations-section{height:auto; margin:15px 0px; padding:20px;}
 	.eGenie-list{margin-top:20px;}
@@ -2147,4 +2152,5 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 	.eGenie-list li:before{font-size:18px; margin-right:10px; }
 	.float{margin-bottom:10px;}
 	.eGenie-overview-img{text-align:center;}
+	.custom-list{margin-bottom:20px;}
 }		
