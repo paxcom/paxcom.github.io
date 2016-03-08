@@ -99,8 +99,11 @@ body {
 	font-weight: 100;
 	font-family: 'Roboto', sans-serif;
 	height:auto;
+	height:100%;
 	
 }
+
+html{ height:100%;}
 iframe{ border:none;}
 
 body:before {
@@ -1007,11 +1010,8 @@ footer ul.social-icon li:hover {
 .paxcom-section{width: 100%;
 float: left;
 top: 0px;
-position:relative;
- display:block;
  height:100%;
- height:100vh;
-min-height:100vh; margin-top:-90px;}
+ min-height:100%;  margin-top:-90px; }
 
 .paxcom ul li.request-demo {
 	padding-right: 35px;
@@ -1075,7 +1075,7 @@ min-height:100vh; margin-top:-90px;}
     margin-left: -20px;
     margin-top: -47px;
     height: 32px;
-    padding: 7px 5px 4px 30px;
+    padding: 7px 5px 4px 10px;
     position: relative;
     -ms-transform: rotate(-4.4deg);
     -webkit-transform: rotate(-4.4deg);
@@ -1420,7 +1420,7 @@ address {
 .paxcom-section{width: 100%;
 float: left;
 top: 0px;
-position:relative;
+
  display:block;
  height:auto;
  height:autp;
