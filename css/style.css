@@ -2116,7 +2116,7 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
     list-style: outside none none;
     margin: 0;
     padding:10px 20px 0px 40px;	
-	background: rgba(0, 0, 0, 0) url("../images/tick-icon.png") no-repeat scroll 15px 15px
+	background: rgba(0, 0, 0, 0) url("../images/tick-icon.png") no-repeat scroll 15px 10px
 
   
 }
