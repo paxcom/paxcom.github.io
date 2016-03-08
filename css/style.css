@@ -434,6 +434,10 @@ opacity:1;
 .nav-style .navbar-collapse {
 	padding: 0px;
 }
+
+.nav-style.navbar-default .navbar-toggle:focus, .nav-style.navbar-default .navbar-toggle:hover{ background-color:#000000; border:solid 1px #000000; color:#FFFFFF;}
+
+.navbar-collapse.display-none{ display:block;}
 section.intro-section {
 	color: #FFFFFF;
 	width: 100%;
@@ -1650,6 +1654,7 @@ ul.client-logo li {
 .overview-container .content {
 	max-width: 100%;
 	padding-left: 70px;
+	text-align:left;
 }
 .overview-container .btn.top {
 	left: 0;
@@ -1910,7 +1915,7 @@ ul.icons-group{ max-width:150px; margin:auto;}
 .navbar-default .navbar-toggle{ border-color:#FFFFFF; }
 .navbar-default .navbar-toggle .icon-bar{background-color: #FFF !important;}
 
-.nav-toggle-icon{ width:35px; float:right; margin-top:-50px; height:40px; display:block; border:solid 1px #f78f1e; border-radius:3px; font-size:24px;
+.nav-toggle-icon{ width:40px; float:right; margin-top:-50px; height:40px; display:block; border:solid 1px #f78f1e; border-radius:3px; font-size:24px;
  padding:2px 0 0 0; margin-right:20px; text-align:center; color:#000; cursor:pointer;}
  .nav-toggle-icon:hover{ background-color:#000000; color:#fff; border:#000000;}
   .nav-toggle-icon.active{ background-color:#000000; color:#fff; border:#000000;}
@@ -2185,4 +2190,5 @@ ul.icons-group li:nth-child(2){ top:267px !important; left: -7px;}
 ul.icons-group li:nth-child(1){ top:267px !important; left: -7px;}
 ul.icons-group li:nth-child(3){ top:-107px !important; left: -7px;}
 .products-icon{ padding:0px;}
+.sidebar{ margin-top:30px;}
 }		

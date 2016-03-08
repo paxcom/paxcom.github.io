@@ -146,7 +146,7 @@ $(function(){
         return false;
     }
     
-	$(".page-scroll").click(function(event){
+	$("a.page-scroll").click(function(event){
 		$(".navbar-ex1-collapse").removeClass("in");
         var targetId = $(event.target).attr('href')
         var currentElement = $scrollElements.filter('.scroll-active');
@@ -162,6 +162,7 @@ $(function(){
         scrollToElement(targetElement);
         event.preventDefault();
 	});
+	
 	
 	$(".nav-toggle-icon").click(function(){
     $(".top-nav-bar ul").toggleClass("nav-display-none");
