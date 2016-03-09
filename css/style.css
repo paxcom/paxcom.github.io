@@ -157,6 +157,8 @@ h5 {
 	font-size: 20px;
 	font-weight: 900;
 }
+
+.img-inline{ display:inline;}
 header {
 	padding: 0px 20px;
 	width: 100%;
@@ -1188,14 +1190,14 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	
 	
 	.sub-heading{font-size: 17px;
-    color: #526069;
+    color: #000;
     font-family: 'RalewayRegular_0'; position:relative; z-index:99; }
 	.sub-heading:first-child{ margin-top:15px; }
 	
 	ul.list-menu{ margin:10px 0 10px 0px; position:relative; z-index:99; }
 	
 	ul.list-menu li{ font-size: 17px;
-    color: #526069;
+    color: #000;
 	 border-left:solid 1px #ff9000;
 	 padding:6px 22px;
     font-family: 'RalewayRegular_0'; display:block;   }
