@@ -1195,11 +1195,11 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	
 	
 	.sub-heading{font-size: 17px;
-    color: #000;
+    color: #000; margin-top:10%;
     font-family: 'RalewayRegular_0'; position:relative; z-index:99; }
 	.sub-heading:first-child{ margin-top:15px; }
 	
-	ul.list-menu{ margin:10px 0 10px 0px; position:relative; z-index:99; }
+	ul.list-menu{ margin:30px 0 10px 0px; float:right; position:relative; z-index:99; }
 	
 	ul.list-menu li{ font-size: 17px;
     color: #000;
@@ -1232,11 +1232,12 @@ ul.icons-group li:hover:before{  border-top:solid 3px #ffaa3b;  border-right:sol
 	font-family: 'RalewayRegular_0';
 }
 .paxcom-into-text em {
-	font-size: 17px;
+	font-size: 30px;
 	color: #526069;
 	font-family: 'RalewayRegular_0';
 	text-align: right;
 	float: left;
+	font-weight:900;
 	font-style: normal;
 	text-shadow:none;
 	padding-left:80px;
@@ -2208,4 +2209,25 @@ ul.icons-group li:nth-child(1){ top:267px !important; left: -7px;}
 ul.icons-group li:nth-child(3){ top:-107px !important; left: -7px;}
 .products-icon{ padding:0px;}
 .sidebar{ margin-top:30px;}
+
+ul.list-menu{ margin:auto; max-width:400px; float:none;} 
+.sub-heading{ text-align:center; margin:30px 0 ;}
+.intro-section-white{ padding:40px 0;}
+}
+
+
+@media (min-width: 1500px) {.paxcom-into-text h1{ font-size:90px;} ul.list-menu{margin: 30px 0 10px 0px;
+position: relative;
+z-index: 99;
+right: 0;
+float: right;}
+
+.paxcom-intro-outter {
+    margin: 0 auto;
+    position: relative;
+    max-width: 90%;
+    width: 100%;
+    padding: 120px 20px 0 20px;
+}
+
 }		
