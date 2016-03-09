@@ -2214,8 +2214,6 @@ ul.list-menu{ margin:auto; max-width:400px; float:none;}
 .sub-heading{ text-align:center; margin:30px 0 ;}
 .intro-section-white{ padding:40px 0;}
 }
-
-
 @media (min-width: 1500px) {.paxcom-into-text h1{ font-size:90px;} ul.list-menu{margin: 30px 0 10px 0px;
 position: relative;
 z-index: 99;
