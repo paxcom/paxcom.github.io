@@ -1130,14 +1130,19 @@ ul.icons-group li:before, ul.icons-group li:after {
 	left: 20.9670px;
 }
 ul.icons-group li:before {
-	top: -53.0330px;
-	border-top: dashed 1.4142px #ff9306;
-	border-right: dashed 1.4142px #ff9306;
+    top: -54px;
+    border-top: dashed 2px #ff9306;
+    border-right: dashed 2px #ff9306;
+    border-right-width: 2px;
+    border-right-style: dashed;
+    border-right-color: rgb(255, 147, 6);
+
 }
 ul.icons-group li:after {
-	bottom: -53.0330px;
-	border-bottom: dashed 1.4142px #ff9306;
-	border-left: dashed 1.4142px #ff9306;
+	    bottom: -54.033px;
+    border-bottom: dashed 2px #ff9306;
+    border-left: dashed 2px #ff9306;
+
 }
 ul.icons-group li:nth-child(4) {
 	top: 163px;
@@ -1522,14 +1527,14 @@ ul.icons-group li:hover:before{}
 
 
 ul.icons-group li:before {
-	top: -53.0330px;
-	border-top: dashed 1.4142px #ff9306;
-	border-right: dashed 1.4142px #ff9306;
+	    top: -53.0330px;
+    border-top: dashed 2px #ff9306;
+    border-right: dashed 2px #ff9306;
 }
 ul.icons-group li:after {
 	bottom: -53.0330px;
-	border-bottom: dashed 1.4142px #ff9306;
-	border-left: dashed 1.4142px #ff9306;
+	border-bottom: dashed 2px #ff9306;
+	border-left: dashed 2px #ff9306;
 }
 ul.icons-group li:nth-child(4) {
 	top: 100px;
