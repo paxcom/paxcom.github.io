@@ -637,6 +637,7 @@ opacity: 1;
 	text-align: left;
 	padding-top: 5px;
 }
+.who-need-pim h4{ text-align:center;}
 .arrow-right {
 	background: url(../images/arrow.png) right no-repeat;
 }
@@ -2214,7 +2215,7 @@ ul.icons-group li:nth-child(3){ top:-107px !important; left: -7px;}
 ul.list-menu{ margin:auto; max-width:400px; float:none;} 
 .sub-heading{ text-align:center; margin:30px 0 ;}
 .intro-section-white{ padding:40px 0 !important;}
-.who-need-pim h4{ text-align:center;}
+
 .who-need-pim .text{ font-size:12px; text-align:center; clear:both; width:100%; float:left;}
 .who-need-pim i.pull-left{ float:none !important; clear:both; text-align:center; font-size:25px;}
 .who-need-pim{ text-align:center;}
