@@ -787,7 +787,7 @@ padding:120px 20px 0 20px;
   stroke-dasharray: 760;
 }
 
-.bg-gray{ background-color:#F1F1F1; padding:70px 0;}
+.bg-gray{ background-color:#F1F1F1; color:#000000; clear:both; padding:70px 0;}
 .mirchimart-section{ padding:70px 0;}
 
 
@@ -2056,8 +2056,8 @@ ul.benefit-list li:before{
 .benefit-box{background:rgb(23,59,71); color:#fff; padding:8px;}
 .benefit-box .benefit-icon{ width:50px; height:50px; border:2px solid #000; text-align:center; line-height:2.2em; margin:0px auto; font-size:20px; color:#fff; border-radius:50%;}
 
-#integrations {color:#fff;}
-.integrations-section{border:1px solid #3c3c49;   color:#fff; margin:80px 0px; padding:20px; background:#14141b; line-height:3em; height:340px;}
+#integrations {color:#000;}
+.integrations-section{border:1px solid #ddd; box-shadow:0 4px 10px #ddd;    color:#000; margin:80px 0px; padding:20px; background:#fff; line-height:3em; height:340px;}
 .integrations-section p{font-size:20px;}
 
 .text-orange{color:#ff9000}
@@ -2108,8 +2108,7 @@ a.custom-thumbnail:hover{background: #c23535; /* Old browsers */
 	transform: translateY(-5px)
 }
 
-.features {
-    padding-bottom: 51px;
+.features { padding:20px 0 0  0;
     text-align: left;
 }
 .features .feature {
@@ -2163,10 +2162,10 @@ a.feature:hover ul.custom-list li	{color:#209acd;}
 .col5pad p i {
     margin-right: 5px;
 }
-.eGenie-list {margin-top:60px;}
-.eGenie-list li{list-style:none; text-align:left; font-size:25px; font-family: 'open_sanslight'; margin-bottom:30px;} 
-.eGenie-list li span{ color:#000000; font-weight:600;font-family: 'Open Sans', sans-serif; }
-.eGenie-list li:before{ color:#0064d2; font-family:'FontAwesome'; content:"\f00c"; font-size:25px; margin-right:20px; }
+.eGenie-list {margin-top:60px; max-width:400px; width:100%;}
+.eGenie-list li{list-style:none; background-color:#ed7000; padding:5px 20px;   text-align:left; font-size:20px; font-family: 'open_sanslight'; margin-bottom:1px;} 
+.eGenie-list li span{ color:#fff; font-weight:900;font-family: 'Open Sans', sans-serif; }
+.eGenie-list li:before{ color:#fff; font-family:'FontAwesome'; content:"\f00c"; font-size:20px; margin-right:20px; }
 .eGenie-overview-img{text-align:left}
 @media (min-width: 768px) and (max-width: 991px) {
 	.eGenie-list li{font-size:22px; } 
