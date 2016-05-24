@@ -16,7 +16,7 @@ markdown: kramdown
 highlighter: Pygments 
 
 # Site Navigation
-baseurl: /paxcomnew2
+
 
 disqus: paxcomblog
 
