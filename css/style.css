@@ -963,6 +963,8 @@ footer ul.social-icon li:hover {
 	background: #f58b15;
 	color: #fff;
 }
+/*.inner-nav .nav>li>a:focus{background:#fff; color:#333}*/
+
 .inner-header.about {
 /*	background: url(../images/aboutus2.png) no-repeat top;
 	background-size: 100% auto;*/
@@ -972,8 +974,9 @@ footer ul.social-icon li:hover {
 	
 }
 .inner-header.contact {
-	background: url(../images/contact-bg2.png) no-repeat top;
+	/*background: url(../images/contact-bg2.png) no-repeat top;*/
 	background-size: 100% auto;
+	background:#fbc992;
 }
 .inner-header.merchandising {
 	/*background: url(../images/merchandisingsolutions.png) no-repeat top;*/
@@ -1330,11 +1333,12 @@ item-3 .shop-img, .item-4 .shop-img, .item-5 .shop-img {
 	font-size: 5.1em;
 }
 .soultions .box .intro-list li {
-	font-size: 1.3em;
+	font-size: 1em;
 	padding-left: 23px;
 	line-height: 1.95em;
 	letter-spacing: 0.5px;
 	margin-left: 10px;
+	
 }
 .intro-list li:before {
 	content: '';
