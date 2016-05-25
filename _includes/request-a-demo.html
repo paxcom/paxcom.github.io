@@ -6,7 +6,7 @@
 	<i class="fa fa-comments-o"></i><br>
 	REQUEST A DEMO
 </div>
-<form id="contactform" method="POST">
+<form id="contactform" method="POST" action="https://formspree.io/bd@paxcom.net">
 <input type="hidden" name="_subject" value="REQUEST A DEMO" />
 <div class="form-group"><input type="text" placeholder="Full Name*" name="Name" class="form-control" required></div>
 <div class="form-group"><input type="tel" placeholder="Phone number*" name="Phone number" class="form-control" required></div>
@@ -19,10 +19,10 @@
 <input type="hidden" name="_next" value="{{site.baseurl}}/thank.html" />
 
 </form>
-<script>
+<!--<script>
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', '//formspree.io/' + 'bd' + '@' + 'paxcom' + '.' + 'net');
-</script>
+</script>-->
 
 </div>
 
