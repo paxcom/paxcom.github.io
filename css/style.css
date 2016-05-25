@@ -777,12 +777,13 @@ footer ul.social-icon li:hover {
 	position: relative;
 	z-index: 12;
 	display: table-cell;
-	vertical-align: middle;
-	/*text-align:center;*/
+	/*vertical-align: middle;
+	text-align:center;*/
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+	padding: 30px 0px;
 }
 .soultions .box:hover {
 	background: #1a4408;
@@ -808,6 +809,7 @@ footer ul.social-icon li:hover {
 }
 .soultions .box .intro-list {
 	margin: 0px;
+	min-height:221px;
 }
 .soultions .box .intro-list li {
 	color: #fff;
@@ -1198,6 +1200,7 @@ footer ul.social-icon li:hover {
 		background-size: 90% 2%;
 		margin: 15px auto;
 	}
+	footer{background:none; padding-bottom:0px;}
 	footer .copyright {
 		font-size: 10px;
 	}
@@ -1206,6 +1209,24 @@ footer ul.social-icon li:hover {
 	footer .copyright {
     	position: static;
 	}
+	.inner-header{padding:90px 0 30px}
+	.inner-header h1{font-size:2em;}
+	.inner-header .image-container{display:none;}
+	header{margin-top:15px;}
+	h2{font-size:24px;}
+	.contact-us-from input{width:100%;}
+	.paxcom-nav ul li .dropdown-menu{margin:6px 0 0 8px}
+	.inner-nav{text-align:left;}
+	.inner-nav .navbar-header  .navbar-toggle{float:left; margin-left:15px;}
+	.inner-nav .nav li a {
+		font-size:0.7em;
+		padding:8px;
+	}
+	.content-section h3{
+		font-size:1.5em;
+	}
+	.content-section h5{font-size:1.2em;}
+	.content-section.section-gray:before{display:none;}
 }
  @media (min-width: 768px) and (max-width: 991px) {
 /*.logo{width:180px; height:180px; left:-55px; top:-135px;}
