@@ -1107,100 +1107,105 @@ footer ul.social-icon li:hover {
 /******************************************************************************************/
 
 @media (max-width: 767px) {
-/*.logo{width:150px; height:150px; left:-45px; top:-110px;}
-	.logo::before{width:150px; height:150px; left:-9px; top:14px;}
-	.logo a{bottom:11%; right:7%}*/
-.carousel {
-	height: auto !important
-}
-.paxcom-home .shop-img {
-	position: static
-}
-.paxcom-home .carousel-caption {
-	margin: 30px 7% 0;
-}
-.paxcom-home h1 {
-	font-size: 1.7em;
-	line-height: 1.5em;
-}
-.paxcom-home p {
-	font-size: 0.4em;
-}
-.paxcom-home .shop-img {
-	bottom: 15px;
-	width: 220px;
-}
-.item-bootom.item-0 {
-	background: none;
-}
-.soultions {
-	display: block;
-	height: auto;
-}
-.soultions .box {
-	display: block;
-	width: 100%;
-	padding: 5%;
-}
-.soultions .box .box-content {
-	width: 100%;
-}
-.soultions .box h1 {
-	font-size: 2.3em;
-}
-.soultions .box .intro-list {
-	float: none
-}
-.signup-request h3 {
-	font-size: 1.5em;
-}
-.paxcom-nav ul li {
-	display: block;
-	margin: 5px 10px;
-}
-.paxcom-nav {
-	float: none;
-}
-.paxcom-nav ul li a {
-	text-align: left;
-	padding-left: 15px;
-}
-.paxcom-nav ul li a:hover, .paxcom-nav ul li a.active, .paxcom-nav ul li.open a:focus, .paxcom-nav ul li.open a {
-	background: #6cb33f;
-	padding-left: 15px;
-}
-/*
-	.inner-nav {
-		margin-left: 10px;
-		margin-top: 30px;
+	/*.logo{width:150px; height:150px; left:-45px; top:-110px;}
+		.logo::before{width:150px; height:150px; left:-9px; top:14px;}
+		.logo a{bottom:11%; right:7%}*/
+	.carousel {
+		height: auto !important
 	}
-	.inner-nav li{
-		display: inline-block;
-    	margin: 0 10px 10px;
-	}*/
-
+	.paxcom-home .shop-img {
+		position: static;
+		bottom: 15px;
+		width: 220px;
+		margin-top:15px;
+	}
+	.paxcom-home .carousel-caption {
+		margin: 30px 7% 0;
+	}
+	.paxcom-home h1 {
+		font-size: 1.7em;
+		line-height: 1.5em;
+	}
+	.paxcom-home p {
+		font-size: 0.4em;
+		line-height: 1.4em;
+	}
+	.item-bootom.item-0 {
+		background: none;
+	}
+	.soultions {
+		display: block;
+		height: auto;
+	}
+	.soultions .box {
+		display: block;
+		width: 100%;
+		padding: 5%;
+	}
+	.soultions .box .box-content {
+		width: 100%;
+	}
+	.soultions .box h1 {
+		font-size: 2.3em;
+	}
+	.soultions .box .intro-list {
+		float: none
+	}
+	.signup-request h3 {
+		font-size: 1.5em;
+	}
+	.paxcom-nav ul li {
+		display: block;
+		margin: 5px 10px;
+	}
+	.paxcom-nav {
+		float: none;
+	}
+	.paxcom-nav ul li a {
+		text-align: left;
+		padding-left: 15px;
+	}
+	.paxcom-nav ul li a:hover, .paxcom-nav ul li a.active, .paxcom-nav ul li.open a:focus, .paxcom-nav ul li.open a {
+		background: #6cb33f;
+		padding-left: 15px;
+	}
+	/*
+		.inner-nav {
+			margin-left: 10px;
+			margin-top: 30px;
+		}
+		.inner-nav li{
+			display: inline-block;
+			margin: 0 10px 10px;
+		}*/
 	
-.paxcom-carousel-indicators li {
-	font-size: 11px;
-	padding: 5px 3px;
-}
-.paxcom-carousel-indicators li.active, .paxcom-carousel-indicators li:hover {
-	border-left-width: 3px;
-}
-.footer-add {
-	margin-bottom: 15px;
-}
-.quick-links {
-	width: 45.8%;
-}
-.footer-social-link {
-	width: 100%;
-	background-size: 90% 2%;
-	margin: 15px auto;
-}
-footer .copyright {
-	font-size: 10px;
-}
+		
+	.paxcom-carousel-indicators li {
+		font-size: 11px;
+		padding: 5px 3px;
+	}
+	.paxcom-carousel-indicators li.active, .paxcom-carousel-indicators li:hover {
+		border-left-width: 3px;
+	}
+	.footer-add {
+		margin-bottom: 15px;
+	}
+	.quick-links {
+		width: 45.8%;
+	}
+	.footer-social-link {
+		width: 100%;
+		background-size: 90% 2%;
+		margin: 15px auto;
+	}
+	footer .copyright {
+		font-size: 10px;
+	}
+	.signup-request input.btn-submit{width:100%;}
+	
+	footer .copyright {
+    	position: static;
+	}
 }
  @media (min-width: 768px) and (max-width: 991px) {
 /*.logo{width:180px; height:180px; left:-55px; top:-135px;}
@@ -1382,26 +1387,35 @@ item-3 .shop-img, .item-4 .shop-img, .item-5 .shop-img {
 /* iPhone 6 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) {
 /* Styles */
-.btn-request-a-demo {
-	top: 30%;
-}
+	.btn-request-a-demo {
+		top: 30%;
+	}
+	
+	.paxcom-home .carousel-caption {
+    	margin: 10px 7% 0;
+	}
+	.paxcom-home p {
+		margin-top:10px;
+		line-height: 0.2em;
+	}
+	.paxcom-home .shop-img{width:224px;}
 }
  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) {
-/* Styles */
-.btn-request-a-demo {
-	top: 30%;
-	margin-top: 0px;
-}
-.paxcom-home .carousel-caption {
-	margin: 30px 0% 0;
-}
-.paxcom-home h1 {
-	font-size: 2.1em;
-	line-height: 1.8em;
-}
-.paxcom-home .shop-img {
-	width: 365px;
-}
+	/* Styles */
+	.btn-request-a-demo {
+		top: 30%;
+		margin-top: 0px;
+	}
+	.paxcom-home .carousel-caption {
+		margin: 30px 0% 0;
+	}
+	.paxcom-home h1 {
+		font-size: 2.1em;
+		line-height: 1.8em;
+	}
+	.paxcom-home .shop-img {
+		width: 365px;
+	}
 }
 
 /* iPhone 6+ ----------- */
@@ -1433,6 +1447,7 @@ item-3 .shop-img, .item-4 .shop-img, .item-5 .shop-img {
 }
 #carousel-example-generic .btn-more {
 	background: #ff9000;
+	margin: 40px 0px 0px 40px;
 }
 .soultions .btn-more {
     font-size: 15px;
