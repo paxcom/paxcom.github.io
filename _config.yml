@@ -17,7 +17,14 @@ highlighter: Pygments
 
 # Site Navigation
 
+gems:
+  - jekyll-redirect-from
+
 
 disqus: paxcomblog
+
+
+redirect_from: /features-order.html
+redirect_to: /supply-chain.html
 
 
