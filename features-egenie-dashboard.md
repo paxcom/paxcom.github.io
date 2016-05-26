@@ -1,4 +1,4 @@
 ---
-permalink: /features-sales.html
+permalink: /features-egenie-dashboard.html
 redirect_to: '/supply-chain.html'
 ---

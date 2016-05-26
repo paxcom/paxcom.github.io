@@ -1,4 +1,4 @@
 ---
-permalink: /features-sales.html
-redirect_to: '/supply-chain.html'
+permalink: /features-pim-classification.html
+redirect_to: '/merchandising-solutions.html'
 ---
