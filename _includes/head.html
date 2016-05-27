@@ -5,6 +5,15 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 
+
+<head>
+    <!-- some other meta -->
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    <!-- some other stuff like link or script -->
+</head>
+
 <!-- Latest compiled and minified CSS -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
