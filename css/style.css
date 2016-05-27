@@ -843,8 +843,8 @@ footer ul.social-icon li:hover {
 	border-top: 1px solid #c6c6c6;
 }
 .signup-request h3 {
-	font-size: 2em;
-	font-weight: 600;
+	font-size: 2.4em;
+	font-weight: 700;
 	margin-bottom: 30px;
 }
 /*.signup-request input{height:53px; border:1px solid #a9a9a9; color:#909090; border-radius:0px;}*/
@@ -961,11 +961,12 @@ footer ul.social-icon li:hover {
     padding: 14px 11px;
     letter-spacing: 1px;
 }
+.inner-nav .nav>li>a:focus{background:#fff !important; color:#333 !important}
 .inner-nav .nav li a:hover, .inner-nav .nav li.active a {
-	background: #f58b15;
-	color: #fff;
+	background: #f58b15 !important;
+	color: #fff !important;
 }
-/*.inner-nav .nav>li>a:focus{background:#fff; color:#333}*/
+
 
 .inner-header.about {
 /*	background: url(../images/aboutus2.png) no-repeat top;

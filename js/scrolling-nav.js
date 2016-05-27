@@ -1,6 +1,6 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
-    if ($(".inner-nav").offset().top > 310) {
+    if ($(".inner-nav").offset().top >= 385) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -8,12 +8,15 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function(){
+    var head = $('#headerdata');
     var scroll = $(window).scrollTop();
-    if (scroll >= 310) {
+    //console.log("scroll",scroll);
+   // console.log("headheight",head.height());
+    if (scroll >= head.height()+100 && !($(".inner-nav").hasClass("navbar-fixed-top"))) {
         $(".inner-nav").removeClass("nav-relative");
         $(".inner-nav").removeClass("nav-relative");
         $(".inner-nav").addClass("navbar-fixed-top");
-    } else if (scroll <= 310) {
+    } else if (scroll < head.height()+100) {
         $(".inner-nav").removeClass("navbar-fixed-top");
     }
 });
@@ -30,17 +33,27 @@ window.animating = true;
 });
 
 */
+
+
+    // $("html, body").animate({ scrollTop: 550 }, 1000);
+
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
+        event.preventDefault();
         var $anchor = $(this);
-		//$(this).parent(li).addClass("active");
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+        var navigationBar = $('#navigation-bar');
+        var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
+        //console.log("hii",$($anchor.attr('href')).offset().top);
+        //console.log("offset",offset);
+        $('html, body').animate({
+            scrollTop: $($anchor.attr('href')).offset().top - offset
         }, 1500, 'easeInOutExpo');
-		//$(this).parent(li).addClass("active");
+       // event.preventDefault();
         event.preventDefault();
     });
 });
+
+
 
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
