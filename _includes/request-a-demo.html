@@ -9,7 +9,7 @@
 <form id="contactform" method="POST" action="https://formspree.io/bd@paxcom.net">
 <input type="hidden" name="_subject" value="REQUEST A DEMO" />
 <div class="form-group"><input type="text" placeholder="Full Name*" name="Name" class="form-control" required></div>
-<div class="form-group"><input type="tel" placeholder="Phone number*" name="Phone number" class="form-control" required></div>
+<div class="form-group"><input type="tel" placeholder="Mobile number*" name="Mobile number" class="form-control" required pattern='\d{10}' title="Mobile Number"></div>
 <div class="form-group"><input type="email" placeholder="Email Id*" class="form-control" name="_replyto" required></div>
 <div class="form-group"><textarea placeholder="Message*" class="form-control" name="Description" required></textarea></div>
 <div class="row">
