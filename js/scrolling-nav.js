@@ -39,7 +39,7 @@ window.animating = true;
 
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
-        event.preventDefault();
+       // event.preventDefault();
         var $anchor = $(this);
         var navigationBar = $('#navigation-bar');
         var offset = navigationBar.hasClass('navbar-fixed-top') ? 0 : navigationBar.height();
@@ -49,7 +49,7 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top - offset
         }, 1500, 'easeInOutExpo');
        // event.preventDefault();
-        event.preventDefault();
+       // event.preventDefault();
     });
 });
 
