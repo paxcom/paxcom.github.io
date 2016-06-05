@@ -12,12 +12,14 @@ $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     //console.log("scroll",scroll);
    // console.log("headheight",head.height());
-    if (scroll >= head.height()+100 && !($(".inner-nav").hasClass("navbar-fixed-top"))) {
+    if (scroll >= head.height()+125 && !($(".inner-nav").hasClass("navbar-fixed-top"))) {
         $(".inner-nav").removeClass("nav-relative");
         $(".inner-nav").removeClass("nav-relative");
         $(".inner-nav").addClass("navbar-fixed-top");
-    } else if (scroll < head.height()+100) {
+    } else if (scroll < head.height()+125) {
         $(".inner-nav").removeClass("navbar-fixed-top");
+        $($('#myTab li')[0]).addClass("active");
+
     }
 });
 
@@ -49,7 +51,7 @@ $(function() {
             scrollTop: $($anchor.attr('href')).offset().top - offset
         }, 1500, 'easeInOutExpo');
        // event.preventDefault();
-       // event.preventDefault();
+       //event.preventDefault();
     });
 });
 
@@ -72,3 +74,4 @@ $(function() {
         // event.preventDefault();
     // });
 });
+

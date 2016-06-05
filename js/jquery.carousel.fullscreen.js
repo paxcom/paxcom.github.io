@@ -9,7 +9,7 @@ jQuery(document).ready(function() {
     	interval: 8000
 	});
 
-	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight()-67 });
+	$('.carousel').css({'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight() });
 	$('.carousel-inner').css({'height': '100% '});
 	
 	$('.carousel .item').css({/*'position': 'fixed',*/ 'width': '100%', 'height': '100%'});
