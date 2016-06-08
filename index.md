@@ -11,7 +11,7 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
       
       <!-- Wrapper for slides -->
       <div class="carousel-inner paxcom-home">
-        <div class="item item-bootom item-1 active">
+        <div class="item item-bootom item-1 active custom_reponsive">
           <div class="container-fluid">
             <div class="carousel-caption">
               <h1>Merchandising Solutions</h1>
