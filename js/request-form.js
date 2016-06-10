@@ -1,22 +1,18 @@
-// JavaScript Document
+// JavaScript Document 
 function submitRequestForDemo(){
-	
-	var data = new FormData();
-	data.append('_subject', 'REQUEST A DEMO');
-	data.append('mobile_number', '9899709711');
-	data.append('_replyto', 'sagararora19992@gmail.com');
-	data.append('description', 'Testing');
-	data.append('name', 'Testing');
-	$.ajax({
-		type:'POST',
-		url:'http://kinator.paxcom.net/paxcom/demo',
-		data:data,	
-		processData: false,
-  		contentType: false,	
-		success: function(msg){
-			if(msg=='success'){
-				window.location.href='/thank.html';
-			}
-		}
-	});
-}
+$("#contactform").submit(function(e){
+ 	var params= $(this).serializeArray();
+    var action= $(this).attr("action");
+     $.ajax({
+        url : action,
+        type: "POST",
+        data : params,
+        mimeType: "text/html; charset=utf-8",
+        success:function(data, textStatus, jqXHR)  {
+            alert("We will contact you shortly");
+        },error: function(jqXHR, textStatus, errorThrown)  {
+             console.log("error");
+        }
+    });
+	 e.preventDefault(); //STOP default action
+}); }
