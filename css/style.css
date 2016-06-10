@@ -966,7 +966,23 @@ footer ul.social-icon li:hover {
 	min-height: 52px;
 }
 	
-	
+.thanks {text-align:center;}
+.thanks h1{font-size:3em; text-align:center;}
+.thanks h1 .check{
+    font-size: 1.5em;
+    width: 100px;
+    height: 100px;
+    margin: 7% auto;
+   border: 2px solid #ff9000;
+    border-radius: 50%;
+    line-height: 1.8em;
+	color:#ff9000;
+}
+.thanks h1 p{font-size:0.3em;margin-top:10px; }
+.thanks h1 span{font-size:0.5em;}
+.thanks h1 a{color:#ff9000}
+.thanks h1 a:hover{color:#6cb33f}
+
 	
 	
 
@@ -997,6 +1013,7 @@ footer ul.social-icon li:hover {
 .paxcom-home .carousel-caption {margin:13% 0% 0% 0%; float: left;}
 
 .paxcom-home h1 { margin: 0px 0px 10px 0px; float: left; text-align: center; letter-spacing: 1px; line-height: 1.5em; font-size: 2.5em; font-weight: 700;}
+.thanks h1{font-size:2em;}
 .paxcom-home h1 span{ padding:0px;}
 .custom_reponsive_with1 h1 {margin:65px 0px 10px 0px; font-size: 1.7em;}
 
@@ -1048,6 +1065,7 @@ footer{ padding-bottom:0px;}
 .paxcom-home .carousel-caption {margin:13% 0% 0% 0%; float: left;}
 
 .paxcom-home h1 { margin: 0px 0px 10px 0px; float: left; text-align: center; letter-spacing: 1px; line-height: 1.5em; font-size: 2.5em; font-weight: 700;}
+.thanks h1{font-size:2em;}
 .paxcom-home h1 span{ padding:0px;}
 .custom_reponsive_with1 h1 {margin:45px 0px 10px 0px; font-size:2.5em;}
 
@@ -1093,6 +1111,7 @@ footer{ padding-bottom:0px;}
 .paxcom-home .carousel-caption {margin:13% 0% 0% 0%; float: left;}
 
 .paxcom-home h1 { margin: 0px 0px 10px 0px; float: left; text-align: center; letter-spacing: 1px; line-height: 1.5em; font-size: 2.5em; font-weight: 700;}
+.thanks h1{font-size:2em;}
 .paxcom-home h1 span{ padding:0px;}
 .custom_reponsive_with1 h1 {margin:45px 0px 10px 0px; font-size:2.5em;}
 
@@ -1167,6 +1186,7 @@ footer{ padding-bottom:0px;}
 .paxcom-home .carousel-caption {margin:9% 5% 0% 5%; float: left;}
 
 .paxcom-home h1 { margin: 0px 0px 10px 0px; float: left; text-align: center; letter-spacing: 1px; line-height: 1.5em; font-size:3.79em; font-weight:600;}
+.thanks h1{font-size:2.5em;}
 .paxcom-home h1 span{ padding:0px;}
 .custom_reponsive_with1 h1 { margin: 95px 0px 10px 0px; font-size: 3.89em; text-align: left; font-weight: 600;}
 .paxcom-home .merchandising_supply {float:left;margin: 4% 2% 4% 2%;}
@@ -1217,6 +1237,7 @@ footer .copyright{position:static}
 @media (min-width:1024px) and (max-width:1366px) { 
 .paxcom-home .carousel-caption { margin: 8% 6% 0px; color: #333;}
 .paxcom-home h1 { font-size: 5.455em; line-height: 1.3em;}
+.thanks h1{font-size:3em;}
 .paxcom-home .merchandising_supply { margin: 2% 2% 0% 2%;}
 .paxcom-home .merchandising_supply h2 { font-size: 1.577em;}
 .paxcom-home .merchandising_supply h2 a {padding: 20px;}
@@ -1230,6 +1251,7 @@ footer .copyright{position:static}
 @media (min-width:1367px) and (max-width:1440px) { 
 .paxcom-home .carousel-caption { margin: 8% 6% 0px; color: #333;}
 .paxcom-home h1 {font-size: 6.66em;}
+.thanks h1{font-size:4.5em;}
 }
 
 
