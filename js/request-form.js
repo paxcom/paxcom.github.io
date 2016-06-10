@@ -7,9 +7,6 @@ function submitRequestForDemo(){
 	data.append('_replyto', 'sagararora19992@gmail.com');
 	data.append('description', 'Testing');
 	data.append('name', 'Testing');
-	
-	
-	
 	$.ajax({
 		type:'POST',
 		url:'http://kinator.paxcom.net/paxcom/demo',
