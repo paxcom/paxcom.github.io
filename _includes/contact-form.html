@@ -1,6 +1,6 @@
 <h2>Leave A Message</h2>
 <div class="row">
-<form id="contactform2" method="POST" action="http://kinator.paxcom.net/paxcom/cs">
+<form id="contactform2" name="contactform2" method="POST" action="http://kinator.paxcom.net/paxcom/cs">
 	<div class="top-space contact-us-from">
     
    <input type="text" name="_gotcha" style="display:none" />
@@ -34,9 +34,10 @@
   <input type="hidden" name="_next" value="{{site.baseurl}}/thank.html" />
   </div>
   </form>
-  <!--<script>
-    var contactform2 =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'bd' + '@' + 'paxcom' + '.' + 'net');
-</script>-->
+  <script>
+    /*var contactform2 =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'bd' + '@' + 'paxcom' + '.' + 'net');*/
+	submitForm("contactform2");
+  </script>
 </div>
 
