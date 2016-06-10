@@ -1,7 +1,8 @@
 // JavaScript Document 
-submitForm = function(form_id) {
- $(("#"+form_id)).submit(function(e)
+function submitForm(id){
+ $(("#"+id)).submit(function(e)
  {
+	e.preventDefault();
   var params= $(this).serializeArray();
   var action= $(this).attr("action");
    $.ajax({
@@ -10,19 +11,25 @@ submitForm = function(form_id) {
    data : params,
    mimeType: "text/html; charset=utf-8",
    success:function(data, textStatus, jqXHR)  {
-    //data: return data from server on success fully complete the rquest
+	   document.getElementById(id).reset();
+	   if(id=="contactform"){
+	   	$(".right-side-bar").toggleClass("show-hide");
+		$(".btn-request-a-demo").toggleClass("org");
+	   }
+     //alert("We will contact you shortly");
+	 window.location.href="/thank.html";
    },error: function(jqXHR, textStatus, errorThrown)  {
      console.log("error");
    }
-  });
-  e.preventDefault(); //STOP default action
- });
-}
-
-$document.ready(function(){
+  }); 
+  
+  return false;
+ });  
+} 
+$(document).ready(function(){
  
- submitForm("contactform");
+ submitForm("contactform"); 
  submitForm("contactform2");
  submitForm("contactform3");
  
-});
+}); 
