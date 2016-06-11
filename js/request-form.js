@@ -71,7 +71,7 @@ function submitForm(id){
    $.ajax({
    url : action,
    type: "POST",
-   data: getQueryStringAsJSONString(document.forms[_name]),
+   data: "data="+getQueryStringAsJSONString(document.forms[_name]),
    contentType: "application/json",
    success:function(data, textStatus, jqXHR)  {	   
 	 window.location.href="/thank.html";
