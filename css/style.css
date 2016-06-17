@@ -564,6 +564,7 @@ footer p {
 	color: #303030;
 	font-size: 12px;
 	/*font-weight:500;*/
+	letter-spacing:0.5px;
 }
 .footer-links li a:hover, .footer-links li a.active {
 	color: #ff9000
