@@ -1,5 +1,8 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
+	/*var navOffTop = $(".inner-nav").offset().top;
+	console.log(navOffTop);
+	*/
     if ($(".inner-nav").offset().top >= 385) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
