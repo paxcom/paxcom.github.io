@@ -100,29 +100,10 @@ module Jekyll
     end
 
     def generate_aliases(destination_path, aliases)
-      alias_paths ||= Array.new
-      alias_paths << aliases
-      alias_paths.compact!
+      index_path = alias_index_path.split('/')[0, sections + 1].join('/')
+	next if index_path.empty?
 
-      alias_paths.flatten.each do |alias_path|
-        alias_path = alias_path.to_s
-
-        alias_dir  = File.extname(alias_path).empty? ? alias_path : File.dirname(alias_path)
-        alias_file = File.extname(alias_path).empty? ? "index.html" : File.basename(alias_path)
-
-        fs_path_to_dir   = File.join(@site.dest, alias_dir)
-        alias_index_path = File.join(alias_dir, alias_file)
-
-        FileUtils.mkdir_p(fs_path_to_dir)
-
-        File.open(File.join(fs_path_to_dir, alias_file), 'w') do |file|
-          file.write(alias_template(destination_path))
-        end
-
-        (alias_index_path.split('/').size + 1).times do |sections|
-          @site.static_files << PagelessRedirectFile.new(@site, @site.dest, alias_index_path.split('/')[1, sections + 1].join('/'), '')
-        end
-      end
+	@site.static_files << Jekyll::PagelessRedirectFile.new(@site, @site.dest, index_path, '')
     end
 
     def alias_template(destination_path)
