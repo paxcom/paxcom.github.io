@@ -1,0 +1,428 @@
+@media (max-width: 768px) {
+	body {
+	 margin: 0;
+	 padding: 0;
+	}
+}
+
+.carousel.carousel-fade .item {
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-ms-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	opacity:0;
+}
+.carousel.carousel-fade .active.item {
+	opacity:1;
+}
+.carousel.carousel-fade .active.left, .carousel.carousel-fade .active.right {
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel.carousel-fade .next, .carousel.carousel-fade .prev {
+	left: 0;
+	z-index: 1;
+	
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel.carousel-fade .carousel-control {
+	z-index: 3;
+}
+
+/*
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}*/
+
+/*
+#carousel-example-generic{background:#fff;}*/
+.paxcom-home .carousel-caption{ position:static; 
+	text-shadow:none; 
+	text-align:center;
+	padding:0px; 
+	margin:6% 6% 0px;
+	color:#333;
+}
+
+.paxcom-home h1 {
+    font-size: 9.5em;
+    font-weight: 500;
+    color: #333333;
+    line-height: 1em;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-align: left;
+    letter-spacing:0px;
+}
+.paxcom-home h1 span{
+    padding-left: 8px;
+}
+
+.paxcom-home .merchandising_supply{
+	width: 100%;
+    height: auto;
+    margin: 3% 2% 0% 2%;
+    padding: 0px;
+}
+.paxcom-home .merchandising_supply h2{
+    font-size:2.88em;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1em;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-align: left;
+	letter-spacing: 2px;
+}
+
+.paxcom-home .merchandising_supply h2 a{
+    padding: 30px;
+    margin: 0px 15px 0px 0px;
+    color: #fff;
+}
+.paxcom-home .trapezoid{
+    position: relative;
+}
+
+.paxcom-home .trapezoid:before {
+    position: absolute;
+    content: '';
+    height: 63px;
+    left: 27px;
+    top: 26px;
+    width: 100%;
+    background: #f7901e;
+    z-index: -1;
+    -webkit-transform: skew(8deg);
+    -moz-transform: skew(8deg);
+    transform: skew(8deg);
+    margin: -3px 0px 0px -25px;
+}
+.paxcom-home .trapezoid:after {
+	position: absolute;
+    content: '';
+        height: 46px;
+    left: 24px;
+    top: 13px;
+    width: 103%;
+   
+    z-index: -1;
+    -webkit-transform: skew(8deg);
+    -moz-transform: skew(8deg);
+    transform: skew(8deg);
+    margin: -3px 0px 0px -25px;
+	border:1px dashed green;
+}
+
+.paxcom-home .intro-list.main-content {
+	margin: 3% 3% 50px 3%;
+    width: 100%;
+}
+.paxcom-home .intro-list.main-content li {
+	position: relative;
+    padding-left: 27px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin: 5px 0px 10px 5px;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.paxcom-home .intro-list.main-content li:before {
+	position: absolute;
+	left: 0px;
+	top:13px;
+	background:#676767;
+}
+
+
+.btnboxdiv {
+    width: 100%;
+    height: auto;
+    padding: 0px 0% 0% 3%;
+    margin: 0px;
+    float: left;
+}
+.btnboxdiv .btn-more {
+    font-size: 15px;
+    margin: 0;
+    padding: 8px 40px;
+    float: left;
+}
+
+
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    text-indent: -9999px;
+    background: url('icon_top.png') no-repeat;
+    background-color: #000;
+}
+
+
+
+
+/*.paxcom-home p{ 
+	font-size:0.2em; 	 
+	font-weight:400;
+	padding:0;
+	margin-top: 20px;
+    line-height: 0px;
+}*/
+.paxcom-home p {
+    font-size: 0.2em;
+    font-weight: 400;
+    padding: 0;
+    margin-top: 40px;
+    line-height: 0px;
+    letter-spacing: 2px;
+}
+
+.paxcom-home .shop-img{display:block;  width:440px;}
+
+.btn-more{
+	background: #ff9000;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 42px;
+    padding: 8px 20px;
+	margin:50px 0px;
+	display:inline-block;
+	position:relative;
+	text-decoration:none;
+}
+/*.btn-more:before{
+	height: 1px;
+    background: #ff9000;
+    bottom: 0px;
+    content: " ";
+    right: 0px;
+    margin: 0px auto;
+    position: absolute;
+    left: -45%;
+    width: 300px;
+    top: 20px;
+    z-index: -1;
+}*/
+.btn-more:hover, .btn-more:focus{
+	opacity:0.8;
+	 color: #fff;
+	 text-decoration:none;
+}
+
+.btn-more.no-bod:before{display:none;}
+
+/*.paxcom-home .shop-img{width:450px; height:169px;}
+.item-0 .shop-img{height:169px;}
+
+.item-1 .shop-img, .item-3 .shop-img, .item-4 .shop-img, .item-5 .shop-img{    
+	height: 218px;
+    width: 420px;
+	right:10%;
+	left:auto;
+	margin:0px;
+	bottom:90px;
+}
+
+.item-2 .shop-img {
+   
+    height: 251px;
+    width: 395px;
+	right:10%;
+	left:auto;
+	margin:0px;
+	bottom:90px;
+}*/
+
+.item-bootom { background:url(../images/inner-footer-round.png) no-repeat bottom; background-size:100% auto; }
+.item-bootom.item-0 { background:url(../images/arc_bottom-home.png) no-repeat bottom; background-size:100% auto; }
+.item-bootom.item-1 { background:url(../images/arc_bottom.png) no-repeat bottom; background-size:100% auto; }
+
+.paxcom-carousel-indicators{    
+	text-align:left;
+    height: 60px;
+    width: 100px;
+    left: 0px;
+    bottom: 0px;
+	top:20%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.paxcom-carousel-indicators li{
+	height:auto;
+	width:auto;
+	border-radius:0px;
+	text-indent:0;	
+	font-weight:300;
+	font-size:14px;
+	color:#333333;
+	padding:8px 5px 8px 15px;
+	border-radius:0px;
+	border:0px;	
+	transition: all .5s ease-in-out 0s;
+	display:inline-block;
+	text-align:center;
+	border-left:5px solid transparent;
+	margin:0px 0px 10px 0px;
+	
+	
+}
+.paxcom-carousel-indicators li.active, .paxcom-carousel-indicators li:hover{
+	font-weight:600;
+	background:transparent;
+	height:auto;
+	width:auto;
+	border-left:5px solid #ff9000;
+	margin-bottom:10px;
+}
+.intro-list{
+	
+	float: left;
+	margin: 50px 0 50px 20%;
+}
+.intro-list li{
+	font-size:1em;	
+	display:block;
+	color:#333333;	
+	font-weight:400;
+	line-height:2.2em;
+	text-align:left;
+}
+.intro-list li:before{
+	content: '';
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    display: inline-block;
+    border-radius: 0px;
+    transform: rotate(50deg);
+	
+}
+
+
+.intro-list.main-content li:before{background: #ff9000;     border-radius: 3px;}
+/************************/
+
+
+@media (max-width: 767px) {		
+	
+}	
+	
+@media (min-width: 768px) and (max-width: 991px) {
+	/*.paxcom-home h1{
+		font-size:2em;
+	}
+	.paxcom-home h1 p{font-size:0.4em; margin-top:5px;-webkit-text-stroke: 0.9px;text-stroke: 0.9px}
+	.shop-img {
+			
+		right: 101px;
+		width: 400px;
+	}
+	.paxcom-carousel-indicators{display:table;}
+	.paxcom-carousel-indicators li{
+		display:table-cell;
+		font-size:12px;
+		vertical-align:middle;
+		padding:0px;
+		height:60px;
+	}
+	
+	.paxcom-carousel-indicators li.active, .paxcom-carousel-indicators li:hover{
+		
+		height:60px;
+	
+	}*/
+	
+	
+
+	/*item-3 .shop-img, .item-4 .shop-img, .item-5 .shop-img {
+		bottom:25%;
+		left:0px;
+		right:0px;
+		margin:10px auto;		
+	}*/
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	/*.paxcom-home h1{
+		font-size:2.6em;
+	}
+	
+	.paxcom-home h1 p{font-size:0.4em; -webkit-text-stroke: 0.9px;}
+	.paxcom-carousel-indicators li{font-size:13px;}
+	.shop-img {		
+		right: 150px;
+    	width: 430px;
+	}	*/
+	
+	
+}
+@media (min-width: 1200px) and (max-width: 1600px) {
+	/*.paxcom-intro-new h1{
+		font-size:3.5em;
+	}
+	.shop-img {		
+		right: 200px;   	
+	}*/
+	
+	/*.paxcom-home .shop-img{width:450px; height:169px;}*/
+	
+	
+}
+
+@media (min-width: 1600px)  {
+	/*.paxcom-home h1{font-size:5.2em; }
+	.paxcom-home h1 p{font-size:24px; letter-spacing: 2px;}
+	.item-1 .shop-img {			
+		right: 250px; 
+		  	
+	}	
+	.item-1 .shop-img {
+    height: 270px;
+    width: 530px;
+	}
+	
+	.item-2 .shop-img {
+    height: 335px;
+    width: 511px;
+}*/
+
+}
+
