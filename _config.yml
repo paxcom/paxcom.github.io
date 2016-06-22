@@ -19,6 +19,7 @@ highlighter: Pygments
 
 gems:
   - jekyll-redirect-from
+  
 
 
 disqus: paxcomblog
