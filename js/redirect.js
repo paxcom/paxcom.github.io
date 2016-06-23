@@ -14,11 +14,13 @@ $("input[name$='value']").click(function() {
 });});*/
 
 $(document).ready(function(){
-	var oldLocation = window.location.href;
-	console.log(oldLocation);
-		
-	if(oldLocation.indexOf('support')){
-	  window.location.assign("http://support.paxcom.net/");
-	} 
+	$(function() {
+		var oldLocation = window.location.href;
+		console.log(oldLocation);
+			
+		if(oldLocation.indexOf('support')){
+		  window.location.assign("http://support.paxcom.net/");
+		} 
+	});
 	
 });
