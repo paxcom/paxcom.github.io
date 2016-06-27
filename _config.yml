@@ -28,3 +28,19 @@ disqus: paxcomblog
 
 redirect_from: /features-order.html
 redirect_to: /supply-chain.html
+
+
+
+
+# custom_redirects:
+#   - from: support/
+#     to: http://support.paxcom.net/
+#     type: permanent
+#   - from: /support/
+#     to: http://support.paxcom.net/
+#     type: temp	
+#   - from: blog/
+#     to: blog.paxcom.net
+#    type: permanent
+
+
