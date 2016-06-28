@@ -1,3 +1,12 @@
-# Redirect old file path to new file path
-Redirect /blog/ http://blog.paxcom.net/
+RewriteEngine on
+# remove trailing slash
+RewriteRule (.+)/$ /blog/$1 [L,R=301]
+ 
+# add trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .*[^/]$ /blog/$1/ [L,R=301]
+ 
+# perform redirect if indiana.edu
+RewriteCond %{HTTP_HOST} ^http://paxcom.net/$ [NC]
+RewriteRule ^(.*)$ http://blog.paxcom.net/$1 [R=301,L]
 
