@@ -1,2 +1,3 @@
 # Redirect old file path to new file path
-Redirect /blog/ blog.paxcom.net
+Redirect /blog/ http://blog.paxcom.net/
+
