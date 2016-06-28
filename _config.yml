@@ -1,0 +1,46 @@
+### GENERAL SETTINGS ###
+
+# Site settings
+name: "paxcom"
+title: Paxcom ecommerce solutions - Omnichannel online solutions for e-tailers and manufactures in India
+keywords: Centralized Product information management
+description: Paxcom e-commerce applications will help you to manage,sell and analyze your products on multiple marketplaces in India -Product Information Management,retail analysis ,Order and Inventory Management
+author: "vivek kumar"
+email: vivek.kumar@paxcom.net
+url: ""
+github : username
+twitter : username
+
+### Build settings
+markdown: kramdown
+highlighter: Pygments 
+
+# Site Navigation
+
+gems:
+  - jekyll-redirect-from
+# - jekyll-server-redirects
+  
+
+
+disqus: paxcomblog
+
+
+redirect_from: /features-order.html
+redirect_to: /supply-chain.html
+
+
+
+
+# custom_redirects:
+#   - from: support/
+#     to: http://support.paxcom.net/
+#     type: permanent
+#   - from: /support/
+#     to: http://support.paxcom.net/
+#     type: temp	
+#   - from: blog/
+#     to: blog.paxcom.net
+#    type: permanent
+
+

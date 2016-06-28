@@ -1,0 +1,46 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default inner-nav"  id="navigation-bar">
+  <div class="container">
+    <div class="navbar-header ">
+      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+    	</button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav" id="myTab">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <!--<li class="hidden"> <a class="page-scroll" href="#page-top">top</a> </li>-->        
+        {% if page.url == "/merchandising-solutions.html" %}
+        	<li class="active"> <a href="#Content-Optimization"  class="page-scroll">Product Data Compliance</a> </li>
+        	<li class=""> <a href="#Product-positioning"  class="page-scroll">Brand Visibility</a> </li>
+            <li class=""> <a href="#Product-Promotions"  class="page-scroll">Promotions Planning</a> </li>
+            <li class=""> <a href="#Retail-Analytics"  class="page-scroll">Data Insights</a> </li>
+        
+        {% else %}
+            <li class="active"> <a href="#Products-Listing"  class="page-scroll">Products Listing</a> </li>
+            <li> <a  href="#Inventory-Distribution" class="page-scroll">Auto Distribute Inventory</a> </li>
+            <li> <a  href="#Multichannel-Orders" class="page-scroll">Centralized Orders view </a> </li>
+            <li> <a  href="#Return-orders-management" class="page-scroll">Manage returns & cancellations</a> </li>
+            <li> <a  href="#Accounts-Reconciliation" class="page-scroll">Reconcile accounts    </a> </li>
+            <li> <a  href="#Smart-Analytics" class="page-scroll">Data Insights </a> </li>
+        {% endif %}
+                
+        
+        
+        						 
+        
+         <!--<li> <a id="nav4" class="page-scroll" href="#relatedProducts">Related Products</a> </li>
+         <li class="hidden"> <a id="nav5" class="page-scroll" href="#clients"></a> </li>-->
+      </ul>
+     
+      
+      
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav> 
+

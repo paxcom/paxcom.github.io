@@ -1,0 +1,35 @@
+<div class="right-side-bar">
+  <div class="btn-request-a-demo"> </div>
+  <div class="request-a-demo">
+    <div class="heading"> <i class="fa fa-comments-o"></i><br>
+      REQUEST A DEMO </div>
+    <form id="contactform" name="contactform" method="POST" action="http://kinator.paxcom.net/paxcom/demo">
+      <input type="hidden" name="_subject" value="REQUEST A DEMO" />
+      <div class="form-group">
+        <input type="text" placeholder="Full Name*" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Mobile number*" name="mobile_number" class="form-control" required pattern='\d{10}' title="Mobile Number">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email Id*" class="form-control" name="_replyto" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Message*" class="form-control" name="description" required></textarea>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-xs-12">
+          <button class="btn btn-success form-control ">SUBMIT</button> 
+        </div>
+        <div class="col-sm-7 col-xs-12 mandatory"> <i class="star">*</i> <span class="pull-left">fields are mandatory.</span></div>
+      </div>
+      <input type="hidden" name="_next" value="{{site.baseurl}}/thank.html" />
+    </form>
+    <script>
+		/*var contactform =  document.getElementById('contactform');
+		contactform.setAttribute('action', '//formspree.io/' + 'bd' + '@' + 'paxcom' + '.' + 'net');*/
+		submitForm("contactform");
+	</script>
+    
+  </div>
+</div>

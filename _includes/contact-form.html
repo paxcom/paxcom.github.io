@@ -1,0 +1,43 @@
+<h2>Leave A Message</h2>
+<div class="row">
+<form id="contactform2" name="contactform2" method="POST" action="http://kinator.paxcom.net/paxcom/cs">
+	<div class="top-space contact-us-from">
+    
+   <input type="text" name="_gotcha" style="display:none" />
+  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+    <label>Name </label>
+    <input class="input-box form-control" type="text" required name="name">
+  </div>
+
+    <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <label>Mobile No  </label>
+     <input class="input-box form-control" name="mobile_number" type="tel" required pattern='\d{10}' title="Mobile Number">
+  </div>
+
+  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <label for="">Email  </label>
+    <input class="input-box form-control" type="email" name="_replyto" id="email" required>
+  </div>
+
+  <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <label for="">Subject </label>
+    <input type="text" id="subject" class="input-box form-control"  name="_subject" required>
+  </div>
+
+  <div class="form-group col-xs-12">
+    <label for="">Description  </label>
+    <textarea  class="form-control" rows="8" name="description" required></textarea>
+  </div>
+ <div class="form-group col-xs-12">
+  <input  class="btn btn-submit btn-contact " type="submit" value="Send" value="Submit Form">   
+  </div> 
+  <input type="hidden" name="_next" value="{{site.baseurl}}/thank.html" />
+  </div>
+  </form>
+  <script>
+    /*var contactform2 =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'bd' + '@' + 'paxcom' + '.' + 'net');*/
+	submitForm("contactform2");
+  </script>
+</div>
+
