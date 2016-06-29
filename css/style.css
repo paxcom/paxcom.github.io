@@ -802,6 +802,60 @@ footer ul.social-icon li:hover {
 
 
 /*********************************** Privacy Policy and T&C header *******************************************************/
+
+.mid_counter {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.ab_cont_work {
+    width: 100%;
+    float: left;
+    background: #fff;
+    height: 54px;
+    box-shadow: 0 0 0 #dcdcdc;
+}
+.work-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.work-nav {
+    width: 750px;
+    margin: 0 auto;
+}
+.work-nav_one {
+    width: 540px !important;
+    margin: 0 auto;
+}
+.work-nav ul li {
+    line-height: normal;
+    float: left;
+}
+.work-nav ul li a {
+    font-size: 16px;
+    color: #1c2733;
+    line-height: 53px;
+    display: block;
+    padding: 0;
+    display: block;
+    margin: 0 20px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
+    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
+}
+.work-nav_one ul li a {
+    text-transform: uppercase;
+    font-size: 13px!important;
+    padding: 0 20px;
+    line-height: 50px;
+    border-bottom: solid 1px transparent;
+    position: relative;
+    font-weight: 700;
+}
+
+
+
 .inner_pp_tc {
 	margin-top: -82px;
     padding: 90px 0px;
@@ -850,59 +904,12 @@ footer ul.social-icon li:hover {
         padding: 2px 5px;
         border: 1px solid black;
     }
-.mid_counter {
-    width: 100%;
-    background: #f5f5f5;
-}
-.ab_cont_work {
-    width: 100%;
-    float: left;
-    background: #fff;
-    height: 54px;
-    box-shadow: 0 0 0 #dcdcdc;
-}
-.work-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.work-nav {
-    width: 750px;
-    margin: 0 auto;
-}
-.work-nav_one {
-    width: 540px !important;
-    margin: 0 auto;
-}
-.work-nav ul li {
-    line-height: normal;
-    float: left;
-}
-.work-nav ul li a {
-    font-size: 16px;
-    color: #1c2733;
-    line-height: 53px;
-    display: block;
-    padding: 0;
-    display: block;
-    margin: 0 20px;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
-    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
-}
-.work-nav_one ul li a {
-    text-transform: uppercase;
-    font-size: 13px!important;
-    padding: 0 20px;
-    line-height: 50px;
-    border-bottom: solid 1px transparent;
-    position: relative;
-    font-weight: 700;
-}
+
+
+
+
+
 /*********************************** Privacy Policy and T&C header *******************************************************/
-
-
-
 
 
 
