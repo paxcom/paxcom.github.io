@@ -22,8 +22,9 @@ layout: default
 </style>
 <div class="clearfix"></div>
 
-{% include inner-header-about.html %}
-{% include inner-nav.html %}
+{% include privacy-terms-header.html %}
+{% include pp-tnc-tab.html %}
+
 <div class="container inner-section">
 
 {% include privacy_policy.html %}
