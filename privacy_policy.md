@@ -18,9 +18,10 @@ layout: default
 .pri_sec p {
 	color: #636363;
 	line-height: 23px;
-} 
+}
 </style>
 <div class="clearfix"></div>
+
 <section id="pp_page">
   <div class="why_sec_cont pri_sec">
     <div class="row">
@@ -84,5 +85,7 @@ layout: default
     </div>
   </div>
 </section>
+
+</div>
 {% include signup-request.html %}
 {% include footer.html %}
