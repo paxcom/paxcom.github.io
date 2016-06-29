@@ -14,7 +14,7 @@
 		//$(document).ready(function() {
 			setTimeout(function(){
 			var cureentUrl = document.location.href;
-			
+			console.log(":cureentUrl",cureentUrl)
 			
 			var urllist=[
 						  {
@@ -41,14 +41,14 @@
   
 			for (var i = 0, l = urllist.length; i < l; i++) 
 				{
-					console.log(urllist[i].oldUrl);
-					console.log(urllist[i].newUrl);
+					//console.log(urllist[i].oldUrl);
+					//console.log(urllist[i].newUrl);
 					
 					//document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
 					
 					//$('head').append('<meta http-equiv="refresh" content="0; url= urllist[i].oldUrl ">');
-					
-					if(cureentUrl == urllist[i].old ){
+					console.log("cureentUrl",cureentUrl,"urllist[i].old",urllist[i].oldUrl)
+					if(cureentUrl == urllist[i].oldUrl ){
 						console.log("condition match");
 						document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
 						document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
