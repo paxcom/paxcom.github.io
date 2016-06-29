@@ -10,12 +10,64 @@
 <head>
     <!-- some other meta -->
     {% if page.url == "/404.html" %}
-        <meta http-equiv="refresh" content="0; url=http://support.paxcom.net/">        
-    	<link rel="canonical" href="http://paxcom.net/support/" />
+    	<script>
+			var cureentUrl = document.location.href;
+			
+			var urllist=[
+						  {
+							  "old": "http://paxcom.net/support/business-intelligence-analytics/",
+							  "new": "http://blog.paxcom.net/business-intelligence-analytics/"
+						  },
+						  {
+							  "old": "http://paxcom.net/support/5-senses-strategy-for-product-content/",
+							  "new": "http://blog.paxcom.net/5-senses-strategy-for-product-content/"
+						  },
+						  {
+							  "old": "http://paxcom.net/support/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/",
+							  "new": "http://blog.paxcom.net/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/"
+						  },
+						  {
+							  "old": "http://paxcom.net/blog/",
+							  "new": "http://blog.paxcom.net/"
+						  },
+						  {
+							  "old": "http://paxcom.net/support/",
+							  "new": "http://support.paxcom.net/"
+						  },
+						  {
+							  "old": "http://127.0.0.1:4000/about-us.html",
+							  "new": "http://support.paxcom.net/"
+						  }
+  						]
+  
+			for (var i = 0, l = urllist.length; i < l; i++) {
+				console.log(urllist[i].old);
+				console.log(urllist[i].new);
+				
+				if(cureentUrl == urllist[i].old ){
+					<meta http-equiv="refresh" content="0; url=urllist[i].new">        
+					<link rel="canonical" href="urllist[i].old" />
+				}
+				break;
+		
+			}
+			
+		
+			
+		</script>
+    
         
         
-        <meta http-equiv="refresh" content="0; url=http://blog.paxcom.net/">        
-    	<link rel="canonical" href="http://paxcom.net/blog/" />
+        <!--{% for list in site.urllist %}
+        	<p>{{  list.old }} {{  list.new }}</p>
+      	{% endfor %}
+        <script>
+			javascript: alert(document.location.href);
+		</script>-->
+        
+        
+        
+        
     {% endif %}
     <!-- some other stuff like link or script -->
 

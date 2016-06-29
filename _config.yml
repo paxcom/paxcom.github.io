@@ -43,4 +43,24 @@ redirect_to: /supply-chain.html
 #     to: blog.paxcom.net
 #    type: permanent
 
+# old ro new url redirects 
+urllist:
+- old: http://paxcom.net/support/business-intelligence-analytics/
+  new: http://blog.paxcom.net/business-intelligence-analytics/
+  
+- old: http://paxcom.net/support/5-senses-strategy-for-product-content/
+  new: http://blog.paxcom.net/5-senses-strategy-for-product-content/
+  
+- old: http://paxcom.net/support/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/
+  new: http://blog.paxcom.net/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/
+  
+- old: http://paxcom.net/blog/
+  new: http://blog.paxcom.net/
+  
+- old: http://paxcom.net/support/
+  new: http://support.paxcom.net/
+  
+- old: http://127.0.0.1:4000/about-us.html
+  new: http://support.paxcom.net/about-us.html
+  
 

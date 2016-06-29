@@ -5,6 +5,36 @@ layout: default
 <div class="container inner-section">
 	<div class="col-md-7">
     	{% include about-content.html %}
+        
+       <!-- <script>
+			alert(document.location.href);
+		</script>
+        {% for list in site.urllist %}
+        	<p>{{  list.old }} {{  list.new }}</p>
+      	{% endfor %}
+        
+        
+        
+        {% highlight javascript %} $('.content').html($(data).find('.YOUR CLASS NAME')); {% endhighlight %}
+        
+        {% assign dog_name = "<script> document.location.href </script>" %}
+        <p> *** {{dog_name}}  ***</p>
+        
+        
+        {% for list in site.urllist %}
+        	<p>{{  list.old }} {{  list.new }}  cureentUrl</p>
+            
+            {% if cureentUrl ==  list.old %}
+                <p>{{  list.old }} {{  list.new }}</p>
+            {% endif %}
+            
+            
+      	{% endfor %}
+        
+        -->
+        
+        
+        
     </div>
     <div class="col-md-5">
     	{% include ouraim.html %}
