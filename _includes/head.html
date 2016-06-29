@@ -11,42 +11,50 @@
     <!-- some other meta -->
     {% if page.url == "/404.html" %}
     	<script>
+		$(document).ready(function() {
 			var cureentUrl = document.location.href;
+			
 			
 			var urllist=[
 						  {
-							  "old": "http://paxcom.net/support/business-intelligence-analytics/",
-							  "new": "http://blog.paxcom.net/business-intelligence-analytics/"
+							  "oldUrl": "http://paxcom.net/support/business-intelligence-analytics/",
+							  "newUrl": "http://blog.paxcom.net/business-intelligence-analytics/"
 						  },
 						  {
-							  "old": "http://paxcom.net/support/5-senses-strategy-for-product-content/",
-							  "new": "http://blog.paxcom.net/5-senses-strategy-for-product-content/"
+							  "oldUrl": "http://paxcom.net/support/5-senses-strategy-for-product-content/",
+							  "newUrl": "http://blog.paxcom.net/5-senses-strategy-for-product-content/"
 						  },
 						  {
-							  "old": "http://paxcom.net/support/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/",
-							  "new": "http://blog.paxcom.net/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/"
+							  "oldUrl": "http://paxcom.net/support/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/",
+							  "newUrl": "http://blog.paxcom.net/data-collection-and-analysis-for-forming-sales-strategy-in-e-commerce/"
 						  },
 						  {
-							  "old": "http://paxcom.net/blog/",
-							  "new": "http://blog.paxcom.net/"
+							  "oldUrl": "http://paxcom.net/blog/",
+							  "newUrl": "http://blog.paxcom.net/"
 						  },
 						  {
-							  "old": "http://paxcom.net/support/",
-							  "new": "http://support.paxcom.net/"
+							  "oldUrl": "http://paxcom.net/support/",
+							  "newUrl": "http://support.paxcom.net/"
 						  }
   						]
   
-			for (var i = 0, l = urllist.length; i < l; i++) {
-				console.log(urllist[i].old);
-				console.log(urllist[i].new);
-				
-				if(cureentUrl == urllist[i].old ){
-					'<meta http-equiv="refresh" content="0; url=urllist[i].new">'        
-					'<link rel="canonical" href="urllist[i].old" />'
+			for (var i = 0, l = urllist.length; i < l; i++) 
+				{
+					console.log(urllist[i].oldUrl);
+					console.log(urllist[i].newUrl);
+					
+					//document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
+					
+					//$('head').append('<meta http-equiv="refresh" content="0; url= urllist[i].oldUrl ">');
+					
+					if(cureentUrl == urllist[i].old ){
+						console.log("condition match");
+						document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
+						document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
+						
+					}	
 				}
-				
-		
-			}
+			});
 		</script>
         
         
