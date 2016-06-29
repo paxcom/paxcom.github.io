@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="clearfix"></div>
+{% include inner-header-about.html %}
+
 <style>
 .why_sec_cont {
 	width: 100%;
