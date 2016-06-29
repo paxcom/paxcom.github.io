@@ -843,9 +843,14 @@ footer ul.social-icon li:hover {
 }
 
 
-.why_sec_cont{}
-
-
+.why_sec_cont{ background: red;}
+.why_sec_cont h4 {
+    padding: 45px 0 0;
+}
+.why_sec_cont p {
+    padding: 10px;
+}
+.why_sec_cont .pp_listcustom ul{}
 
 
 
