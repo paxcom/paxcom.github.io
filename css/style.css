@@ -1237,7 +1237,7 @@ footer .copyright{position:static}
 /******************************************************************************************/
  
 @media (min-width:1024px) and (max-width:1366px) { 
-.paxcom-home .carousel-caption { margin: 8% 6% 0px; color: #333;}
+.paxcom-home .carousel-caption { margin: 8% 9% 0px; color: #333;}
 .paxcom-home h1 { font-size: 5.455em; line-height: 1.3em;}
 .thanks h1{font-size:3em;}
 .paxcom-home .merchandising_supply { margin: 2% 2% 0% 2%;}
