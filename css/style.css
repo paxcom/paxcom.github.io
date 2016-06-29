@@ -852,6 +852,7 @@ footer ul.social-icon li:hover {
 .why_sec_cont p {
     margin: 0px 0px 15px 0px;
     color: #333;
+    font-weight: normal;
 }
 
 .why_sec_cont ul{ margin: 0px 0px 0px 19px;}
