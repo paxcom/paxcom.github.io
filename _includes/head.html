@@ -37,13 +37,10 @@
 						  {
 							  "oldUrl": "http://paxcom.net/support/",
 							  "newUrl": "http://support.paxcom.net/"
-						  },
-						  {
-							  "oldUrl": "http://127.0.0.1:4000/support/",
-							  "newUrl": "http://127.0.0.1:4000/about-us.html"
 						  }
+						  
   						]
-  
+  			var match = false;
 			for (var i = 0, l = urllist.length; i < l; i++) 
 				{
 					//console.log(urllist[i].oldUrl);
@@ -54,6 +51,7 @@
 					//$('head').append('<meta http-equiv="refresh" content="0; url= urllist[i].oldUrl ">');
 					console.log("cureentUrl",cureentUrl,"urllist[i].old",urllist[i].oldUrl)
 					if(cureentUrl == urllist[i].oldUrl ){
+						match = true;
 						console.log("condition match");
 						var newAdd = urllist[i].newUrl;
 						var oldAdd = urllist[i].oldUrl;
@@ -63,14 +61,20 @@
 						//document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
 						//document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
 						
-						var x = document.createElement("META");
+						/*var x = document.createElement("META");
 						x.setAttribute("http-equiv", "refresh");
 						x.setAttribute("content", "Free Web tutorials");
-						document.head.appendChild(x);
+						document.head.appendChild(x);*/
 						
 						
 					}	
 				}
+				if((!match)&&(cureentUrl.indexOf("http://paxcom.net/support/")!=-1)){
+					
+						$('head').append("<meta http-equiv=\"refresh\" content=\"0; url=" + "http://support.paxcom.net/" + "\" >");
+						$('head').append('<link rel=\"canonical\" href=\"+ oldAdd + \">');
+					
+					}
 			},1000);
 			//});
 		</script>
