@@ -18,7 +18,7 @@ layout: default
 .pri_sec p {
 	color: #636363;
 	line-height: 23px;
-}
+} 
 </style>
 <div class="clearfix"></div>
 <section id="pp_page">
