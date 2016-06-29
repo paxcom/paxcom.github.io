@@ -231,7 +231,7 @@ $('ul.nav li.dropdown').hover(function() {
 
 
 /*Scroll Spy*/
-   $('body').scrollspy({ target: '#spy', offset:80});
+   /* $('body').scrollspy({ target: '#spy', offset:80});
 
     
     $('a[href*=#]:not([href=#])').click(function() {
@@ -246,6 +246,6 @@ $('ul.nav li.dropdown').hover(function() {
                 return false;
             }
         }
-    });
+    });*/
 
 });
