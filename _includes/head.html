@@ -70,11 +70,20 @@
 					}	
 				}
 				if((!match)&&(cureentUrl.indexOf("http://paxcom.net/support/")!=-1)){
+						match = true;
 					
 						$('head').append("<meta http-equiv=\"refresh\" content=\"0; url=" + "http://support.paxcom.net/" + "\" >");
 						$('head').append('<link rel=\"canonical\" href=\"+ oldAdd + \">');
 					
 					}
+					
+				if((!match)&&(cureentUrl.indexOf("http://paxcom.net/blog/")!=-1)){
+					match = true;
+						$('head').append("<meta http-equiv=\"refresh\" content=\"0; url=" + "http://blog.paxcom.net/" + "\" >");
+						$('head').append('<link rel=\"canonical\" href=\"+ oldAdd + \">');
+					
+					}
+				
 			},1000);
 			//});
 		</script>
