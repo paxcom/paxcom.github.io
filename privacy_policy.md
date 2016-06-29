@@ -29,5 +29,7 @@ layout: default
 {% include privacy_policy.html %}
    
 </div>
+<div class="clearfix"></div>
+
 {% include signup-request.html %}
 {% include footer.html %}
