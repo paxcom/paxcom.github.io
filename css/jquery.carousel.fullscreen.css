@@ -54,7 +54,6 @@
     margin: 0px;
     text-align: left;
     letter-spacing: 0px;
-    float: left;
 }
 
 .paxcom-home h1 span{
@@ -174,7 +173,7 @@
     letter-spacing: 2px;
 }
 
-.paxcom-home .shop-img{display:block;  width:598px;}
+.paxcom-home .shop-img{display:block;  width:552px;}
 
 .btn-more{
 	background: #ff9000;
