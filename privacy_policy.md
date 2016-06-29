@@ -23,6 +23,7 @@ layout: default
 <div class="clearfix"></div>
 
 {% include inner-header-about.html %}
+{% include inner-nav.html %}
 <div class="container inner-section">
 
 {% include privacy_policy.html %}
