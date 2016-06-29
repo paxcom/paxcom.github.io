@@ -8,6 +8,7 @@
 
 
 <head>
+<script src="{{site.baseurl}}/js/main.js"></script>
     <!-- some other meta -->
     {% if page.url == "/404.html" %}
     	<script>
@@ -50,10 +51,16 @@
 					console.log("cureentUrl",cureentUrl,"urllist[i].old",urllist[i].oldUrl)
 					if(cureentUrl == urllist[i].oldUrl ){
 						console.log("condition match");
-						//$('head').append('<meta http-equiv="refresh" content="0; url= urllist[i].newUrl ">');
-						//$('head').append('<link rel="canonical" href="urllist[i].oldUrl">');
-						document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
-						document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
+						$('head').append('<meta http-equiv="refresh" content="0; url= urllist[i].newUrl ">');
+						$('head').append('<link rel="canonical" href="urllist[i].oldUrl">');
+						//document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
+						//document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
+						
+						var x = document.createElement("META");
+						x.setAttribute("http-equiv", "refresh");
+						x.setAttribute("content", "Free Web tutorials");
+						document.head.appendChild(x);
+						
 						
 					}	
 				}
