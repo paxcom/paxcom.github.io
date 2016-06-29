@@ -799,6 +799,74 @@ footer ul.social-icon li:hover {
 	margin: 0px;
 	bottom: 0px;
 }
+
+
+/*********************************** Privacy Policy and T&C header *******************************************************/
+.inner_pp_tc {
+	margin-top: -82px;
+    padding: 90px 0px;
+    border-bottom: 1px solid #f7901e;
+    position: relative;
+}
+
+.inner_pp_tc .pp{
+	position: relative;
+    background: #fbc992;
+}
+.inner_pp_tc h1 {
+    font-weight: 300;
+    color: #000;
+    font-size: 2.7em;
+    line-height: 1.2em;
+    margin: 0px;
+}
+.inner_pp_tc h1 p {
+    color: #000;
+    font-weight: 700;
+    font-size: 0.6em;
+    margin: 0px;
+    line-height: 1.5em;
+}
+.inner_pp_tc .pp h1 p{
+    color: #000;
+}
+.inner_pp_tc .pp .image-container, .inner_pp_tc .tnc .image-container {
+    position: absolute;
+    right: 4%;
+    bottom: 0px;
+    width: 36%;
+}
+
+.inner_ul_center {
+        text-align: center;
+    }
+    .inner_ul_center ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .inner_ul_center li {
+        float: left;
+        padding: 2px 5px;
+        border: 1px solid black;
+    }
+
+
+/*********************************** Privacy Policy and T&C header *******************************************************/
+
+
+
+
+
+
+
+
+
+
+
 /***********************************Inner header*******************************************************/
 					
 .inner-header {
@@ -985,62 +1053,6 @@ footer ul.social-icon li:hover {
 .thanks h1 span{font-size:0.5em;}
 .thanks h1 a{color:#ff9000}
 .thanks h1 a:hover{color:#6cb33f}
-
-	
-	
-
-/*********************************** Privacy Policy and T&C header *******************************************************/
-.inner_pp_tc {
-	margin-top: -82px;
-    padding: 90px 0px;
-    border-bottom: 1px solid #f7901e;
-    position: relative;
-}
-
-.inner_pp_tc .pp{
-	position: relative;
-    background: #fbc992;
-}
-.inner_pp_tc h1 {
-    font-weight: 300;
-    color: #000;
-    font-size: 2.7em;
-    line-height: 1.2em;
-    margin: 0px;
-}
-.inner_pp_tc h1 p {
-    color: #000;
-    font-weight: 700;
-    font-size: 0.6em;
-    margin: 0px;
-    line-height: 1.5em;
-}
-.inner_pp_tc .pp h1 p{
-    color: #000;
-}
-.inner_pp_tc .pp .image-container, .inner_pp_tc .tnc .image-container {
-    position: absolute;
-    right: 4%;
-    bottom: 0px;
-    width: 36%;
-}
-
-.inner_ul_center {
-        text-align: center;
-    }
-    .inner_ul_center ul {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        /* For IE, the outcast */
-        zoom:1;
-        *display: inline;
-    }
-    .inner_ul_center li {
-        float: left;
-        padding: 2px 5px;
-        border: 1px solid black;
-    }
 
 
 /******************************************************************************************
