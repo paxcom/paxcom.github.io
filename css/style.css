@@ -845,12 +845,16 @@ footer ul.social-icon li:hover {
 
 .why_sec_cont{ background: red;}
 .why_sec_cont h4 {
-    padding: 45px 0 0;
+    padding: 10px 0px 0px 0px;
+    margin: 20px 0px 10px 0px;
+    font-weight: 700;
 }
 .why_sec_cont p {
-    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    color: #333;
 }
-.why_sec_cont .pp_listcustom ul{}
+.why_sec_cont .pp_listcustom ul{ margin: 0px 0px 0px 40px;}
+.why_sec_cont .pp_listcustom ul li{ padding: 0px; margin: 0px; font-family: 'Raleway', sans-serif; line-height: 33px;}
 
 
 
