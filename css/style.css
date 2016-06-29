@@ -807,12 +807,9 @@ footer ul.social-icon li:hover {
     padding: 90px 0px;
     border-bottom: 1px solid #f7901e;
     position: relative;
-}
-
-.inner_pp_tc.pp{
-	position: relative;
     background: #fbc992;
 }
+
 .inner_pp_tc h1 {
     font-weight: 300;
     color: #000;
