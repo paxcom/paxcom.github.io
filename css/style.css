@@ -827,7 +827,7 @@ footer ul.social-icon li:hover {
 .inner_pp_tc .pp h1 p{
     color: #000;
 }
-.inner_pp_tc .pp .image-container, .inner_pp_tc .tnc .image-container {
+.inner_pp_tc.image-container, .inner_pp_tc.image-container {
     position: absolute;
     right: 4%;
     bottom: 0px;
