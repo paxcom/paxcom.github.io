@@ -37,6 +37,10 @@
 						  {
 							  "oldUrl": "http://paxcom.net/support/",
 							  "newUrl": "http://support.paxcom.net/"
+						  },
+						  {
+							  "oldUrl": "http://127.0.0.1:4000/support/",
+							  "newUrl": "http://127.0.0.1:4000/about-us.html"
 						  }
   						]
   
@@ -53,8 +57,8 @@
 						console.log("condition match");
 						//var newAdd = urllist[i].newUrl;
 						//var oldAdd = urllist[i].newUrl;
-						$('head').append('<meta http-equiv="refresh" content="\0; url=+urllist[i].oldUrl+\">');
-						$('head').append('<link rel="canonical" href="\+urllist[i].newUrl\">');
+						$('head').append('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
+						$('head').append('<link rel="canonical" href="urllist[i].oldUrl">');
 						//document.getElementsByTagName('head')[0].appendChild('<meta http-equiv="refresh" content="0; url=urllist[i].newUrl">');
 						//document.getElementsByTagName('head')[0].appendChild('<link rel="canonical" href="urllist[i].oldUrl">');
 						
