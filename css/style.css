@@ -837,28 +837,11 @@ footer ul.social-icon li:hover {
     width: 36%;
 }
 
-.inner_ul_center {
-        text-align: center;
-    }
-    .inner_ul_center ul {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        /* For IE, the outcast */
-        zoom:1;
-        *display: inline;
-    }
-    .inner_ul_center li {
-        float: left;
-        padding: 2px 5px;
-        border: 1px solid black;
-    }
-
-
 
 .mid_counter {
     width: 100%;
     background: #f5f5f5;
+    float: left;
 }
 
 .ab_cont_work {
