@@ -6,9 +6,6 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
 ---
 <div class="clearfix"></div>
 {% include paxcomHomeIntro.html %}
-
-<div class="section s2">
-
 <section id="Merchandising">
     <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"> 
       
@@ -35,10 +32,8 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
       <!-- Controls --> 
       <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>--> </div>
   </section>
- </div> 
   
   
-  <div class="section s3"> 
   <section id="SupplyChain">
     <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"> 
       
@@ -66,9 +61,6 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
       <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>--> </div>
   </section>
 
-</div>
-  
-  
 {% include our_clients.html %}  
   
 {% include signup-request.html %}
