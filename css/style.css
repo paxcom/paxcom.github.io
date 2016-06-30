@@ -876,6 +876,76 @@ footer ul.social-icon li:hover {
 
 
 
+
+.box {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.3s linear;
+}
+.section {
+	overflow: hidden;
+	height: 100%;
+}
+.s1 {
+	background: #5686a5
+}
+.s2 {
+	background: #774a7c
+}
+.s3 {
+	background: #4a7c74
+}
+.s4 {
+	background: #7c794a
+}
+.s5 {
+	background: #4c4c4c
+}
+
+.s1 div {
+	color: #fff;
+	line-height: 24px;
+	text-indent: 2em;
+	padding: 20px
+}
+.controlBtns {
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	margin-top: -40px;
+	_position: absolute;
+}
+.controlBtns a {
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	background-color: #9f9f9f;
+	display: block;
+}
+.controlBtns a.active {
+	background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*********************************** Privacy Policy and T&C header *******************************************************/
 
 
