@@ -862,9 +862,8 @@ footer ul.social-icon li:hover {
 
 
 .our_clintes_div {
-    background:red;
-    padding: 30px 15px;
-    border-top: 1px solid #c6c6c6;
+    padding: 50px 0px 100px 0px;
+    border-top: 1px solid #f5f5f5;
 }
 .our_clintes_div h3 {
 	font-size: 2.4em;
