@@ -9,7 +9,7 @@ layout: default
 <section class="mid_counter">
 <div class="container inner-section">
 
-{% include privacy_policy.html %}
+{% include terms_conditions.html %}
    
 </div>
 </section>
