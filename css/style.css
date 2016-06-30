@@ -809,6 +809,7 @@ footer ul.social-icon li:hover {
     border-bottom: 1px solid #f7901e;
     position: relative;
     background: #fbc992;
+    min-height: 305px;
 }
 
 .inner_pp_tc h1 {
