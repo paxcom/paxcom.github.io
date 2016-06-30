@@ -861,7 +861,17 @@ footer ul.social-icon li:hover {
 .why_sec_cont .indenttxt{ margin: 0px 0px 10px 40px; padding: 0;}
 
 
-
+.our_clintes_div {
+    background:red;
+    padding: 30px 15px;
+    border-top: 1px solid #c6c6c6;
+}
+.our_clintes_div h3 {
+	font-size: 2.4em;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.our_clintes_div p{}
 .our_clinte_img { margin: 20px auto;}
 
 
