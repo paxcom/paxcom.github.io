@@ -862,21 +862,8 @@ footer ul.social-icon li:hover {
 
 
 
-.cli_sec {
-    padding: 20px 0 0;
-    width: 980px;
-    margin: 0 auto;
-}
-.client_inside {
-    border-bottom: 1px solid #df4c54;
-}
+.our_clinte_img { margin: 20px auto;}
 
-.client_list {
-    border-right: 1px solid #df4c54;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
-    transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color .3s;
-}
 
 
 
