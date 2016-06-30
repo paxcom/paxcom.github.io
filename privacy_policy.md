@@ -4,7 +4,7 @@ layout: default
 
 <div class="clearfix"></div>
 
-{% include privacy-terms-header.html %}
+{% include privacy_policy_header.html %}
 
 <section class="mid_counter">
 <div class="container inner-section">
