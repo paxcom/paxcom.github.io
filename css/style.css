@@ -1007,11 +1007,12 @@ footer ul.social-icon li:hover {
 }
 
 .content-section.section-gray {
-	position: relative;
 	background: #f6f7f9;
-	margin: 50px 0px;
+
+/*	position: relative;
+	margin: 50px 0px;*/
 }
-.content-section.section-gray:before {
+/* .content-section.section-gray:before {
 	content: "";
 	position: absolute;
 	top: -34px;
@@ -1020,7 +1021,7 @@ footer ul.social-icon li:hover {
 	width: 100%;
 	border-left: 767px solid transparent;
 	border-right: 581px solid transparent;
-	border-bottom: 34px solid #f6f7f9;
+	border-bottom: 34px solid #f6f7f9; */
 }
 .ouraim, .ourlocation {
 	border: 1px dashed #f7901e;
