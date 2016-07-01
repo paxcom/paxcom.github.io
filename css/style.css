@@ -87,6 +87,8 @@ header {
 .navbar-toggle:hover .icon-bar {
 	background: #6cb33f;
 }
+
+
 .paxcom-nav {
 	float: right;
 	margin-bottom: 0px;
@@ -120,7 +122,7 @@ header {
 	background-color: #ff9000;
 	display: block;
 	content: '';
-	transition: 0.3s;
+	transition: 0.2s;
 }
 .paxcom-nav ul li a.active {
 	border-bottom: solid 1px #ff9000;
@@ -135,63 +137,9 @@ header {
 	border-bottom: none;
 }
 
-.paxcom-nav ul li .dropdown-menu {
-	background: #fff;
-	border-radius: 0px;
-	margin: 0 0 0 10px;
-	padding: 0px 0;
-	border-radius: 2px;
-	box-shadow: none;
-	margin: 13px 0px 0px -10px;
-	min-width:111px;
-}
-.paxcom-nav ul li .dropdown-menu li {
-	padding: 0px;
-	color: #fff;
-	margin: 0px;
-	text-transform: none;
-}
 
-.paxcom-nav ul li .dropdown-menu li a {
-	padding: 9px 15px 9px 15px;
-	color: #000;
-	text-transform: inherit;
-	text-align: center;
-	font-size: 1em;
-	letter-spacing: 1px;
-	margin: 0;
-}
-.paxcom-nav ul li .dropdown-menu li a:hover, .paxcom-nav ul li .dropdown-menu li a.active {
-	background-color: #f78f1e;
-	color: #FFFFFF;
-}
-.paxcom-nav ul li .dropdown:hover .dropdown-menu {
-	display: block;
-}
-.paxcom-nav ul li .dropdown-menu:before {
-	position: absolute;
-	top: -7px;
-	left: 44px;
-	display: inline-block;
-	border-right: 7px solid transparent;
-	border-bottom: 7px solid #ccc;
-	border-left: 7px solid transparent;
-	border-bottom-color: rgba(0, 0, 0, 0.2);
-	content: '';
-}
-.paxcom-nav ul li .dropdown-menu:after {
-	position: absolute;
-	top: -6px;
-	left: 45px;
-	display: inline-block;
-	border-right: 6px solid transparent;
-	border-bottom: 6px solid #ffffff;
-	border-left: 6px solid transparent;
-	content: '';
-}
-.paxcom-nav ul li .dropdown-menu li a:after {
-	border-bottom: none;
-}
+
+
 /**************************** main Menu ***********************/
 
 /* Menu */
