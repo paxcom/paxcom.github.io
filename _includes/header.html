@@ -26,8 +26,23 @@ style=" margin: 0px; padding: 20px 40px;">
 
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Our Solutions <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="{{site.baseurl}}/merchandising-solutions.html" {% if page.url == '/merchandising-solutions.html'  %} class='active' {% endif %}>Merchandising Solutions</a></li>
+              <ul class="dropdown-menu multi-level">
+                
+                <li class="dropdown-submenu">
+                  <a href="{{site.baseurl}}/merchandising-solutions.html" {% if page.url == '/merchandising-solutions.html'  %} class='active' {% endif %}>Merchandising Solutions</a>
+                
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Second level</a></li>
+                  <li class="dropdown-submenu"><a href="#">Even More..</a></li>
+                  <li><a href="#">Second level</a></li>
+                  <li><a href="#">Second level</a></li>
+                </ul>
+                
+                </li>
+                
+                
+                
+                
                 <li><a href="{{site.baseurl}}/supply-chain.html" {% if page.url == '/supply-chain.html'  %} class='active' {% endif %}>Supply Chain Solutions</a></li> 
               </ul>
             </li> 
@@ -36,7 +51,7 @@ style=" margin: 0px; padding: 20px 40px;">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Resources<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="http://blog.paxcom.net/"  target="_blank">Blog</a></li>
-            	<li><a href="http://support.paxcom.net/"  target="_blank">Support</a></li> 
+              <li><a href="http://support.paxcom.net/"  target="_blank">Support</a></li> 
               </ul>
             </li>    
             
