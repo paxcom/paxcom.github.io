@@ -4,9 +4,9 @@ layout: default
 
 <div class="clearfix"></div>
 
-<section id="Content-Optimization" class="content-section section-gray">
+<section id="Product-Promotions" class="content-section section-gray">
 
-{% include ensureproduct.html %}
+{% include promotionssmartly.html %}
    
 </section>
 
