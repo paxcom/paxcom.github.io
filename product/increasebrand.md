@@ -4,9 +4,9 @@ layout: default
 
 <div class="clearfix"></div>
 
-<section id="Content-Optimization" class="content-section active">
+<section id="Product-positioning" class="content-section section-gray" >
 
-{% include product_data_compliance.html %}
+{% include increasebrand.html %}
    
 </section>
 
