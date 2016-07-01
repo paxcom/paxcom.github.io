@@ -94,7 +94,7 @@ header {
 	min-height: auto;
 }
 .paxcom-nav ul li {
-	display: inline;
+	/*display: inline;*/
 	margin: 0px 9px;
 }
 .paxcom-nav ul li a {
