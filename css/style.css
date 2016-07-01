@@ -986,7 +986,10 @@ footer ul.social-icon li:hover {
 	font-size: 1.3em;
 	font-weight: 700;
 	margin: 25px 0px 10px;
+	letter-spacing: 1px;
 }
+.content-section strong{ letter-spacing: 1px;}
+
 .content-section {
 	padding:70px 0px 50px;
 }
