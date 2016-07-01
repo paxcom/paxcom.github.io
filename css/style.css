@@ -970,6 +970,11 @@ footer ul.social-icon li:hover {
 .section-tab {
 	position: relative;
 }
+.content-section h1 {
+	font-size: 4em;
+	font-weight: 700;
+	margin: 25px 0px 10px;
+}
 .content-section h3 {
 	font-size: 1.877em;
     font-weight: 600;
