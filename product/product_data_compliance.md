@@ -6,7 +6,7 @@ layout: default
 
 <section id="Content-Optimization" class="content-section active">
 
-{% include ensureproduct.html %}
+{% include product_data_compliance.html %}
    
 </section>
 
