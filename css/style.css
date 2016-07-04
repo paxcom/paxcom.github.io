@@ -882,14 +882,6 @@ footer ul.social-icon li:hover {
 .our_clinte_img { margin:30px auto 0px auto;}
 .our_clinte_img img { margin:0px auto;}
 
-.content_divide{
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-}
-
-
-
 
 
 /*********************************** Privacy Policy and T&C header *******************************************************/
