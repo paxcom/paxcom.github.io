@@ -11,7 +11,8 @@ layout: default
 </section>
 
 <div class="clearfix"></div>
-[related_posts]
+
+{% include our_clients.html %} 
 {% include our_clients.html %} 
 {% include signup-request.html %}
 {% include footer.html %}
