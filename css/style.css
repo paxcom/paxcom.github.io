@@ -895,12 +895,12 @@ footer ul.social-icon li:hover {
     list-style: none;
 }
 
-.mid_content_sec{margin: 0 0 3% 0;background: #ff9000; padding: 3% 0 2% 0;}
+.mid_content_sec{margin: 0 0 0% 0;background: #ff9000; padding: 3% 0 2% 0;}
 .mid_ptag{color: white;
     font-size: 18px;
     line-height: 28px;
     text-shadow: 0px 1px 2px #734100;}
-.bottom_content_sec{margin: 0 0 3% 0;background:yellow; padding: 3% 0 2% 0;}
+.bottom_content_sec{margin: 0 0 0% 0;padding: 3% 0 2% 0;}
 
 
 
