@@ -48,6 +48,15 @@ header:before {
 .mtop50 {
 	margin-top: 50px;
 }
+.mtop60 {
+	margin-top: 60px;
+}
+.mtop70 {
+	margin-top: 70px;
+}
+.mtop80 {
+	margin-top: 80px;
+}
 h2 {
 	font-weight: 600
 }
