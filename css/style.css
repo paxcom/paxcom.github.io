@@ -887,14 +887,20 @@ footer ul.social-icon li:hover {
 	margin:5px 0px 15px 5px;
 }
 .intro-list1.main-content1 li {
-    background: antiquewhite;
-    margin: 5px 0px 5px 0px;
-    padding: 5px 10px 5px 10px;
+    background: white;
+    margin: 6px 0px 6px 0px;
+    padding: 7px 10px 7px 10px;
     font-weight: 500;
     letter-spacing: 1px;
+    list-style: none;
 }
 
-
+.mid_content_sec{margin: 0 0 3% 0;background: white; padding: 3% 0 2% 0;}
+.mid_ptag{color: white;
+    font-size: 18px;
+    line-height: 28px;
+    text-shadow: 0px 1px 2px #734100;}
+.bottom_content_sec{margin: 0 0 3% 0;background:yellow; padding: 3% 0 2% 0;}
 
 
 
