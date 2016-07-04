@@ -883,6 +883,20 @@ footer ul.social-icon li:hover {
 .our_clinte_img img { margin:0px auto;}
 
 
+.intro-list1.main-content1 {
+	margin:5px 0px 15px 5px;
+}
+.intro-list1.main-content1 li {
+    background: antiquewhite;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+
+
 
 /*********************************** Privacy Policy and T&C header *******************************************************/
 
