@@ -1061,7 +1061,7 @@ footer ul.social-icon li:hover {
 	border-right: 581px solid transparent;
 	border-bottom: 34px solid #f6f7f9; */
 }
-.ouraim.ourlocation {
+.ouraim,.ourlocation {
 	border: 1px dashed #f7901e;
 	padding: 7px 20px 20px 30px;
 }
