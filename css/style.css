@@ -1066,8 +1066,9 @@ footer ul.social-icon li:hover {
 	padding: 7px 20px 20px 30px;
 }
 .ourlocation {
-	margin-top: 30px;
-	border: 1px dashed #6cb33f;
+    border: 1px dashed #6cb33f;
+    margin-top: 30px;
+    padding: 5px 25px 20px;
 }
 .mail {
 	color: #333333
