@@ -1044,12 +1044,24 @@ footer ul.social-icon li:hover {
 	top:5px;
 }
 
+.ouraim, .ourlocation {
+    border: 1px dashed #f7901e;
+    padding: 7px 20px 20px 30px;
+}
+
+.ourlocation {
+    border: 1px dashed #6cb33f;
+    margin-top: 30px;
+    padding: 7px 20px 20px 30px;
+}
+
 .content-section.section-gray {
 	background: #f6f7f9;
 
 /*	position: relative;
 	margin: 50px 0px;*/
 }
+
 /* .content-section.section-gray:before {
 	content: "";
 	position: absolute;
@@ -1059,18 +1071,9 @@ footer ul.social-icon li:hover {
 	width: 100%;
 	border-left: 767px solid transparent;
 	border-right: 581px solid transparent;
-	border-bottom: 34px solid #f6f7f9; */
+	border-bottom: 34px solid #f6f7f9;*/
 }
-.ouraim1{
-	border: 1px dashed #f7901e;
-    margin-top: 30px;
-    padding: 7px 20px 20px 30px;
-}
-.ourlocation {
-    border: 1px dashed #6cb33f;
-    margin-top: 30px;
-    padding: 7px 20px 20px 30px;
-}
+
 .mail {
 	color: #333333
 }
