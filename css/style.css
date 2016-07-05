@@ -591,7 +591,7 @@ footer {
 	padding-bottom: 111px;
 	position: relative;
 	background-position: center calc(100% - 46px);
-	border-top: 1px solid #c6c6c6;
+	border-top: 1px solid #ececec;
 	/*margin-top: 40px;*/
 	padding-top: 40px;
 }
@@ -811,9 +811,9 @@ footer ul.social-icon li:hover {
 					Signup Request footer SECTION
 *****************************************************************************************/
 .signup-request {
-    background: #f9fafa;
+    background: #f6f7f9 ;
     padding: 30px 15px;
-    border-top: 1px solid #c6c6c6;
+    border-top: 1px solid #ececec;
 }
 .signup-request h3 {
 	font-size: 2.4em;
@@ -1066,7 +1066,7 @@ footer ul.social-icon li:hover {
 .content-section h1 {
 	font-size: 4em;
 	font-weight: 700;
-	margin: 25px 0px 10px;
+	margin: 25px 0px 10px 13px;
 }
 .content-section h3 {
 	font-size: 1.877em;
@@ -1094,12 +1094,23 @@ footer ul.social-icon li:hover {
     padding-left: 26px;
     letter-spacing: 1px;
     line-height: 21px;
-    margin: 7px 0px 8px 0px;
+    margin:15px 0px 20px 0px;
 }
 .intro-list.main-content li:before {
 	position: absolute;
 	left: 0px;
 	top:5px;
+}
+
+.ouraim, .ourlocation {
+    border: 1px dashed #f7901e;
+    padding: 7px 20px 20px 30px;
+}
+
+.ourlocation {
+    border: 1px dashed #6cb33f;
+    margin-top: 30px;
+    padding: 7px 20px 20px 30px;
 }
 
 .content-section.section-gray {
@@ -1108,6 +1119,7 @@ footer ul.social-icon li:hover {
 /*	position: relative;
 	margin: 50px 0px;*/
 }
+
 /* .content-section.section-gray:before {
 	content: "";
 	position: absolute;
@@ -1117,16 +1129,9 @@ footer ul.social-icon li:hover {
 	width: 100%;
 	border-left: 767px solid transparent;
 	border-right: 581px solid transparent;
-	border-bottom: 34px solid #f6f7f9; */
+	border-bottom: 34px solid #f6f7f9;*/
 }
-.ouraim, .ourlocation {
-	border: 1px dashed #f7901e;
-	padding: 7px 20px 20px 30px;
-}
-.ourlocation {
-	margin-top: 30px;
-	border: 1px dashed #6cb33f;
-}
+
 .mail {
 	color: #333333
 }
