@@ -533,7 +533,7 @@ footer {
 	padding-bottom: 111px;
 	position: relative;
 	background-position: center calc(100% - 46px);
-	border-top: 1px solid #c6c6c6;
+	border-top: 1px solid #ececec;
 	/*margin-top: 40px;*/
 	padding-top: 40px;
 }
@@ -753,9 +753,9 @@ footer ul.social-icon li:hover {
 					Signup Request footer SECTION
 *****************************************************************************************/
 .signup-request {
-    background: #f9fafa;
+    background: #f6f7f9 ;
     padding: 30px 15px;
-    border-top: 1px solid #c6c6c6;
+    border-top: 1px solid #ececec;
 }
 .signup-request h3 {
 	font-size: 2.4em;
