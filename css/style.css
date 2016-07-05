@@ -533,8 +533,7 @@ footer {
 	padding-bottom: 111px;
 	position: relative;
 	background-position: center calc(100% - 46px);
-	border-top: 1px solid #c6c6c6;
-	/*margin-top: 40px;*/
+	/*margin-top: 40px; border-top: 1px solid #c6c6c6;*/
 	padding-top: 40px;
 }
 footer p {
@@ -753,15 +752,16 @@ footer ul.social-icon li:hover {
 					Signup Request footer SECTION
 *****************************************************************************************/
 .signup-request {
-    background: #f9fafa;
-    padding: 30px 15px;
-    border-top: 1px solid #c6c6c6;
+    background: #ff9000;
+    padding:40px 15px;
+    /*order-top: 1px solid #c6c6c6;*/
 }
 .signup-request h3 {
 	font-size: 2.4em;
 	font-weight: 700;
 	margin-bottom: 30px;
 	letter-spacing: 1px;
+	color: #fff;
 }
 /*.signup-request input{height:53px; border:1px solid #a9a9a9; color:#909090; border-radius:0px;}*/
 .signup-request input.btn-submit {
@@ -771,8 +771,8 @@ footer ul.social-icon li:hover {
 	height: 45px;
 	/*border: 1px solid #a9a9a9;
 	 padding: 15px;*/
+	 border: none;
 	color: #909090;
-	border-radius: 0px;
 	letter-spacing: 1px;
 	border-radius: 1px;
 	box-shadow: none;/*width: 180px;*/
@@ -880,7 +880,8 @@ footer ul.social-icon li:hover {
 
 .our_clintes_div {
     padding: 50px 0px 100px 0px;
-    border-top: 1px solid #f5f5f5;
+    /*border-top: 1px solid #f5f5f5;*/
+    background: #f6f7f9;
 }
 .our_clintes_div h3 {
 	font-size: 2.4em;
