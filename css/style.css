@@ -222,7 +222,11 @@ header {
 	letter-spacing: 1px;
 }
 .paxcom-nav-2 ul > li .dropdown-menu > li{margin-bottom:1px;}
-.paxcom-nav-2 ul > li .dropdown-menu > li a{padding: 9px 20px 9px 10px;}
+.paxcom-nav-2 ul > li .dropdown-menu > li a{
+    font-size: 0.98em;
+    padding: 9px 20px 9px 10px;
+    text-transform: none;
+}
 .paxcom-nav-2 ul > li .dropdown-menu > li a:hover{border-bottom:0px;}
 
 .paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a
@@ -252,8 +256,27 @@ header {
 	border-bottom: solid 1px #ff9000;
 	padding: 10px 0 4px 0;
 }
- 
- 
+
+.paxcom-nav-2 ul li .dropdown-menu::before {
+    border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 44px;
+    position: absolute;
+    top: -7px;
+}
+ .paxcom-nav-2 ul li .dropdown-menu::after {
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 45px;
+    position: absolute;
+    top: -6px;
+}
 /*.dropdown-menu > li.kopie > a {
     padding-left:5px;
 }*/
