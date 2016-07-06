@@ -1076,10 +1076,11 @@ footer ul.social-icon li:hover {
     line-height: 1.36em;
 }
 .content-section h5 {
-	font-size: 1.3em;
-	font-weight: 700;
-	margin: 25px 0px 10px;
-	letter-spacing: 1px;
+    font-size: 1.56em;
+    font-weight: 700;
+    margin: 25px 0px 10px;
+    letter-spacing: 1px;
+    color: #ff9000;
 }
 .content-section strong{ letter-spacing: 1px;}
 
