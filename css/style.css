@@ -224,8 +224,20 @@ header {
 
 
 
+.well-custom{
+	margin: 20px 0px 20px 0px;
+    float: left;
+}
 
-
+.well-custom .intro-list.main-content li {
+    position: relative;
+    padding-left: 26px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin: 15px 9px 20px 5px;
+    float: right;
+    width: 32%;
+}
 
 
 /******************************************************************************************
