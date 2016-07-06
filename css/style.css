@@ -208,8 +208,7 @@ header {
  
 .paxcom-nav-2 .dropdown-submenu:hover>a:after {
     border-left-color:#f7901e;
-    background:#ff9000 !important;
-  color:#fff;
+    color:#f7901e;
  }
 
 .paxcom-nav-2 .dropdown-menu > li  a:hover, .dropdown-menu > .active  a:hover {
