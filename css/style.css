@@ -227,6 +227,13 @@ header {
 .well-custom{
 	margin: 20px 0px 20px 0px;
     float: left;
+	background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
 }
 
 .well-custom .intro-list.main-content li {
