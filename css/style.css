@@ -247,6 +247,17 @@ header {
 	transition: 0.1s;
 }
 
+.paxcom-nav-2 ul li .dropdown-menu{
+
+    background: #fff none repeat scroll 0 0;
+    border-radius:1px;
+    box-shadow: none;
+    margin: 13px 0 0 -10px;
+    min-width: 111px;
+    padding: 0;
+
+}
+
 .paxcom-nav-2 ul > li.active a{
 	border-bottom: solid 1px #ff9000;
 	padding: 10px 0 4px 0;
