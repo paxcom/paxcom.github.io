@@ -186,6 +186,10 @@ header {
     letter-spacing: 1px;
 }
 
+.paxcom-nav-2 .dropdown-menu>li {
+    margin: 0;
+}
+
 
 .paxcom-nav-2 ul li .arrownone a{ padding: 6px 13px 6px 15px;}
 
