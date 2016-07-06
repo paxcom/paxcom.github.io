@@ -173,6 +173,18 @@ header {
 	letter-spacing: 1px;
 }
 
+.paxcom-nav-2 ul > li.active a{
+	border-bottom: solid 1px #ff9000;
+	padding: 10px 0 4px 0;
+	font-weight: 600
+}
+
+.paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a
+ {
+	text-decoration: none;
+	padding: 10px 0 4px 0;
+	background-color: transparent;
+}
 
 
 .paxcom-nav-2 .dropdown-submenu>.dropdown-menu {
