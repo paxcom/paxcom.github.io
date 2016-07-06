@@ -319,10 +319,12 @@ header {
     font-weight: 600;
     padding: 10px 0 4px;
 }
-
-
-
-
+.paxcom-nav-2 ul li .dropdown-menu li {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+}
 
 /*.dropdown-menu > li.kopie > a {
     padding-left:5px;
