@@ -179,10 +179,8 @@ header {
 	font-weight: 600
 }
 
-.paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a
- {
+.paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a {
 	text-decoration: none;
-	padding: 10px 0 4px 0;
 	background-color: transparent;
 }
 
