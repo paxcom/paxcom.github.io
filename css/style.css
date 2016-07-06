@@ -224,13 +224,14 @@ header {
 }
 .paxcom-nav-2 ul > li .dropdown-menu > li{margin-bottom:1px;}
 .paxcom-nav-2 ul > li .dropdown-menu > li a{padding: 9px 20px 9px 10px;}
-.paxcom-nav-2 ul > li .dropdown-menu > li a:hover{border-bottom:0px;}
+.paxcom-nav-2 ul > li .dropdown-menu > li a:hover{ border-bottom: 4px solid #fff;}
 
 .paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a
  {
 	text-decoration: none;
 	padding: 10px 0 4px 0;
 	background-color: transparent;
+	border-bottom: 4px solid #fff;
 }
 .paxcom-nav-2 ul > li.active > a:after {
 	position: absolute;
@@ -241,7 +242,6 @@ header {
 	background-color: #ff9000;
 	display: block;
 	content: '';
-	transition: 0.1s;
 }
 
 .paxcom-nav-2 ul > li.active a{
