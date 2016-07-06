@@ -6,7 +6,7 @@ layout: default
 
 <section id="Product-Promotions" class="content-section section-gray">
 
-{% include price-stock-tracking.html %}
+{% include price-monitoring.html %}
    
 </section>
 
