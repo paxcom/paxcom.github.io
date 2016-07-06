@@ -329,40 +329,40 @@ nav {
    
    
    /* submenu positioning*/
-.nav1 ul {
+.rajunav ul {
   position: absolute;
   white-space: nowrap;
   border-bottom: 5px solid  orange;
   z-index: 1;
   left: -99999em;
 }
-.nav1 > li:hover > ul {
+.rajunav > li:hover > ul {
   left: auto;
   padding-top: 5px  ;
   min-width: 100%;
 }
-.nav1 > li li ul {  border-left:1px solid #fff;}
+.rajunav > li li ul {  border-left:1px solid #fff;}
 
 
-.nav1 > li li:hover > ul { 
+.rajunav > li li:hover > ul { 
  /* margin-left: 1px */
   left: 100%;
   top: -1px;
 }
 /* arrow hover styling */
-.nav1 > li > a:first-child:nth-last-child(2):before { 
+.rajunav > li > a:first-child:nth-last-child(2):before { 
   border-top-color: #aaa; 
 }
-.nav1 > li:hover > a:first-child:nth-last-child(2):before {
+.rajunav > li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent; 
   border-bottom-color: orange; 
   margin-top:-5px
 }
-.nav1 li li > a:first-child:nth-last-child(2):before {  
+.rajunav li li > a:first-child:nth-last-child(2):before {  
   border-left-color: #aaa; 
   margin-top: -5px
 }
-.nav1 li li:hover > a:first-child:nth-last-child(2):before {
+.rajunav li li:hover > a:first-child:nth-last-child(2):before {
   border: 5px solid transparent; 
   border-right-color: orange;
   right: 10px; 
