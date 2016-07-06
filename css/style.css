@@ -212,14 +212,14 @@ header {
 .paxcom-nav-2 ul > li .dropdown-menu{padding:0px;}
 .paxcom-nav-2 ul > li .dropdown-menu > li{margin:0px;}
 .paxcom-nav-2 ul li a {
-	color: #333333;
-	font-size: 0.8em;
-	font-weight: 500;
-	position: relative;
-	text-align: left;
-	padding: 10px 0 4px 0;
-	text-transform: uppercase;
-	letter-spacing: 1px;
+    color: #333333;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 0 4px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
 }
 .paxcom-nav-2 ul > li .dropdown-menu > li{margin-bottom:1px;}
 .paxcom-nav-2 ul > li .dropdown-menu > li a{
