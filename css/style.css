@@ -167,6 +167,7 @@ header {
 .paxcom-nav-2 ul > li{ margin: 0px 13px;}
 .paxcom-nav-2 ul li a { color: #333333; font-size: 0.8em; font-weight: 500;	position: relative;	text-align: left;	padding: 10px 0 10px 0;	text-transform: uppercase;	letter-spacing: 1px;}
 .paxcom-nav-2 ul > li.active a{	border-bottom: solid 1px #ff9000;padding: 10px 0 4px 0;	font-weight: 600}
+
 .paxcom-nav-2 ul > li > a:hover, .paxcom-nav-2 ul > li.active a { text-decoration: none; background-color: transparent;}
 
 
@@ -216,7 +217,7 @@ header {
     color:#f7901e;
  }
 
-.paxcom-nav-2 .dropdown-menu > li  a:hover, .dropdown-menu > .active  a:hover {
+.paxcom-nav-2 .dropdown-menu > li a:hover, .dropdown-menu > .active a:hover {
   background:#ff9000 !important;
   color:#fff;
 } 
