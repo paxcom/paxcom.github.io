@@ -4,9 +4,11 @@ layout: default
 
 <div class="clearfix"></div>
 
+<section id="Product-positioning" class="content-section paddnonetop section-gray" >
 
 {% include increasebrand.html %}
-   
+
+</section>   
 
 <div class="clearfix"></div>
 

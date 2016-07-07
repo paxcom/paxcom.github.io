@@ -4,7 +4,7 @@ layout: default
 
 <div class="clearfix"></div>
 
-<section id="Inventory-Distribution" class="content-section section-gray" >
+<section id="Inventory-Distribution" class="content-section paddnonetop section-gray" >
 
 {% include autodistribute.html %}
    
