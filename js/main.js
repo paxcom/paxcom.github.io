@@ -224,9 +224,9 @@ $(document).ready(function () {
 
 
 $('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(2000).fadeIn(500);
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(0);
 }, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(2000).fadeOut(500);
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(0);
 });
 
 
