@@ -1,37 +1,20 @@
 ---
 layout: default
 ---
+
 <div class="clearfix"></div>
 
-<!-- START This is a typical Twitter Bootstrap Carousel -->
-<!-- Carousel -->
-<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"> 
-  
-  
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner paxcom-home">
-    <div class="item item-bootom item-0 active">    	
-      <div class="container-fluid">
-        <div class="carousel-caption">
-          <h1> 
-          	 <span>Coming Soon </span>
-        	<!--	<p>We have received your enquiry and will respond to you soon.</p> --> 
-      		</h1>
-           
-            
-            <!--<a href="{{site.baseurl}}/index.html" class="btn-more page-scroll">Know more</a>-->     
-                  
-            <!--<div class="shop-img"> <img src="{{ site.baseurl }}/images/local-shop.png" alt="Paxcom" class="img-responsive"></div>-->          
-        </div>
-      </div>
-    </div> 
- 
-    
- 
-  </div>
-  <!-- End Wrapper for slides --> 
-</div>
+{% include privacy_policy_header.html %}
 
+<section class="mid_counter">
+<div class="container inner-section">
+
+{% include privacy_policy.html %}
+   
+</div>
+</section>
+
+<div class="clearfix"></div>
 
 {% include signup-request.html %}
 {% include footer.html %}
