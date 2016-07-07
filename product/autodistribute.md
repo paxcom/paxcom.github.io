@@ -5,10 +5,8 @@ layout: default
 <div class="clearfix"></div>
 
 
-
 {% include autodistribute.html %}
    
-
 
 <div class="clearfix"></div>
 

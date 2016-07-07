@@ -4,11 +4,9 @@ layout: default
 
 <div class="clearfix"></div>
 
-<section id="Smart-Analytics" class="content-section section-gray">
 
 {% include deepdive.html %}
    
-</section>
 
 <div class="clearfix"></div>
 
