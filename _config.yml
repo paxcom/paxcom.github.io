@@ -45,4 +45,5 @@ redirect_to: /supply-chain.html
 
 
 # Site Navigation
-baseurl: /raju_paxcom
+baseurl:
+#baseurl: /raju_paxcom
