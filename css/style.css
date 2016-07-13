@@ -969,7 +969,50 @@ footer ul.social-icon li:hover {
 /*********************************** Privacy Policy and T&C header *******************************************************/
 
 
+/*********************************** Supply chain / merchandising css ******************************************************/
 
+
+.merchansupplyheading h2 {
+	font-size: 2.5em;
+    font-weight: 700;
+    margin: 25px 0px 15px;
+    letter-spacing: 0px;
+    line-height: 1.36em;
+}
+.merchansupplyheading h5 {
+    font-size: 1.55em;
+    font-weight: 800;
+    margin: 35px 0px 10px;
+    letter-spacing: 1px;
+    color: #f58b15;
+}
+.merchansupplyheading p {
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.merchansupplyheading .listintro {
+	margin:0px;
+}
+.merchansupplyheading .listintro ul{ margin: 0px; padding: 0px;}
+
+.merchansupplyheading .listintro li {
+	position: relative;
+    padding-left: 26px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    margin:15px 0px 20px 0px;
+}
+.merchansupplyheading .listintro li:before {
+	position: absolute;
+	left: 0px;
+	top:5px;
+	background: #ff9000;
+    border-radius: 3px;
+}
 
 
 
