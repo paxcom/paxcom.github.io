@@ -972,7 +972,7 @@ footer ul.social-icon li:hover {
 /*********************************** Supply chain / merchandising css ******************************************************/
 
 .merchansupplyheading {
-	padding:70px 0px 50px;
+	padding:70px 0px 70px;
 }
 .merchansupplyheading h3 {
 	font-size: 2.5em;
@@ -996,7 +996,7 @@ footer ul.social-icon li:hover {
     font-weight: 500;
 }
 .merchansupplyheading .listintro {
-    margin: 5px 0px 15px 5px;
+    margin:15px 0px 15px 5px;
 }
 .merchansupplyheading .listintro ul{ margin: 0px; padding: 0px;}
 
@@ -1037,6 +1037,9 @@ footer ul.social-icon li:hover {
     border: 1px solid #bababa;
 }
 .btn-more-new:hover{background:#f58b15;}
+
+/*********************************** Supply chain / merchandising css end******************************************************/
+
 /***********************************Inner header*******************************************************/
 					
 .inner-header {
