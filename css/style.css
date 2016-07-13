@@ -1007,6 +1007,7 @@ footer ul.social-icon li:hover {
     letter-spacing: 1px;
     line-height: 20px;
     margin: 0px 0px 5px 0px;
+    list-style: none;
 }
 .merchansupplyheading .listintro li:before {
 	position: absolute;
@@ -1014,17 +1015,14 @@ footer ul.social-icon li:hover {
     top: 5px;
     background: #ff9000;
     border-radius: 2px;
-}
-.merchansupplyheading .listintro li:before {
-    content: '';
-    background: #fff;
+	content: '';
     width: 10px;
     height: 10px;
     margin-right: 8px;
     display: inline-block;
-    border-radius: 0px;
     transform: rotate(50deg);
 }
+
 
 
 
