@@ -982,11 +982,11 @@ footer ul.social-icon li:hover {
     line-height: 1.36em;
 }
 .merchansupplyheading h5 {
-    font-size: 1.55em;
-    font-weight: 800;
-    margin: 35px 0px 10px;
+    font-size: 1.35em;
+    font-weight: 700;
+    margin: 30px 0px 10px;
     letter-spacing: 1px;
-    color: #f58b15;
+    color: #404040;
 }
 .merchansupplyheading p {
     margin: 0 0 10px;
@@ -997,25 +997,34 @@ footer ul.social-icon li:hover {
 }
 
 .merchansupplyheading .listintro {
-	margin:0px;
+    margin: 5px 0px 15px 5px;
 }
 .merchansupplyheading .listintro ul{ margin: 0px; padding: 0px;}
 
 .merchansupplyheading .listintro li {
 	position: relative;
-    padding-left: 26px;
+    padding-left: 18px;
     letter-spacing: 1px;
-    line-height: 21px;
-    margin:15px 0px 20px 0px;
+    line-height: 20px;
+    margin: 0px 0px 5px 0px;
 }
 .merchansupplyheading .listintro li:before {
 	position: absolute;
-	left: 0px;
-	top:5px;
-	background: #ff9000;
-    border-radius: 3px;
+    left: 0px;
+    top: 5px;
+    background: #ff9000;
+    border-radius: 2px;
 }
-
+.merchansupplyheading .listintro li:before {
+    content: '';
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    display: inline-block;
+    border-radius: 0px;
+    transform: rotate(50deg);
+}
 
 
 
