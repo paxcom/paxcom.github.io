@@ -984,7 +984,7 @@ footer ul.social-icon li:hover {
 .merchansupplyheading h5 {
     font-size: 1.35em;
     font-weight: 700;
-    margin: 30px 0px 10px;
+    margin: 30px 0px 15px;
     letter-spacing: 1px;
     color: #404040;
 }
@@ -995,7 +995,6 @@ footer ul.social-icon li:hover {
     font-size: 1.2em;
     font-weight: 500;
 }
-
 .merchansupplyheading .listintro {
     margin: 5px 0px 15px 5px;
 }
@@ -1022,9 +1021,6 @@ footer ul.social-icon li:hover {
     display: inline-block;
     transform: rotate(50deg);
 }
-
-
-
 
 /***********************************Inner header*******************************************************/
 					
