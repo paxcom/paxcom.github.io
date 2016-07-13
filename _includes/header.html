@@ -47,8 +47,8 @@ style="margin: 0px;padding:20px 40px;">
                  </li>
                  
                  
-                 <li class="dropdown dropdown-submenu" class="dropdown-toggle" data-toggle="dropdown">
-                 	<a href="{{site.baseurl}}/supply-chain.html" {% if page.url == '/supply-chain.html'  %} class='active' {% endif %} >Supply Chain Solutions</a>
+                 <li class="dropdown dropdown-submenu"  {% if page.url == '/supply-chain.html'  %} class='active' {% endif %}>
+                 	<a href="{{site.baseurl}}/supply-chain.html" class="dropdown-toggle" data-toggle="dropdown" {% if page.url == '/supply-chain.html'  %} class='active' {% endif %}>Supply Chain Solutions</a>
                     
                     <ul class="dropdown-menu arrownone">
                       
