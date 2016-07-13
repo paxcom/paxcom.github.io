@@ -970,7 +970,9 @@ footer ul.social-icon li:hover {
 
 
 /*********************************** Supply chain / merchandising css ******************************************************/
-
+.merchansupplyheading.section-gray {
+	background: #f6f7f9;
+}
 .merchansupplyheading {
 	padding:70px 0px 70px;
 }
