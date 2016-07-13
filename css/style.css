@@ -971,7 +971,9 @@ footer ul.social-icon li:hover {
 
 /*********************************** Supply chain / merchandising css ******************************************************/
 
-
+.merchansupplyheading {
+	padding:70px 0px 50px;
+}
 .merchansupplyheading h3 {
 	font-size: 2.5em;
     font-weight: 700;
