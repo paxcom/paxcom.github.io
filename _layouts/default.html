@@ -3,7 +3,7 @@
 {% include head.html %}
 {% include js.html %}
 <!-- Wrapper -->
-<div id="wrapper">    
+<div id="wrapper" {% if page.url == '/contact-us.html'  %} itemscope itemtype="http://schema.org/LocalBusiness" {% endif %} >    
     {% include header.html %}
     {% include request-a-demo.html %}   
     {{ content }}
