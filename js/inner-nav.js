@@ -18,7 +18,7 @@ $(window).scroll(function(){
         $(".inner-nav").addClass("navbar-fixed-top");
     } else if (scroll < head.height()+125) {
         $(".inner-nav").removeClass("navbar-fixed-top");
-        $($('#myTab li')[0]).addClass("active");
+        $($('#myTab li')[1]).addClass("active");
 
     }
 });
