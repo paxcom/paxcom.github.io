@@ -231,10 +231,10 @@ $('ul.nav li.dropdown').hover(function() {
 
 
 /*Scroll Spy*/
-    $('body').scrollspy({ target: '#spy', offset:80});
+    $('body').scrollspy({ target: '#spy', offset:40});
 
     
-    $('a[href*=#]:not([href=#])').click(function() {
+    $('a[href]:not([href=])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
             var target = $(this.hash);
@@ -242,7 +242,7 @@ $('ul.nav li.dropdown').hover(function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top
-                }, 1000);
+                }, 500);
                 return false;
             }
         }
