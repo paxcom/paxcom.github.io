@@ -222,13 +222,13 @@
 
 $(document).ready(function () {
 
-/*
+
 $('ul.nav li.dropdown').hover(function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(0);
 }, function() {
   $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(0);
 });
-*\
+
 
 /*Scroll Spy*/
 
