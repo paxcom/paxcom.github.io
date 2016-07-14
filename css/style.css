@@ -1091,11 +1091,11 @@ footer ul.social-icon li:hover {
     padding: 14px 11px;
     letter-spacing: 1px;
 }
-.inner-nav .nav>li>a:focus{background:#fff !important; color:#333 !important}
+.inner-nav .nav>li>a:focus{background:#fff; color:#333;}
 
 .inner-nav .nav li a:hover, .inner-nav .nav li.active a {
-	background: #f58b15 !important;			
-	color: #fff !important;
+	background: #f58b15;			
+	color: #fff;
 }
 .inner-header.about {
 	position: relative;	background:#fbc992;	
