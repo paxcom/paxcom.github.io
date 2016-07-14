@@ -222,13 +222,15 @@
 
 $(document).ready(function () {
 
-
+/*
 $('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(0);
 }, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(0);
 });
+*\
 
+/*Scroll Spy*/
 
 /*Scroll Spy*/
    /* $('body').scrollspy({ target: '#spy', offset:80});
@@ -247,5 +249,7 @@ $('ul.nav li.dropdown').hover(function() {
             }
         }
     });*/
+
+
 
 });
