@@ -12,10 +12,9 @@ $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     //console.log("scroll",scroll);
    // console.log("headheight",head.height());
-    if (scroll >= head.height()+125 && !($(".inner-nav").hasClass("navbar-fixed-top"))) {
-        $(".inner-nav").removeClass("nav-relative");
-        $(".inner-nav").removeClass("nav-relative");
-        $(".inner-nav").addClass("navbar-fixed-top");
+    if (scroll >= head.height()+125) {
+       $(".inner-nav").removeClass("navbar-fixed-top");
+        $($('#myTab li')[0]).addClass("active");
     } else if (scroll < head.height()+125) {
         $(".inner-nav").removeClass("navbar-fixed-top");
         $($('#myTab li')[0]).addClass("active");
