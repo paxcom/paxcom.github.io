@@ -16,7 +16,8 @@ var blog = WP.open('http://blog.paxcom.net/');
 			jQuery('.'+MYWRAPPER_CLASS).append(function(){
 			//return (posts[i].thumbnail) ? ''+posts[i].title+'' : ''+posts[i].title+'';
 			//return (posts[i].title + '<br>' '' + posts[i].content);
-			return (posts[i].content) ? '<br>'   +posts[i].id+ '<br> <a href="' +posts[i].url+  '">'+posts[i].title+ '</a>'  : "+posts[i].date+" +'<br>'  ;
+			//return (posts[i].content) ? '<br>'   +posts[i].id+ '<br> <a href="' +posts[i].url+  '">' +posts[i].title+ '</a>':'';
+			return (posts[i].content) ? '<br> <a href="' +posts[i].url+  '">' +posts[i].title+ '</a>':'';
 			
 		
 		});
