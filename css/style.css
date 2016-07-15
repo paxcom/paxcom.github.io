@@ -199,11 +199,22 @@ header {
 .paxcom-nav-2 .dropdown-submenu ul > li{ margin: 0px;}
 .paxcom-nav-2 .dropdown-submenu>.dropdown-menu { top: 0; left: 100%; margin-top: -6px; margin-left: -1px; z-index: -1; border-radius: 0 2px 2px 2px; box-shadow: none;}
 
-
- 
+.paxcom-nav-2 .dropdown-submenu > a:after {
+	border-color: transparent transparent transparent #908c8c;
+    border-style: solid;
+    border-width: 7px 0 7px 6px;
+    content: " ";
+    display: block;
+    float: right;
+    height: 0;
+    margin-right: -19px;
+    margin-top: 5px;
+    width: 0;
+}
 .paxcom-nav-2 .dropdown-submenu:hover>a:after {
     border-left-color:#f7901e;
     color:#f7901e;
+    z-index: 1;
  }
 
 .paxcom-nav-2 .dropdown-menu > li a:hover, .dropdown-menu > .active a:hover {
