@@ -223,11 +223,14 @@
 $(document).ready(function () {
 
 
-$('ul.nav li.dropdown').hover(function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+
+
+/*$('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(0);
 }, function() {
-  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-});
+  $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(0);
+});*/
+
 
 
 /*Scroll Spy*/

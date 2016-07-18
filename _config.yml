@@ -43,6 +43,7 @@ redirect_to: /supply-chain.html
 #     to: blog.paxcom.net
 #    type: permanent
 
+
 # old ro new url redirects 
 urllist:
 - old: http://paxcom.net/support/business-intelligence-analytics/
@@ -63,4 +64,8 @@ urllist:
 - old: http://127.0.0.1:4000/about-us.html
   new: http://support.paxcom.net/about-us.html
   
+
+# Site Navigation
+#baseurl:
+#baseurl: /raju_paxcom
 
