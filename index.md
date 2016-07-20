@@ -3,8 +3,6 @@ layout: default
 title: Optimize omnichannel selling for e-tailers and manufacturers in India.
 keywords: "Centralized Product information management"
 description: Paxcom e-commerce applications will help you to manage,sell and analyze your products on multiple marketplaces in India -Product Information Management,retail analysis ,Order and Inventory Management
-permalink: /index.html
-redirect_to: 'http://paxcom.net'
 ---
 
 
