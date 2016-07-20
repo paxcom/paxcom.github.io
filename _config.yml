@@ -61,8 +61,8 @@ urllist:
 - old: http://paxcom.net/support/
   new: http://support.paxcom.net/
   
-- old: http://127.0.0.1:4000/about-us.html
-  new: http://support.paxcom.net/about-us.html
+- old: http://paxcom.net/index.html
+  new: http://paxcom.net/
   
 
 # Site Navigation
