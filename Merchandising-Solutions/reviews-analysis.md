@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Product Reviews - Sentiment Analysis -Paxcom
+keywords: "Product Reviews - Sentiment Analysis -Paxcom"
+description: Paxcom helps you to monitor product reviews
 ---
 
 <div class="clearfix"></div>

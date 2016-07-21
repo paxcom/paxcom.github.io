@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Smart analytics-Paxcom
+keywords: "Smart analytics-Paxcom"
+description: Paxcom analytics solution helps you to monitor Key Performing Products and Sales channels.
 ---
 
 <div class="clearfix"></div>

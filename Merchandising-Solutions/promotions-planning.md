@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Plan, Monitor and Analyze - Product promotional offers -Paxcom
+keywords: "Plan, Monitor and Analyze - Product promotional offers -Paxcom"
+description: Paxcom helps to keep a track on your product promotions and offers run by competion on various ecommerce channels and increase your online sales.
 ---
 
 <div class="clearfix"></div>

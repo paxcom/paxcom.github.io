@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Centralized Inventory Distribution-Paxcom 
+keywords: "Centralized Inventory Distribution-Paxcom"
+description: Paxcom Centralized Inventory Management help sellers to distribute optimal inventory across popular marketplaces like amazon.
 ---
 
 <div class="clearfix"></div>

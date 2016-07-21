@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Monitor Price -competitive pricing - Paxcom 
+keywords: "Monitor Price -competitive pricing - Paxcom"
+description: Competitor price monitoring and MAP price updates with Paxcom Price Intelligence tool.
 ---
 
 <div class="clearfix"></div>

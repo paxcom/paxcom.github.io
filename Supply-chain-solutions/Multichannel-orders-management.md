@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Multichannel Orders-Paxcom 
+keywords: "Multichannel Orders-Paxcom"
+description: Paxcom Centralized Order Panel help sellers to manage orders for omni-channel at one place
 ---
 
 <div class="clearfix"></div>

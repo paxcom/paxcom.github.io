@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Reconcile payments from Marketplaces-Paxcom
+keywords: "Reconcile payments from Marketplaces-Paxcom"
+description: Paxcom helps to reconcile payments from popular channels like Amazon, Snapdeal, Paytm, Flipkart
 ---
 
 <div class="clearfix"></div>

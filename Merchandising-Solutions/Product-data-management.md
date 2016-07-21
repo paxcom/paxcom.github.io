@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Product Catalog management - Information Management- Paxcom 
+keywords: "Product Catalog management - Information Management- Paxcom"
+description: Paxcom ecommerce solutions helps you to build optimized,consistent and accurate product page content.
 ---
 
 <div class="clearfix"></div>
