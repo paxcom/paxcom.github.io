@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Terms and conditions- Paxcom 
+keywords: "Terms and conditions- Paxcom"
+description: Terms and Conditions for the use of Paxcom Website
 ---
 
 <div class="clearfix"></div>

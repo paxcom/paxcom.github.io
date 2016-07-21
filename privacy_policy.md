@@ -1,5 +1,8 @@
 ---
 layout: default
+title: Privacy Policy - Paxcom 
+keywords: "Privacy Policy - Paxcom"
+description: As you render Paxcom Services, We request you to go trough our Privacy Policy
 ---
 
 <div class="clearfix"></div>
