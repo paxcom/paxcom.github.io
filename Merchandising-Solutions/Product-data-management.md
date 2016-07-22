@@ -15,6 +15,7 @@ description: Paxcom ecommerce solutions helps you to build optimized,consistent 
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} -->
 {% include signup-request.html %}
 {% include footer.html %}

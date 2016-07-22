@@ -15,6 +15,7 @@ description: Paxcom SEO services will help you to rank your products higher in s
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} -->
 {% include signup-request.html %}
 {% include footer.html %}

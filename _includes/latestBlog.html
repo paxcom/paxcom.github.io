@@ -1,0 +1,47 @@
+<div class="our_clintes_div">
+	<div class="container">
+    	<div class="row">
+        	<h3 class="text-center"> Related Blogs </h3>
+        
+   <script type="text/javascript">			
+					/*var blog = WP.open('http://blog.paxcom.net/');
+					blog.posts().all(function(posts){
+						var count = 0;
+						for(var i = 0; i < posts.length; i++){
+							for(var j = 0; j < posts[i].categories.length && count<3; j++){
+								if(posts[i].categories[j].slug=="brand-visibility"){
+									count=count+1;
+									console.log(count);
+									jQuery('.'+MYWRAPPER_CLASS).append(function(){
+										return (posts[i].content) ? '<div class="col-md-4"><span><a href="' +posts[i].url+  '" target="_blank" >' +posts[i].title+ '  </a></span>' +posts[i].excerpt+ '<a href="' +posts[i].url+  '" target="_blank" class="smallLink" > Read More...   </a> </div>':'';
+									});
+								}
+							}
+						}
+					
+						if(count==1){
+							var el = document.querySelector('.col-md-4');
+								el.classList.remove('col-md-4');
+								el.classList.add('col-md-12');
+							}
+							else if(count==2){
+								var el = $('.homeblog .col-md-4');
+								for(var k = 0; k< el.length; k++){
+									el[k].classList.remove('col-md-4');
+									el[k].classList.add('col-md-6');
+								}
+							}
+					});*/
+					
+					
+</script>
+{% include blog.html %}
+            
+<div class="homeblog"> </div>          
+            
+            
+           <!-- <p class="text-center">We count our customers after they find more value than what they pay for, and more importantly, only after they smile</p>
+            <div class="our_clinte_img"> <img src="{{site.baseurl}}/images/our_clients_logo.png" alt="Paxcom" class="img-responsive customimgresponsive" /></div>-->
+		</div>
+    </div>
+</div>

@@ -1,0 +1,128 @@
+<!-- some other meta -->
+   <script type="text/javascript">    
+		//$(document).ready(function() {
+			var MYBLOG_LIMIT = 100;
+				var MYWRAPPER_CLASS = 'homeblog';
+				
+				
+				var WP={open:function(b){var a={posts:function(){var d=MYBLOG_LIMIT;var e=0;var c={all:function(g){var f=b+"/api/get_recent_posts/";f+="?count="+d+"&page="+e+"&callback=?";jQuery.getJSON(f,function(l){var k=l.posts;for(var j=0;j<k.length;j++){var h=k[j];h.createComment=function(i,m){i.postId=h.id;a.comments().create(i,m)}}g(k)})},findBySlug:function(f,h){var g=b+"/api/get_post/";g+="?slug="+f+"&callback=?";jQuery.getJSON(g,function(i){h(i.post)})},limit:function(f){d=f;return c},page:function(f){e=f;return c}};return c},pages:function(){var c={findBySlug:function(d,f){var e=b+"/api/get_page/";e+="?slug="+d+"&callback=?";jQuery.getJSON(e,function(g){f(g.page)})}};return c},categories:function(){var c={all:function(e){var d=b+"/api/get_category_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.categories)})}};return c},tags:function(){var c={all:function(e){var d=b+"/api/get_tag_index/";d+="?callback=?";jQuery.getJSON(d,function(f){e(f.tags)})}};return c},comments:function(){var c={create:function(f,e){var d=b+"/api/submit_comment/";d+="?post_id="+f.postId+"&name="+f.name+"&email="+f.email+"&content="+f.content+"&callback=?";jQuery.getJSON(d,function(g){e(g)})}};return c}};return a}};
+			
+			
+			var curSlugtext;
+			setTimeout(function(){
+			var cureentUrl = document.location.href;
+			console.log(":cureentUrl",cureentUrl)
+			
+			
+			var urllist=[
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Smart-Analytics.html",
+							  "slugText": "data-insights"
+						  },
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Accounts-Reconciliation.html",
+							  "slugText": "account-reconciliation"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Merchandising-Solutions/brand-visibilty.html",
+							  "slugText": "brand-visibility"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Inventory-Distribution.html",
+							  "slugText": "inventory-control"
+						  }
+						  ,
+						  {
+							  "pageUrl": "inventory-tracking",
+							  "slugText": "http://blog.paxcom.net/business-intelligence-analytics/"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/merchandising-solutions.html",
+							  "slugText": "merchandising-solutions"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Multichannel-orders-management.html",
+							  "slugText": "multichannel-orders"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Merchandising-Solutions/monitor-price.html",
+							  "slugText": "price-intelligence"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Merchandising-Solutions/Product-data-management.html",
+							  "slugText": "product-data-management"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Products-Listing.html",
+							  "slugText": "product-listing"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Merchandising-Solutions/reviews-analysis.html",
+							  "slugText": "product-review-analysis"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Merchandising-Solutions/promotions-planning.html",
+							  "slugText": "promotion-planning"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/Supply-chain-solutions/Return-orders-management.html",
+							  "slugText": "returns-management/"
+						  }
+						  ,
+						  {
+							  "pageUrl": "http://paxcom.net/supply-chain.html",
+							  "slugText": "supply-chain"
+						  }
+  						]
+  			var match = false;
+			for (var i = 0, l = urllist.length; i < l; i++) 
+				{
+					if(cureentUrl == urllist[i].pageUrl ){
+						curSlugtext= urllist[i].slugText;
+					}					
+				}
+			},1000);
+			
+			console.log(curSlugtext);
+			
+			var blog = WP.open('http://blog.paxcom.net/');
+					blog.posts().all(function(posts){
+						var count = 0;
+						for(var i = 0; i < posts.length; i++){
+							for(var j = 0; j < posts[i].categories.length && count<3; j++){
+								if(posts[i].categories[j].slug==curSlugtext){
+									count=count+1;
+									console.log(count);
+									jQuery('.'+MYWRAPPER_CLASS).append(function(){
+										return (posts[i].content) ? '<div class="col-md-4"><span><a href="' +posts[i].url+  '" target="_blank" >' +posts[i].title+ '  </a></span>' +posts[i].excerpt+ '<a href="' +posts[i].url+  '" target="_blank" class="smallLink" > Read More...   </a> </div>':'';
+									});
+								}
+							}
+						}
+					
+						if(count==1){
+							var el = document.querySelector('.col-md-4');
+								el.classList.remove('col-md-4');
+								el.classList.add('col-md-12');
+							}
+							else if(count==2){
+								var el = $('.homeblog .col-md-4');
+								for(var k = 0; k< el.length; k++){
+									el[k].classList.remove('col-md-4');
+									el[k].classList.add('col-md-6');
+								}
+							}
+					});
+			
+	
+ </script>

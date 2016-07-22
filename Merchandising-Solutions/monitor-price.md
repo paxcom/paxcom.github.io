@@ -15,6 +15,7 @@ description: Competitor price monitoring and MAP price updates with Paxcom Price
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} -->
 {% include signup-request.html %}
 {% include footer.html %}

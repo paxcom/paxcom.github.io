@@ -15,6 +15,7 @@ description: Paxcom helps you to monitor product reviews
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} --> 
 {% include signup-request.html %}
 {% include footer.html %}

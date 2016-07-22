@@ -16,6 +16,7 @@ description: Get out of stock alerts and track your inventory with Paxcom Kinato
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} --> 
 {% include signup-request.html %}
 {% include footer.html %}

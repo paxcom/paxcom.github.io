@@ -15,6 +15,7 @@ description: Paxcom eGenie helps you to list products on popular channels like A
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} -->
 {% include signup-request.html %}
 {% include footer.html %}

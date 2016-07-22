@@ -14,7 +14,7 @@ description: Paxcom analytics solution helps you to monitor Key Performing Produ
 </section>
 
 <div class="clearfix"></div>
-
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} -->
 {% include signup-request.html %}
 {% include footer.html %}

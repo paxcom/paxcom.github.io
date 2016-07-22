@@ -15,6 +15,7 @@ description: Paxcom helps to reconcile payments from popular channels like Amazo
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} --> 
 {% include signup-request.html %}
 {% include footer.html %}

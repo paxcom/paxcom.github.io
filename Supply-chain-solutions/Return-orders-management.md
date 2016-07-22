@@ -15,6 +15,7 @@ description: Paxcom Retun Management Panel help sellers to manage returned order
 
 <div class="clearfix"></div>
 
-{% include our_clients.html %} 
+{% include latestBlog.html %}
+<!--{% include our_clients.html %} --> 
 {% include signup-request.html %}
 {% include footer.html %}
