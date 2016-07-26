@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Centralized Inventory Distribution-Paxcom 
-keywords: "Centralized Inventory Distribution-Paxcom"
+title: Inventory Management for Amazon,Flipkart,Paytm-Paxcom 
+keywords: "Inventory Management for Amazon,Flipkart,Paytm-Paxcom"
 description: Paxcom Centralized Inventory Management help sellers to distribute optimal inventory across popular marketplaces like amazon.
 ---
 

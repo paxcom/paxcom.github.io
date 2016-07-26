@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Product Listing-Paxcom 
-keywords: "Product Listing-Paxcom"
+title: Product Listing on Amazon,Flipkart,Snapdeal-Paxcom 
+keywords: "Product Listing on Amazon,Flipkart,Snapdeal-Paxcom"
 description: Paxcom eGenie helps you to list products on popular channels like Amazon, snapdeal, Paytm, Flipkart.
 ---
 

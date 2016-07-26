@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Manage Returned Orders-Paxcom 
-keywords: "Manage Returned Orders-Paxcom"
+title: Return orders on Multiple Channels - Paxcom
+keywords: "Return orders on Multiple Channels - Paxcom"
 description: Paxcom Retun Management Panel help sellers to manage returned orders, transfer returned stock to inventory and Raise disputes.
 ---
 

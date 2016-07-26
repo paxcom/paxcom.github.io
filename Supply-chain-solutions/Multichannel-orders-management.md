@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Multichannel Orders-Paxcom 
-keywords: "Multichannel Orders-Paxcom"
+title: Multi channel Order Mangement for Amazon,Flipkart,Snapdeal  -Paxcom 
+keywords: "Multi channel Order Mangement for Amazon,Flipkart,Snapdeal  -Paxcom"
 description: Paxcom Centralized Order Panel help sellers to manage orders for omni-channel at one place
 ---
 
