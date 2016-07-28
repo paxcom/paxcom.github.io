@@ -24,7 +24,7 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
                 <li>Optimize Customer Experience with Stock Availability, And Competitive Price</li>
               </ul>
               <div class="btnboxdiv"> <a href="{{site.baseurl}}/merchandising-solutions.html" class="btn-more page-scroll">Know more</a> </div>
-              <div class="shop-img"> <img src="{{ site.baseurl }}/images/PIM.png" alt="Paxcom" class="img-responsive customimgresponsive" /></div>
+              <div class="shop-img"> <img src="{{ site.baseurl }}/images/merchandising-solution.png" alt="merchandising-for-manufacturers" class="img-responsive customimgresponsive" /></div>
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
                 <li>Efficient Returns and Replacement Management</li>
               </ul>
               <div class="btnboxdiv"> <a href="{{site.baseurl}}/supply-chain.html" class="btn-more page-scroll">Know more</a> </div>
-              <div class="shop-img"> <img src="{{site.baseurl}}/images/supply-chain_img.png" alt="Paxcom" class="img-responsive customimgresponsive" /></div>
+              <div class="shop-img"> <img src="{{site.baseurl}}/images/supply-chain-retailers.png" alt="supply-chain-for-retailers" class="img-responsive customimgresponsive" /></div>
             </div>
           </div>
         </div>
