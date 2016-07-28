@@ -24,7 +24,7 @@ description: Paxcom e-commerce applications will help you to manage,sell and ana
                 <li>Optimize Customer Experience with Stock Availability, And Competitive Price</li>
               </ul>
               <div class="btnboxdiv"> <a href="{{site.baseurl}}/merchandising-solutions.html" class="btn-more page-scroll">Know more</a> </div>
-              <div class="shop-img"> <img src="{{ site.baseurl }}/images/merchandising-solution.png" alt="merchandising-for-manufacturers" class="img-responsive customimgresponsive" /></div>
+              <div class="shop-img"> <img src="{{ site.baseurl }}/images/merchandising-solution.png" alt="merchandising-for-manufacturers " class="img-responsive customimgresponsive" /></div>
             </div>
           </div>
         </div>
